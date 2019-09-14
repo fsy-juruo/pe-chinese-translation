@@ -1,0 +1,30 @@
+### 677. Coloured Graphs
+
+Let $g(n)$ be the number of **undirected graphs** with $n$ nodes satisfying the following properties:
+
+- The graph is connected and has no cycles or multiple edges.
+- Each node is either red, blue, or yellow.
+- A red node may have no more than 4 edges connected to it.
+- A blue or yellow node may have no more than 3 edges connected to it.
+- An edge may not directly connect a yellow node to a yellow node.
+
+For example, $g(2)=5$, $g(3)=15$, and $g(4) = 57$.
+You are also given that $g(10) = 710249$ and $g(100) \equiv 919747298 \pmod{1\,000\,000\,007}$.
+
+Find $g(10\,000) \bmod 1\,000\,000\,007$.
+
+
+### 677. 被染色的图
+
+令 $g(n)$ 为有 $n$ 个节点，且满足以下性质的**无向图**的个数：
+
+- 这个图是连通的，没有重边和环。
+- 每个节点上只有红、蓝、黄三种颜色的一种。
+- 一个红色的节点最多有 4 条与其连着的边。
+- 一个蓝色或黄色的节点最多有 3 条与其连着的边。
+- 没有一条边直接连接两个黄点。
+
+例如，$g(2)=5$，$g(3)=15$，且 $g(4) = 57$.
+你还知道 $g(10) = 710249$ 并且 $g(100) \equiv 919747298 \pmod{1\,000\,000\,007}$.
+
+求 $g(10\,000) \bmod 1\,000\,000\,007$.
