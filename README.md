@@ -1,4 +1,4 @@
-# Project euler 题目中文翻译
+# Project euler 题目中文翻译 :cn:
 
 ## 1. 简介
 
@@ -12,7 +12,7 @@
 
 **A.** 前面的题目都可以在 [本网站](http://pe-cn.github.io/) 找到翻译。
 
-## 3. 如何进行贡献？
+## 3. 如何进行贡献？  :wrench:
 
 提建议请开 issue，无意义的 issue 会直接被 close。
 
