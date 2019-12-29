@@ -1,4 +1,4 @@
-### 676. Matching Digit Sums
+### [676. Matching Digit Sums](https://projecteuler.net/problem=676)
 
 Let $d(i,b)$ be the digit sum of the number $i$ in base $b$. For example $d(9,2)=2$, since $9=1001_2$. When using different bases, the respective digit sums most of the time deviate from each other, for example $d(9,4)=3 \ne d(9,2)$.
 
