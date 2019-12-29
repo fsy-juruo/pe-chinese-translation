@@ -1,4 +1,4 @@
-### 675. $2^{\omega(n)}$
+### [675. $2^{\omega(n)}$](https://projecteuler.net/problem=675)
 
 Let $\omega(n)$ denote the number of distinct prime divisors of a positive integer $n$. So $\omega(1) = 0$ and $\omega(360) = \omega(2^{3} \times 3^{2} \times 5) = 3$.
 
