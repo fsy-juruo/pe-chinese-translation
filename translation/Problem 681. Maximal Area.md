@@ -1,4 +1,4 @@
-### 681. Maximal Area
+### [681. Maximal Area](https://projecteuler.net/problem=681)
 
 Given positive integers $a \le b \le c \le d$, it may be possible to form quadrilaterals with edge lengths $a,b,c,d$ (in any order). When this is the case, let $M(a,b,c,d)$ denote the maximal area of such a quadrilateral. For example, $M(2,2,3,3)=6$, attained e.g. by a $2\times 3$ rectangle.
 

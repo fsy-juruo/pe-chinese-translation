@@ -1,4 +1,4 @@
-### 679. Freefarea
+### [679. Freefarea](https://projecteuler.net/problem=679)
 
 Let $S$ be the set consisting of the four letters $\tt \{‘A’,‘E’,‘F’,‘R’\} $.
 For $n \geq 0$, let $S^{*}(n)$ denote the set of words of length $n$ consisting of letters belonging to $S$.
@@ -22,9 +22,8 @@ Find $f(30)$.
 
 令 $f(n)$ 为 $S^{*}(n)$ 中，恰好包含四个关键词各一次的字符串的个数。
 
-在 $n=9$ 时，出现第一个合法的字符串 $\tt FREEFAREA$。
-故 $f(9) = 1$.
+在 $n=9$ 时，出现第一个合法的字符串 $\tt FREEFAREA$。故 $f(9) = 1$。
 
-并且你还知道 $f(15)=72863$.
+已知 $f(15)=72863$。
 
-求 $f(30)$.
+求 $f(30)$。

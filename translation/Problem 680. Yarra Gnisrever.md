@@ -1,4 +1,4 @@
-### 680. Yarra Gnisrever
+### [680. Yarra Gnisrever](https://projecteuler.net/problem=680)
 
 Let $N$ and $K$ be two positive integers.
 

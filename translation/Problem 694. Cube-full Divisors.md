@@ -1,4 +1,4 @@
-### 694. Cube-full Divisors
+### [694. Cube-full Divisors](https://projecteuler.net/problem=694)
 
 A positive integer $n$ is considered *cube-full*, if for every prime $p$ that divides $n$, so does $p^3$. Note that $1$ is considered cube-full.
 
@@ -16,9 +16,9 @@ Find $S(10^{18})$.
 
 令 $s(n)$ 为 $n$ 里面满立方约数的个数。举个例子，$1$、$8$ 和 $16$ 是 $16$ 的三个满立方约数。因此，$s(16)=3$。
 
-令 $S(n)$ 为 $s(n)$ 的前缀和函数，也就是说，$S(n)=\displaystyle\sum_{i=1}^n s(i)$。
+令 $S(n)$ 为 $s(n)$ 的前缀和函数，即 $S(n)=\displaystyle\sum_{i=1}^n s(i)$。
 
-你已经知道 $S(16) =  19$，$S(100) = 126$ 且 $S(10000) = 13344$。
+已知 $S(16) =  19$，$S(100) = 126$ 且 $S(10000) = 13344$。
 
 求 $S(10^{18})$。
 

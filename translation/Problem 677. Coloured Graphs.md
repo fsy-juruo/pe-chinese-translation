@@ -1,4 +1,4 @@
-### 677. Coloured Graphs
+### [677. Coloured Graphs](https://projecteuler.net/problem=677)
 
 Let $g(n)$ be the number of **undirected graphs** with $n$ nodes satisfying the following properties:
 
@@ -24,7 +24,6 @@ Find $g(10\,000) \bmod 1\,000\,000\,007$.
 - 一个蓝色或黄色的节点最多有 3 条与其连着的边。
 - 没有一条边直接连接两个黄点。
 
-例如，$g(2)=5$，$g(3)=15$，且 $g(4) = 57$.
-你还知道 $g(10) = 710249$ 并且 $g(100) \equiv 919747298 \pmod{1\,000\,000\,007}$.
+已知，$g(2)=5$，$g(3)=15$，且 $g(4) = 57$，$g(10) = 710249$ 并且 $g(100) \equiv 919747298 \pmod{1\,000\,000\,007}$。
 
-求 $g(10\,000) \bmod 1\,000\,000\,007$.
+求 $g(10\,000) \bmod 1\,000\,000\,007$。

@@ -1,4 +1,4 @@
-### 692. Siegbert and Jo
+### [692. Siegbert and Jo](https://projecteuler.net/problem=692)
 
 Siegbert and Jo take turns playing a game with a heap of $N$ pebbles:
 1. Siegbert is the first to take some pebbles. He can take as many pebbles as he wants. (Between 1 and $N$ inclusive.)
@@ -22,6 +22,7 @@ Find $G(23416728348467685)$.
 尽管西格伯特可以通过在第一轮拿取所有鹅卵石来保证获胜，但为了使游戏更有意思，他会在保证获胜的前提下，在第一轮拿去数量尽量少的鹅卵石。
 
 假设两人每一轮做出的都是最优决策，令 $H(N)$ 为在一轮有 $N$ 枚鹅卵石的游戏中，在保证获胜的前提下，西格伯特会拿取的最小的鹅卵石数。
-你已经知道 $H(1)=1$，$H(4)=1$，$H(17)=1$，$H(8)=8$ 并且 $H(18)=5$。
+
+已知 $H(1)=1$，$H(4)=1$，$H(17)=1$，$H(8)=8$ 并且 $H(18)=5$。
 令 $G(n)$ 为 $\displaystyle{\sum_{k=1}^n H(k)}$，$G(13)=43$。
 请计算 $G(23416728348467685)$。

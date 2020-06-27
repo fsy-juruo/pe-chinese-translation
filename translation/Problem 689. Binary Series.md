@@ -1,4 +1,4 @@
-### 689. Binary Series
+### [689. Binary Series](https://projecteuler.net/problem=689)
 
 For $0 \le x \lt 1$, define $d_i(x)$ to be the $i$th digit after the binary point of the binary representation of $x$.
 For example $d_2(0.25) = 1$, $d_i(0.25) = 0$ for $i \ne 2$.
