@@ -1,1 +1,0 @@
-Translation with TeX formula
