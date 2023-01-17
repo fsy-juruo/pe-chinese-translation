@@ -48,13 +48,30 @@
 |788|支配数 / Dominating Numbers|10%|已译、未校|[link_788](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20788.%20Dominating%20Numbers.md)|
 |789|模 $p$ 时的最小花费配对 / Minimal pairing modulo $p$|50%|已译、未校|[link_789](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20789.%20Minimal%20pairing%20modulo%20p.md)|
 |790|时钟网格 / Clock Grid|45%|已译、未校|[link_790](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20790.%20Clock%20Grid.md)|
+|810|异或质数 / XOR-Primes|20%|已译、未校|[link_810](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20810.%20XOR-Primes.md)|
+|811|逐位递归 / Bitwise Recursion|40%|已译、未校|[link_811](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20811.%20Bitwise%20Recursion.md)|
+|812|壮悍多项式 / Dynamical Polynomials|90%?|已译、未校|[link_812](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20812.%20Dynamical%20Polynomials.md)|
+|813|异或幂 / XOR-Powers|20%|已译、未校|[link_813](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20813.%20XOR-Powers.md)|
+|814|中强音 / Mezzo-forte|50%|已译、未校|[link_814](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20814.%20Mezzo-forte.md)|
+|815|按价值分堆 / Group by Value|25%|已译、未校|[link_815](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20815.%20Group%20by%20Value.md)|
+|816|平面点对最短距离 / Shortest distance among points|暂无|已译、未校|[link_816](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20816.%20Shortest%20distance%20among%20points.md)|
+|817|平方数里的数位 / Digits in Squares|暂无|已译、未校|[link_817](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20817.%20Digits%20in%20Squares.md)|
+|819|迭代取样法 / Iterative Sampling|暂无|已译、未校|[link_819](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20819.%20Iterative%20Sampling.md)|
+|820|倒数的小数点后第 $N$ 位 / $N$<sup>th</sup> digit of Reciprocals|暂无|已译、未校|[link_820](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20820.%20Nth%20digit%20of%20Reciprocals.md)|
+|821|可 123 分离的 / 123-Separable|暂无|已译、未校|[link_821](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20821.%20123-Separable.md)|
+|822|把最小数平方 / Square the Smallest|暂无|已译、未校|[link_822](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20822.%20Square%20the%20Smallest.md)|
+|823|因子重排 / Factor Shuffle|暂无|已译、未校|[link_823](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20823.%20Factor%20Shuffle.md)|
+|824|滑块棋子 / Chess Sliders|暂无|已译、未校|[link_824](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20824.%20Chess%20Sliders.md)|
+|825|追逐游戏 / Chasing Game|暂无|已译、未校|[link_825](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20825.%20Chasing%20Game.md)|
+
+【注】难度系数后带 ? 等价于 PE 的 not yet finalised（难度未敲定）
 
 ### 最近更新
 
+* 【2023-1-17】翻译 810 至 817、819 至 825 题。
 * 【2022-5-4】将 679 原译标题取消。
 * 【2022-3-27】修正 691 错译标题，并修改 683、691 的部分表述。
 * 【2022-3-25】翻译 781 至 790 题。
-* 【2021-7-13】翻译 761 题。
 
 ## 其它翻译站点
 
