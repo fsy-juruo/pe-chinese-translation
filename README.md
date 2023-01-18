@@ -48,6 +48,25 @@
 |788|支配数 / Dominating Numbers|10%|已译、未校|[link_788](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20788.%20Dominating%20Numbers.md)|
 |789|模 $p$ 时的最小花费配对 / Minimal pairing modulo $p$|50%|已译、未校|[link_789](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20789.%20Minimal%20pairing%20modulo%20p.md)|
 |790|时钟网格 / Clock Grid|45%|已译、未校|[link_790](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20790.%20Clock%20Grid.md)|
+|791|平均数与方差 / Average and Variance|60%|已译、未校|[link_791](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20791.%20Average%20and%20Variance.md)|
+|792|太多 2 了 / Too Many Twos|95%?|已译、未校|[link_792](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20792.%20Too%20Many%20Twos.md)|
+|793|乘积的中位数 / Median of Products|20%|已译、未校|[link_793](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20793.%20Median%20of%20Products.md)|
+|794|十七个点 / Seventeen Points|35%|已译、未校|[link_794](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20794.%20Seventeen%20Points.md)|
+|795|交错最大公因数求和 / Alternating GCD Sum|30%|已译、未校|[link_795](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20795.%20Alternating%20GCD%20Sum.md)|
+|796|大洗牌 / A Grand Shuffle|55%|已译、未校|[link_796](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20796.%20A%20Grand%20Shuffle.md)|
+|797|可成圆多项式 / Cyclogenic Polynomials|50%|已译、未校|[link_797](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20797.%20Cyclogenic%20Polynomials.md)|
+|798|卡堆叠游戏 / Card Stacking Game|95%?|已译、未校|[link_798](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20798.%20Card%20Stacking%20Game.md)|
+|799|五边形数谜题 / Pentagonal Puzzle|50%|已译、未校|[link_799](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20799.%20Pentagonal%20Puzzle.md)|
+|800|杂合整数 /	Hybrid Integers|5%|已译、未校|[link_800](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20800.%20Hybrid%20Integers.md)|
+|801|$x^y \equiv y^x$|50%|已译、未校|[link_801](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20801.%20x%5Ey%20equiv%20y%5Ex.md)|
+|802|迭代复合 /	Iterated Composition|35%|已译、未校|[link_802](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20802.%20Iterated%20Composition.md)|
+|803|伪随机序列 / Pseudorandom sequence|55%|已译、未校|[link_803](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20803.%20Pseudorandom%20sequence.md)|
+|804|二元二次表示法计数 / Counting Binary Quadratic Representations|20%|已译、未校|[link_804](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20804.%20Counting%20Binary%20Quadratic%20Representations.md)|
+|805|平移中的倍数关系 / Shifted Multiples|55%|已译、未校|[link_805](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20805.%20Shifted%20Multiples.md)|
+|806|汉诺塔上的取石子游戏 / Nim on Towers of Hanoi|95%?|已译、未校|[link_806](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20806.%20Nim%20on%20Towers%20of%20Hanoi.md)|
+|807|绳环 / Loops of Ropes|85%?|已译、未校|[link_807](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20807.%20Loops%20of%20Ropes.md)|
+|808|可翻转质数平方 / Reversible prime squares|5%|已译、未校|[link_808](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20808.%20Reversible%20prime%20squares.md)|
+|809|有理数上的递归关系 / Rational Recurrence Relation|35%|已译、未校|[link_809](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20809.%20Rational%20Recurrence%20Relation.md)|
 |810|异或质数 / XOR-Primes|20%|已译、未校|[link_810](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20810.%20XOR-Primes.md)|
 |811|逐位递归 / Bitwise Recursion|40%|已译、未校|[link_811](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20811.%20Bitwise%20Recursion.md)|
 |812|壮悍多项式 / Dynamical Polynomials|90%?|已译、未校|[link_812](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20812.%20Dynamical%20Polynomials.md)|
@@ -68,6 +87,7 @@
 
 ### 最近更新
 
+* 【2023-1-18】翻译 791 至 809 题，修正了部分错误。
 * 【2023-1-17】翻译 810 至 817、819 至 825 题。
 * 【2022-5-4】将 679 原译标题取消。
 * 【2022-3-27】修正 691 错译标题，并修改 683、691 的部分表述。
