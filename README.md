@@ -4,6 +4,7 @@
 
 ### 最近更新 & 计划 | Recent updates & plans
 
+* **【2023-6-15】将部分题目的翻译进行修正与统一，并更新网站。**
 * **【2023-6-14】翻译 826 至 847 题。**
 * 【2023-1-18】翻译 791 至 809 题，修正了部分错误。
 * 【2023-1-17】翻译 810 至 817、819 至 825 题。
@@ -18,26 +19,26 @@
 
 |ID|题目名|难度系数(PE)|状态|链接|
 |:---|:----|:-----|:----|:----|
-|675|$2^{\omega(n)}$|25%|已译、未校|[link_675](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20675.%202%5Eomega(n).md)|
-|676|匹配数位和 / Matching Digit Sums|50%|已译、未校|[link_676](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20676.%20Matching%20Digit%20Sums.md)|
-|677|被染色的图 / Coloured Graphs|90%|已译、未校|[link_677](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20677.%20Coloured%20Graphs.md)|
-|678|费马式方程 / Fermat-like Equations|55%|已译、未校|[link_678](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20678.%20Fermat-like%20Equations.md)|
+|675|$2^{\omega(n)}$|25%|一校|[link_675](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20675.%202%5Eomega(n).md)|
+|676|匹配数位和 / Matching Digit Sums|50%|一校|[link_676](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20676.%20Matching%20Digit%20Sums.md)|
+|677|被染色的图 / Coloured Graphs|90%|一校|[link_677](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20677.%20Coloured%20Graphs.md)|
+|678|费马式方程 / Fermat-like Equations|55%|一校|[link_678](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20678.%20Fermat-like%20Equations.md)|
 |679|Freefarea|20%|一校|[link_679](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20679.%20Freefarea.md)|
 |680|组数转翻 / Yarra Gnisrever|65%|一校|[link_680](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20680.%20Yarra%20Gnisrever.md)|
-|681|最大化面积 / Maximal Area|50%|已译、未校|[link_681](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20681.%20Maximal%20Area.md)|
-|682|5-光滑数对 / 5-Smooth Pairs|50%|已译、未校|[link_682](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20682.%205-Smooth%20Pairs.md)|
-|683|追逐游戏 2 / The Chase II|40%|已译、未校|[link_683](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20683.%20The%20Chase%20II.md)|
-|688|数堆盘子 / Piles of Plates|20%|已译、未校|[link_688](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20688.%20Piles%20of%20Plates.md)|
-|689|二进制级数 / Binary Series|60%|已译、未校|[link_689](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20689.%20Binary%20Series.md)|
-|691|重复多次的长子串 / Long substring with many repetitions|40%|已译、未校|[link_691](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20691.%20Long%20substring%20with%20many%20repetitions.md)|
-|692|西格伯特与乔 / Siegbert and Jo|10%|已译、未校|[link_692](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20692.%20Siegbert%20and%20Jo.md)|
-|693|有限序列生成器 / Finite Sequence Generator|40%|已译、未校|[link_693](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20693.%20Finite%20Sequence%20Generator.md)|
-|694|满立方约数 / Cube-full Divisors|15%|已译、未校|[link_694](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20694.%20Cube-full%20Divisors.md)|
-|695|随机矩形 / Random Rectangles|70%|已译、未校|[link_695](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20695.%20Random%20Rectangles.md)|
-|696|麻将 / Mahjong[^3]|100%|已译、未校|[link_696](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20696.%20Mahjong.md)|
-|717|模意义算式求和 / Summation of a Modular Formula|25%|已译、未校|[link_717](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20717.%20Summation%20of%20a%20Modular%20Formula.md)|
-|718|无法到达之数 / Unreachable Numbers|35%|已译、未校|[link_718](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20718.%20Unreachable%20Numbers.md)|
-|719|数字分划 / Number Splitting|5%|已译、未校|[link_719](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20719.%20Number%20Splitting.md)|
+|681|最大化面积 / Maximal Area|50%|一校|[link_681](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20681.%20Maximal%20Area.md)|
+|682|5-光滑数对 / 5-Smooth Pairs|50%|一校|[link_682](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20682.%205-Smooth%20Pairs.md)|
+|683|追逐游戏 II / The Chase II|40%|一校|[link_683](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20683.%20The%20Chase%20II.md)|
+|688|几堆盘子 / Piles of Plates|20%|一校|[link_688](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20688.%20Piles%20of%20Plates.md)|
+|689|二进制级数 / Binary Series|60%|一校|[link_689](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20689.%20Binary%20Series.md)|
+|691|重复多次的长子串 / Long substring with many repetitions|40%|一校|[link_691](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20691.%20Long%20substring%20with%20many%20repetitions.md)|
+|692|西格伯特与乔 / Siegbert and Jo|10%|一校|[link_692](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20692.%20Siegbert%20and%20Jo.md)|
+|693|有限序列生成器 / Finite Sequence Generator|40%|一校|[link_693](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20693.%20Finite%20Sequence%20Generator.md)|
+|694|满立方约数 / Cube-full Divisors|15%|一校|[link_694](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20694.%20Cube-full%20Divisors.md)|
+|695|随机矩形 / Random Rectangles|70%|一校|[link_695](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20695.%20Random%20Rectangles.md)|
+|696|麻将 / Mahjong|100%|一校|[link_696](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20696.%20Mahjong.md)|
+|717|模意义函数值求和 / Summation of a Modular Formula|25%|一校|[link_717](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20717.%20Summation%20of%20a%20Modular%20Formula.md)|
+|718|无法到达之数 / Unreachable Numbers|35%|一校|[link_718](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20718.%20Unreachable%20Numbers.md)|
+|719|数字分划 / Number Splitting|5%|一校|[link_719](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20719.%20Number%20Splitting.md)|
 |721|无理数的高次幂 / High powers of irrational numbers|30%|已译、未校|[link_721](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20721.%20High%20powers%20of%20irrational%20numbers.md)|
 |722|缓慢收敛的级数 / Slowly converging series|25%|已译、未校|[link_722](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20722.%20Slowly%20converging%20series.md)|
 |723|毕达哥拉斯四元组 / Pythagorean Quadrilaterals|65%|已译、未校|[link_723](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20723.%20Pythagorean%20Quadrilaterals.md)|
@@ -117,5 +118,5 @@
 
 [sx349 翻译（目前至 830 题）](http://pe-cn.github.io/)
 
-国内镜像由 [xiaoyaowudi](https://pe.xiaoyaowudi.com/about) 提供。
+[国内镜像](https://pe.xiaoyaowudi.com/about) 由 [xiaoyaowudi](https://www.luogu.com.cn/blog/xiaoyaowudi/#) 提供。
 
