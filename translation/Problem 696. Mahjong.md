@@ -11,11 +11,11 @@ A *winning hand* is a collection of $3t+2$ Tiles (where $t$ is a fixed integer) 
 
 For example, here is a winning hand with $n=9$, $s=3$, $t=4$, consisting in this case of two Chows, two Pungs, and one Pair:
 
-![](https://projecteuler.net/project/images/p696_mahjong_1.png)
+![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_1.png?1678992054)
 
 Note that sometimes the same collection of tiles can be represented as $t$ Triples and one Pair in more than one way. This only counts as one winning hand. For example, this is considered to be the same winning hand as above, because it consists of the same tiles:
 
-![](https://projecteuler.net/project/images/p696_mahjong_2.png)
+![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_2.png?1678992054)
 
 Let $w(n, s, t)$ be the number of distinct winning hands formed of $t$ Triples and one Pair, where there are $s$ suits available and tiles are numbered up to $n$.
 
@@ -25,25 +25,27 @@ Find $w(10^8, 10^8, 30)$. Give your answer modulo $1\,000\,000\,007$.
 
 ### 696. 麻将
 
-麻将游戏的牌共有 $s$ 种*花色*，每一张牌上都有 $1...n$ 范围内的一个数字，称为*点数*。对于任意花色-点数的组合，都有恰好四张完全相同的牌。（原本的麻将游戏中有奖励牌，但是在这道题里面，就装作它不存在吧）
+麻将游戏的牌共有 $s$ 种*花色*，每一张牌上都有 $1 \sim n$ 范围内的一个正整数，称为*点数*。任意花色-点数的组合都恰有四张完全相同的牌（现实中的麻将游戏中还有字牌、花牌，但是本题中就不考虑了）。
 
-当玩家拥有了一副由 $3t+2$ 张牌的牌组，且这个牌组能被整理为 $t$ 个*三对子*与一个*杠*，玩家就可以*胡牌*。其中定义：
+当玩家拥有了一副由 $3t+2$ 张牌的牌组，且这个牌组能被整理为 $t$ 副*三对子*与一副*对子*，玩家就可以*胡牌*。其中定义：[^1]
 
-- *三对子*要么是一*吃*，要么是一*碰*。
-- 三张点数连续，花色相同的牌称作一*吃*
-- 三张点数相同，花色相同的牌称作一*碰*
-- 两张点数相同，花色相同的牌称作一*杠*
+- *三对子*要么是一副*顺子*，要么是一副*刻子*。
+- 三张点数连续、花色相同的牌称作一副*顺子*
+- 三张点数相同、花色相同的牌称作一副*刻子*
+- 两张点数相同、花色相同的牌称作一副*对子*
 
-下图的牌组满足 $n=9$，$s=3$，$t=4$，且能胡牌。（由两吃，两碰，一杠组成）
+下图的牌组满足 $n=9$、$s=3$、$t=4$，且能胡牌。（由两副顺子，两副刻子，一副对子组成）
 
-![](https://projecteuler.net/project/images/p696_mahjong_1.png)
+![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_1.png?1678992054)
 
-注意到有时候相同的一副牌可以通过不同的方式被整理为 $t$ 个三对子与一个杠，重复的牌组只计一次。下图的牌组也能胡牌，但由于与上图中的牌完全一致，所以被认为与上图重复：
+注意到有时候相同的一副牌可以通过不同的方式被整理为 $t$ 副三对子与一副对子，但是重复的牌组只计一次。下图的牌组也能胡牌，但由于其与上图中的牌完全一致，所以被认为与上图重复：
 
-![](https://projecteuler.net/project/images/p696_mahjong_2.png)
+![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_2.png?1678992054)
 
-令 $w(n, s, t)$ 为由 $t$ 个三对子与一杠组成的，有 $s$ 个可用花色，最大点数为 $n$ 的可以胡牌的不同的牌组数。
+记 $w(n, s, t)$ 为满足如下条件的不同的牌组数：由 $t$ 副三对子与一副对子组成、有 $s$ 个可用花色、最大点数为 $n$ 且可以胡牌。
 
-比如 $w(4, 1, 1) = 20$：有 12 个由一碰，一杠组成的可胡牌的牌组，8 个由一吃，一杠组成的可胡牌的牌组。已知 $w(9, 1, 4) = 13259$，$w(9, 3, 4) = 5237550$ 且 $w(1000, 1000, 5) \equiv 107662178 \pmod{1\,000\,000\,007}$。
+例如 $w(4, 1, 1) = 20$，因为一共有 12 个由一副刻子、一副对子组成的可胡牌的牌组；8 个由一副顺子、一副对子组成的可胡牌的牌组。亦已知 $w(9, 1, 4) = 13259$、$w(9, 3, 4) = 5237550$ 且 $w(1000, 1000, 5) \equiv 107662178 \pmod{1\,000\,000\,007}$。
 
-求 $w(10^8, 10^8, 30)$ 模 $1\,000\,000\,007$。
+求 $w(10^8, 10^8, 30)$ 模 $1\,000\,000\,007$ 之值。
+
+[^1]: 所有麻将相关术语（除「点数」「三对子」）的译名参照《中国麻将竞赛规则（1998 年 7 月版）》。原译的「吃」「碰」「杠」是考虑到英文原稿而为，但这是错译。
