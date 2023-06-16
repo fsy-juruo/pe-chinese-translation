@@ -2,8 +2,11 @@
 
 这里是个人没事维护的一个仓库，用来放我翻译的一些 Project Euler 题目。
 
+**现在使用了 Github Pages 静态网站作为主页，Typora 生成文档和 html。主页[戳这里](https://fsy-juruo.github.io/pe-chinese-translation/)。**
+
 ### 最近更新 & 计划 | Recent updates & plans
 
+* **【2023-6-16】将目前所翻译的题目均转为 html 并搬运到网站上，并进行了一些翻译的修正。**
 * **【2023-6-15】将部分题目的翻译进行修正与统一，并更新网站。**
 * **【2023-6-14】翻译 826 至 847 题。**
 * 【2023-1-18】翻译 791 至 809 题，修正了部分错误。
@@ -17,7 +20,9 @@
 
 ### 目录：题目翻译 | Translation: Archives & Recent
 
-|ID|题目名|难度系数(PE)|状态|链接|
+**注：下面的链接指向的 github 内的 Markdown 文档，可能会有 LaTeX 公式渲染问题。**
+
+|ID|题目名|难度系数(PE)|状态| MD 文档链接|
 |:---|:----|:-----|:----|:----|
 |675|$2^{\omega(n)}$|25%|一校|[link_675](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20675.%202%5Eomega(n).md)|
 |676|匹配数位和 / Matching Digit Sums|50%|一校|[link_676](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20676.%20Matching%20Digit%20Sums.md)|
