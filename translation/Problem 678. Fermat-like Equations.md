@@ -15,3 +15,9 @@ Find $F(10^{18})$.
 令 $F(N)$ 为满足方程 $a^e + b^e = c^f$ 的正整数五元组 $(a, b, c, e, f)$ 的个数，其中 $a, b, c, e, f$ 满足：$0 < a < b$、$e \geq 2$、$f \geq 3$ 且 $c^f \leq N$。已知：$F(10^3) = 7$、$F(10^5) = 53$ 且 $F(10^7) = 287$。
 
 求 $F(10^{18})$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

@@ -1,4 +1,4 @@
-### 786. Billiard
+### [786. Billiard](https://projecteuler.net/problem=786)
 
 The following diagram shows a billiard table of a special quadrilateral shape.
 The four angles $A, B, C, D$ are $120^\circ, 90^\circ, 60^\circ, 90^\circ$ respectively, and the lengths $AB$ and $AD$ are equal.
@@ -30,6 +30,12 @@ Find $B(10^9)$.
 
 我们忽略台球桌的摩擦，并认为一切碰撞皆为弹性碰撞。注意，碰撞不能发生在顶点处，不然台球的轨迹就很难预测了。
 
-令 $B(N)$ 为某无限小台球从 $A$ 点出发，被台球桌边界反弹至多 $N$ 次后刚好回到 $A$ 点的可能轨迹数量。已知 $B(10) = 6$，$B(100) = 478$，$B(1000) = 45790$。
+记 $B(N)$ 为某无限小台球从 $A$ 点出发，被台球桌边界反弹至多 $N$ 次后刚好回到 $A$ 点的可能轨迹数量。已知 $B(10) = 6$、$B(100) = 478$、$B(1000) = 45790$。
 
 求 $B(10^9)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

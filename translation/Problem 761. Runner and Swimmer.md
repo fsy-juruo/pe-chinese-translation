@@ -23,3 +23,9 @@ Give your answer rounded to 8 digits after the decimal point.
 后来，这两人在一个正四边形水池中玩这个游戏。游戏开始前，游泳者仍然在水池中心，而跑者则位于水池边缘任意一边的中点上。其余假设不变。可以发现此时的临界速度 $V_{Square} \approx 5.78859314$。
 
 最终，这两人决定在一个正六边形水池中玩这个游戏。同样，除了「游戏开始前，游泳者仍然在水池中心，而跑者则位于水池边缘任意一边的中点上」这一个改变之外，其余假设不变。计算此时的临界速度 $V_{Hexagon}$。将答案四舍五入至小数点后第 8 位。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

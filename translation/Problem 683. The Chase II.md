@@ -23,3 +23,9 @@ Find $G(500)$, giving your answer in scientific notation rounded to 9 significan
 记 $G(n)$ 为：有 $n$ 名玩家时，胜者从奖池内得到的钱的期望值。已知：$G(5) \approx 96.544$、$G(50) \approx 2.82491788e6$（科学计数法，且保留 9 位有效数字）。
 
 求出 $G(500)$ 的值，并将你的答案用科学计数法表示，保留 9 位有效数字。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

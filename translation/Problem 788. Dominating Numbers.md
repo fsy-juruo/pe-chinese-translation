@@ -1,4 +1,4 @@
-### 788. Dominating Numbers
+### [788. Dominating Numbers](https://projecteuler.net/problem=788)
 
 A *dominating number* is a positive integer that has more than half of its digits equal.
 
@@ -13,8 +13,14 @@ Find $D(2022)$. Give your answer modulo $1\,000\,000\,007$.
 
 若一个正整数中，有大于一半的数位均为同一个数字，则我们称这个数为*支配数*。
 
-比如说，$2022$ 是一个支配数，因为它的四个数位中，有三个都是 $2$。但是，$2021$ 就不是支配数。
+例如 $2022$ 是一个支配数，因为它的四个数位中，有三个都是 $2$。但是，$2021$ 就不是支配数。
 
-令 $D(N)$ 为小于 $10^N$ 的正整数中，支配数的个数。已知 $D(4) = 603$ 且 $D(10) = 21893256$。
+记 $D(N)$ 为小于 $10^N$ 的正整数中，支配数的个数。已知 $D(4) = 603$ 且 $D(10) = 21893256$。
 
-求 $D(2022)$ 模 $1\,000\,000\,007$。
+求 $D(2022)$ 模 $1\,000\,000\,007$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

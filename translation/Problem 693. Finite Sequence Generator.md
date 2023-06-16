@@ -36,3 +36,9 @@ $3,4,4,2,4,7,9,4,4,3,9,6,4,16,4,16,16,4,16,3,9,6,10,19,25,16,16,8,0$，故 $l(5,
 记 $f(n)$ 为对于所有 $x \le n$，$g(x)$ 的最大值。已知：$f(100) = 145$ 且 $f(10\,000) = 8824$。
 
 求 $f(3\,000\,000)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

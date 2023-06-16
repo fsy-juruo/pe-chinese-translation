@@ -17,3 +17,9 @@ Find $G(6)$. Give your answer modulo $1\,000\,000\,007$.
 记 $G(p)$ 为：在给定值为 $p$ 的情况下，所有无法到达之数的和。已知：$G(1) = 8253$、$G(2)= 60258000$。
 
 求 $G(6)$ 模 $1\,000\,000\,007$ 的值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

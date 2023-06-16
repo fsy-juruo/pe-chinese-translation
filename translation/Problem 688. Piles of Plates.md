@@ -18,3 +18,8 @@ Find $S(10^{16})$ giving your answer modulo $1\,000\,000\,007$.
 
 求 $S(10^{16})$ 模 $1\,000\,000\,007$ 之值。 
 
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

@@ -1,4 +1,4 @@
-### [794. Seventeen Points](https://pe.xiaoyaowudi.com/problem=794)
+### [794. Seventeen Points](https://projecteuler.net/problem=794)
 
 This problem uses half open interval notation where $[a,b)$ represents $a \le x < b$.
 
@@ -22,6 +22,14 @@ Find $F(17)$ and give your answer rounded to 12 decimal places.
 
 $n$ 步后我们得到一个 $n$ 元组 $(x_1, x_2, ..., x_n)$，记 $F(n)$ 为 $x_1 + x_2 + ... + x_n$ 的最小值。例如 $F(4) = 1.5$，这可以通过 $(x_1, x_2, x_3, x_4) = (0, 0.75, 0.5, 0.25)$ 取到。
 
-令人惊讶的是，在此过程中，你最多只能取 $17$ 个实数。
+令人惊讶的是，在此过程中，你最多只能取 $17$ 个实数。[^1]
 
 求 $F(17)$，将你的答案四舍五入至小数点后第 12 位。
+
+[^1]: 如果有感兴趣的读者的话，这里描述的问题被称为 Irregularities in the distributions。数学家 E. R. Berlekamp 和 R. L. Graham 曾在 1970 年给出过其[证明](https://www.sciencedirect.com/science/article/pii/0022314X70900156?ref=pdf_download&fr=RR-2&rr=7a4bf2d2d981f95b)。但在做本题时请不要参阅此论文。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

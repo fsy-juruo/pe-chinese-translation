@@ -19,3 +19,10 @@ Find $F(10,000,000)$. Give your answer modulo $1,000,000,087$.
 再记 $F(n)=\sum_{i=2}^n S(i!)$。如 $F(10)=4821$。
 
 求出 $F(10,000,000)$ 模 $1,000,000,087$ 的值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。
+

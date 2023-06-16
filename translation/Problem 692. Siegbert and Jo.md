@@ -25,3 +25,9 @@ Find $G(23416728348467685)$.
 
 记 $G(n) = \displaystyle{\sum_{k=1}^{n} H(k)}$。已知：$G(13)=43$。  
 求 $G(23416728348467685)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

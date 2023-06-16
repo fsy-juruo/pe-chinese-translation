@@ -19,3 +19,9 @@ Find $G(10^7)$.
 再记 $G(N)$ 为对于所有小于 $N$ 的奇质数 $p$，$g(p)$ 的和。已知 $G(100) = 474$ 且 $G(10^4) = 2819236$。
 
 求 $G(10^7)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

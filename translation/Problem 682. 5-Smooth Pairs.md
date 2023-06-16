@@ -24,3 +24,9 @@ Find $f(10^7) \bmod 1\,000\,000\,007$.
 已知 $f(10)=4$，4 个数对分别是 $(4,9),(5,5),(6,6),(9,4)$。亦可知 $f(10^2)=3629$。
 
 求 $f(10^7) \bmod 1\,000\,000\,007$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

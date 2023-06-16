@@ -19,3 +19,9 @@ Find $p(0.5)$. Give your answer rounded to 8 digits after the decimal point.
 记 $p(a)$ 为当 $x$ 在 0 到 1 之间均匀分布时，$f(x) \gt a$ 的概率。
 
 求 $p(0.5)$ 并将答案四舍五入至小数点后第 8 位。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

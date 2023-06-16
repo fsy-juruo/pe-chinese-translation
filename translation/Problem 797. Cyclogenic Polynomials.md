@@ -1,4 +1,4 @@
-### [797. Cyclogenic Polynomials](https://pe.xiaoyaowudi.com/problem=797)
+### [797. Cyclogenic Polynomials](https://projecteuler.net/problem=797)
 
 A *monic polynomial* is a single-variable polynomial in which the coefficient of highest degree is equal to 1.
 
@@ -23,11 +23,11 @@ $Q_{10}(x)=x^{10}+3x^9+3x^8+7x^7+8x^6+14x^5+11x^4+18x^3+12x^2+23x$ and $Q_{10}(2
 
 Find $Q_{10^7}(2)$. Give your answer modulo $1\,000\,000\,007$.
 
-### 797. 可成圆多项式
+### 797. 可成圆多项式[^1]
 
-**首 1 多项式**，是最高次数项的系数为 1 的单变元多项式。
+*首 1 多项式*，是最高次数项的系数为 1 的单变元多项式。
 
-记 $\mathcal{F}$ 为所有整系数首 1 多项式的集合（包括常项式 $p(x)=1$）。若多项式 $p(x)\in\mathcal{F}$ 满足：存在多项式 $q(x)\in\mathcal{F}$ 与正整数 $n$ 使得 $p(x)q(x)=x^n-1$ 成立，则称 $p(x)$ 是*可成圆的*。如果上述等式里 $n$ 是最小的可使等式成立的正整数，则称 $p(x)$ 是 $n$*-可成圆的*。
+记 $\mathcal{F}$ 为所有整系数首 1 多项式的集合（包括常项式 $p(x)=1$）。若多项式 $p(x)\in\mathcal{F}$ 满足：存在多项式 $q(x)\in\mathcal{F}$ 与正整数 $n$ 使得 $p(x)q(x)=x^n-1$ 成立，则称 $p(x)$ 是*可成圆的*多项式。如果上述等式里 $n$ 是最小的可使等式成立的正整数，则称 $p(x)$ 是 $n$*-可成圆的*多项式。
 
 
 记 $P_n(x)$ 为所有 $n$*-可成圆的*多项式之和。例如，共有 10 个 6-可成圆的多项式（可整除 $x^6-1$，不可整除 $k$ 更小的 $x^k-1$）：
@@ -54,3 +54,11 @@ $$
 已知 $Q_{10}(x)=x^{10}+3x^9+3x^8+7x^7+8x^6+14x^5+11x^4+18x^3+12x^2+23x$ 且 $Q_{10}(2) = 5598$。
 
 求 $Q_{10^7}(2)$ 模 $1\,000\,000\,007$ 之值。
+
+[^1]: 标题翻译参照数学中的「分圆(割圆)多项式（cyclotomic polynomial）」。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

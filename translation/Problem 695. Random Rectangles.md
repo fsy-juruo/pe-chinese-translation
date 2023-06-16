@@ -17,3 +17,9 @@ Find the expected value of the area of the second biggest of the three rectangle
 我们对于面积第二大的矩形很感兴趣。本例中，面积第二大的是以 $\overline{P_2P_3}$ 为对角线的绿色矩形。
 
 求面积第二大的矩形的期望面积，并将你的答案四舍五入至小数点后第 10 位。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

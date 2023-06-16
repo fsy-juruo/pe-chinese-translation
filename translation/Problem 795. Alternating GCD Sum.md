@@ -1,4 +1,4 @@
-### [795. Alternating GCD Sum](https://pe.xiaoyaowudi.com/problem=795)
+### [795. Alternating GCD Sum](https://projecteuler.net/problem=795)
 
 
 For a positive integer $n$, the function $g(n)$ is defined as
@@ -24,6 +24,12 @@ $$
 
 如 $g(4) = -\gcd \left(4,1^2\right) + \gcd \left(4,2^2\right) - \gcd \left(4,3^2\right) + \gcd \left(4,4^2\right) = -1+4-1+4=6$，同理 $g(1234)=1233$。
 
-令 $\displaystyle G(N) = \sum_{n=1}^N g(n)$，已知 $G(1234) = 2194708$。
+记 $\displaystyle G(N) = \sum_{n=1}^N g(n)$。已知：$G(1234) = 2194708$。
 
 求 $G(12345678)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

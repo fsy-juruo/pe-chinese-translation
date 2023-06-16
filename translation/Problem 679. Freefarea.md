@@ -26,3 +26,8 @@ Find $f(30)$.
 
 [^1]: 考虑到本题以四个关键词为主体，以及``FREEFAREA`` 中四个关键词的顺序，故本题原定标题为”免费（free）、礁脉（reef）、费用（fare）、面积（area）“。后来在与审稿人讨论后决定不译。
 
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

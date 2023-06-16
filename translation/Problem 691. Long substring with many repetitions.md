@@ -30,3 +30,8 @@ Find the sum of non-zero $L(k,S_{5000000})$ for $k\ge 1$.
 
 求 $k\ge 1$ 时，所有非零的 $L(k,S_{5000000})$ 之和。
 
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

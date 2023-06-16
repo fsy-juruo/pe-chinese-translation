@@ -49,3 +49,9 @@ Find $w(10^8, 10^8, 30)$. Give your answer modulo $1\,000\,000\,007$.
 求 $w(10^8, 10^8, 30)$ 模 $1\,000\,000\,007$ 之值。
 
 [^1]: 所有麻将相关术语（除「点数」「三对子」）的译名参照《中国麻将竞赛规则（1998 年 7 月版）》。原译的「吃」「碰」「杠」是考虑到英文原稿而为，但这是错译。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

@@ -1,4 +1,4 @@
-### 781. Feynman Diagrams
+### [781. Feynman Diagrams](https://projecteuler.net/problem=781)
 
 Let $F(n)$ be the number of connected graphs with blue edges (directed) and red edges (undirected) containing:
 
@@ -17,15 +17,25 @@ NOTE: Feynman diagrams are a way of visualising the forces between elementary pa
 
 ### 781. 费曼图
 
-记 $F(n)$ 为由若干条蓝色有向边与红色无向边组成的，且满足下述条件的连通图个数。 
+记 $F(n)$ 为由若干条蓝色有向边与红色无向边组成的，满足下述条件的连通图个数。 
 
 * 有一个入度为 1，一个出度为 1 的节点。
 * 有 $n$ 个度数为 3 的节点。这 3 个度数分别来自一条入边、一条出边与一条无向边，且入边与出边**不同**。
 
-举个例子，$F(4)=5$；因为共有 $5$ 张图符合要求。
+例如 $F(4)=5$，这 $5$ 张符合要求的图如下：
 
 ![](https://pe.xiaoyaowudi.com/project/images/p781_feynman_diagrams.jpg)
 
-已知 $F(8)=319$。求 $F(50\,000)$ 模 $1\,000\,000\,007$。
+已知 $F(8)=319$。
 
-注：费曼图是一种可视化“基本”粒子之间作用力的一种方法。每个点表示两个粒子的作用。蓝色有向边表示一个费米子（如电子、正电子），其方向表示电荷流向。红色边（一般是波浪形的）表示光子。费曼图可用于预测粒子作用力的强度。
+求 $F(50\,000)$ 模 $1\,000\,000\,007$ 之值。
+
+注：费曼图是一种可视化“基本”粒子之间作用力的一种方法。每个顶点表示两个粒子的作用。蓝色有向边表示一个实物粒子（如电子、正电子），其方向表示电荷流向。红色边（一般是波浪形的）表示力场粒子（如光子）。费曼图可用于预测粒子作用力的强度。[^1]
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。
+
+[^1]: 现翻译参照英文原文和 Richard Xu (sx349) 的[翻译](http://pe-cn.github.io/781/)。原翻译参照 [Eric Weisstein's World of Physics](https://scienceworld.wolfram.com/physics/FeynmanDiagram.html) 与 Wikipedia 镜像中的页面。（EW's world of Physics: In such a diagram, all particles are represented by lines, with straight lines representing fermions and wavy lines representing bosons (except for the Higgs boson, which is usually represented by a dashed line, and gluons, which are usually represented by loops).）
