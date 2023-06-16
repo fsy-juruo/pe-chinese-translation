@@ -29,7 +29,7 @@ Find $\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$, where $F_j$ is the Fibonacci sequence
 
 求 $\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$，其中 $F_j$ 是第 $j$ 个斐波那契数（此处认为 $F_1=F_2=1$，故 $A(F_{5+1},F_{5-1}) = A(8,3)$）。将你的答案四舍五入至小数点后第 $10$ 位后提交。
 
-[^1]: 参见下方译注对应处。
+[^1]: 参见上方译注对应处。
 
 -----------------------------------
 
@@ -39,9 +39,9 @@ Find $\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$, where $F_j$ is the Fibonacci sequence
 
 1. 连接点：在单位圆上等距分布 $p$ 个点，顺时针标号为 $1, 2, \cdots, p$。从 $1$ 号点开始，每一次将 $i$ 号点（当前待连边的点）与 $i + q$ 号（大于 $p$ 时对 $p$ 取余）点相连。直至重新连回 $1$ 号点。例如，$p = 8, q = 3$ 时，$i$ 依次为 $1, 4, 7, 2, 5, 8, 3, 6$。
 
-那为什么说是“环绕” $q$ 圈？在下图中仔细观察，每次连边后，该边都会占据 $\frac{2q}{p} \pi$ 的圆心角。重新连回 $1$ 号点时，占据的圆心角总和为 $q \times 2\pi$，相当于“环绕”了 $q$ 圈。
+那为什么说是“环绕” $q$ 圈？在下图中仔细观察，每次连边后，该边都会占据 $\frac{2q}{p} \pi$ 的圆心角。重新连回 $1$ 号点时，占据的圆心角总和为 $q \times 2\pi$，相当于“环绕”了中间的正 $p$ 边形 $q$ 圈。
 
-![](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/images/841_regular_star_polygon_with_circum.PNG) 
+![](https://cdn.luogu.com.cn/upload/image_hosting/8ay21ush.png)
 > 使用了 Alex CHIK 在 GeoGebra 上的演示器。[网址链接](https://www.geogebra.org/material/show/id/tYUSwUxw)
 
 这种方法在 $(p, q) \neq 1$ 时会退化，还有一种方法是，直接对于所有 $i \in \{1, 2, 3, \cdots, p\}$，将 $i$ 号点与 $i + q$ 号（大于 $p$ 时对 $p$ 取余）点相连。
@@ -50,4 +50,8 @@ Find $\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$, where $F_j$ is the Fibonacci sequence
 
 顺带一提，$\{p/q\}$ 这种表示规则星形多边形的方法被称为 Schläfli 符号。
 
+---
 
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

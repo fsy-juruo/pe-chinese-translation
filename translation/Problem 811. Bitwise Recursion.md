@@ -1,4 +1,4 @@
-### [811. Bitwise Recursion](https://pe.xiaoyaowudi.com/problem=811)
+### [811. Bitwise Recursion](https://projecteuler.net/problem=811)
 
 Let $b(n)$ be the largest power of 2 that divides $n$. For example $b(24) = 8$.
 
@@ -32,8 +32,12 @@ A(2n+1) &= A(n)
 \end{split}
 \end{align*}
 $$
-并记 $H(t,r) = A\big((2^t+1)^r\big)$。
-
-已知 $H(3,2) = A(81) = 636056$。
+并记 $H(t,r) = A\big((2^t+1)^r\big)$。已知 $H(3,2) = A(81) = 636056$。
 
 求 $H(10^{14}+31,62)$ 模 $1\,000\,062\,031$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

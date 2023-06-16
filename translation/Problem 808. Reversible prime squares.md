@@ -1,4 +1,4 @@
-### [808. Reversible prime squares](https://pe.xiaoyaowudi.com/problem=808)
+### [808. Reversible prime squares](https://projecteuler.net/problem=808)
 
 Both 169 and 961 are the square of a prime. 169 is the reverse of 961.
 
@@ -25,3 +25,9 @@ Find the sum of the first 50 reversible prime squares.
 169 和 961 都不是回文数，所以它们都是可翻转质数平方。
 
 求前 50 个可翻转质数平方之和。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

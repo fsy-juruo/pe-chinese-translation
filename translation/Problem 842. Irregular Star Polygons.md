@@ -28,10 +28,16 @@ Find $\displaystyle \sum_{n = 3}^{60}T(n)$. Give your answer modulo $(10^9 + 7)$
 
 对于一个星形 $n$ 边形 $S$，记 $I(S)$ 为该 $n$ 边形自相交点的个数。记 $T(n)$ 为所有星形 $n$ 边形的 $I(S)$ 之和。已知：$T(5) = 20$。
 
-需要注意的是，如果有多于两条边同时交于一点，这个自相交点应该只被计数 1 次。如下图，对于这个星形 $6$ 边形 $S$，$I(S) = 4$。
+需要注意的是，如果有多于两条边同时交于一点，这个自相交点应该只被计数 1 次。如下图，对于这个星形六边形 $S$，$I(S) = 4$。
 
 ![](https://pe.xiaoyaowudi.com/resources/images/0842_6-agon.jpg?1680461493)
 
 又已知：$T(8) = 14640$。
 
 求 $\displaystyle \sum_{n = 3}^{60}T(n)$ 模 $(10^9 + 7)$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

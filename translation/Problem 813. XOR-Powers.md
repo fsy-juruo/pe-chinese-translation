@@ -1,4 +1,4 @@
-### [813. XOR-Powers](https://pe.xiaoyaowudi.com/problem=813)
+### [813. XOR-Powers](https://projecteuler.net/problem=813)
 
 We use $x\oplus y$ to be the bitwise XOR of $x$ and $y$.
 
@@ -42,4 +42,10 @@ $$
 $$
 我们进一步记 $P(n) = 11^{\otimes n} = \overbrace{11\otimes 11\otimes \ldots \otimes 11}^n$。例如 $P(2)=69$。
 
-试求 $P(8^{12}\cdot 12^8)$ 模 $(10^9+7)$。
+试求 $P(8^{12}\cdot 12^8)$ 模 $(10^9+7)$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

@@ -1,4 +1,4 @@
-### [812. Dynamical Polynomials](https://pe.xiaoyaowudi.com/problem=812)
+### [812. Dynamical Polynomials](https://projecteuler.net/problem=812)
 
 A *dynamical polynomial* is a **monic** polynomial $f(x)$ with integer coefficients such that $f(x)$ divides $f(x^2-2)$.
 
@@ -15,7 +15,7 @@ Find $S(10\,000)$. Give your answer modulo $998244353$.
 
 ### 812. 壮悍多项式
 
-若某整系数首 1 多项式 $f(x)$ 满足 $f(x)$ 整除 $f(x^2-2)$，则称其为壮悍多项式。
+若某整系数首 1 多项式 $f(x)$ 满足 $f(x)$ 整除 $f(x^2-2)$，则称其为*壮悍多项式*。
 
 例如，$f(x) = x^2 - x - 2$ 是壮悍多项式，因为 $f(x^2-2) = x^4-5x^2+4 = (x^2 + x -2)f(x)$。
 
@@ -28,3 +28,8 @@ $$
 
 求 $S(10\,000)$ 模 $998244353$ 之值。
 
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

@@ -10,3 +10,9 @@ Find $D(10^{16})$.
 记 $D(n)$ 为第 $n$ 个满足其数位和为质数的正整数。已知：$D(61) = 157$，$D(10^8) = 403539364$。
 
 求 $D(10^{16})$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

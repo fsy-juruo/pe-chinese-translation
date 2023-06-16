@@ -23,3 +23,9 @@ Find $U(1234567)$.
 记 $\displaystyle U(N)=\sum_{n=3}^{N}T(n)$，已知：$U(10^2)=612572$。
 
 求 $U(1234567)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

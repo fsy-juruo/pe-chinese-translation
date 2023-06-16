@@ -1,4 +1,4 @@
-### [815. Group by Value](https://pe.xiaoyaowudi.com/problem=815)
+### [815. Group by Value](https://projecteuler.net/problem=815)
 
 A pack of cards contains $4n$ cards with four identical cards of each value. The pack is shuffled and cards are dealt one at a time and placed in piles of equal value. If the card has the same value as any pile it is placed in that pile. If there is no pile of that value then it begins a new pile. When a pile has four cards of the same value it is removed.
 
@@ -13,3 +13,9 @@ Find $E(60)$. Give your answer rounded to 8 digits after the decimal point.
 在摸牌过程中，我们记录下非空牌堆数的最大值，并记 $E(n)$ 为其期望。已知 $E(2)$ 四舍五入至小数点后 8 位后为 $1.97142857$。
 
 求 $E(60)$，将你的答案四舍五入至小数点后 8 位。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

@@ -18,4 +18,10 @@ Find $S(10^{35})$. Give your answer modulo $136101521$.
 
 记 $S(n)$ 为所有满足如下条件的整数三元组 $(a, b, c)$ 中，$c$ 的和：$0 <c \le n$，$0 < a < b$，$c^2=T_a \cdot T_b$。已知：$S(100)= \sqrt{T_1 T_8}+\sqrt{T_2 T_{24}}+\sqrt{T_1 T_{49}}+\sqrt{T_3 T_{48}}=6+30+35+84=155$。亦有：$S(10^5)=1479802$ 且 $S(10^9)=241614948794$。
 
-求 $S(10^{35})$ 模 $136101521$。
+求 $S(10^{35})$ 模 $136101521$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

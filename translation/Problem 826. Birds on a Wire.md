@@ -13,3 +13,9 @@ Find the average of $F(n)$ where $n$ ranges through all odd prime less than a mi
 记 $F(n)$ 为有 $n$ 只鸟时，被涂色的电线的期望长度。已知：$F(3) = 0.5$。
 
 求所有 $F(n)$ 的均值，其中 $n$ 取遍所有小于 $10^6$ 的奇质数。将答案四舍五入到小数点后第 10 位。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

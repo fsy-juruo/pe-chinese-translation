@@ -34,3 +34,9 @@ Find $\displaystyle\sum_{n=2}^{31} M(n)$.
 
 
 求 $\displaystyle\sum_{n=2}^{31} M(n)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

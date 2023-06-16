@@ -26,8 +26,14 @@ Find $M(10^{18})$. Give your answer modulo $1\,000\,000\,007$.
 
 第一轮后纸上有 $1,2,3$ 三个数。第二轮中 $a = 4$，而且因为 $(4 \oplus 5), (4 \oplus 6), (4 \oplus 7)$ 都在纸上，所以 $b = 8$。
 
-$n$ 轮后，纸上会有 $3n$ 个数，记它们的和为 $M(n)$。已知：$M(10) = 642$ 且 $M(1000) = 5432148$
+$n$ 轮后，纸上会有 $3n$ 个数，记它们的和为 $M(n)$。已知：$M(10) = 642$ 且 $M(1000) = 5432148$。
 
-求 $M(10^{18})$ 模 $1\,000\,000\,007$。
+求 $M(10^{18})$ 模 $1\,000\,000\,007$ 之值。
 
 [^1]: mex 为 minimal excluded 的缩写，在此过程中的第二步被体现。信息学竞赛中一般不翻译 mex，这里也不翻译。另外，一般的 mex 运算一般是不在某个数集中最小的自然数，而非正整数。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

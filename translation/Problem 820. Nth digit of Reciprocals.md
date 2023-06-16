@@ -1,4 +1,4 @@
-### [820. $N$<sup>th</sup> digit of Reciprocals](https://pe.xiaoyaowudi.com/problem=820)
+### [820. $N$<sup>th</sup> digit of Reciprocals](https://projecteuler.net/problem=820)
 
 Let $d_n(x)$ be the $n$<sup>th</sup> decimal digit of the fractional part of $x$, or $0$ if the fractional part has fewer than $n$ digits.
 
@@ -34,3 +34,9 @@ Find $S(10^7)$.
 * $S(100) = 418$
 
 求 $S(10^7)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

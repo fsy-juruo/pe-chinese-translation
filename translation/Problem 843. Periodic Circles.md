@@ -19,3 +19,9 @@ Find $S(100)$.
 记 $S(N)$ 为：在 $3 \leq n \leq N$ 时，所有可能的周期长度之和。已知：$S(6) = 6$。因为 $n = 3$ 或 $4$ 时周期为 $1$、$n = 5$ 时周期为 $1$ 或 $3$、$n = 6$ 时周期为 $1$ 或 $2$。所有可能的周期为 $1, 2, 3$。已知：$S(30) = 20381$。
 
 求 $S(100)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

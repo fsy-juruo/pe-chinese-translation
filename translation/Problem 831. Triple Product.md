@@ -20,3 +20,9 @@ $$
 已知 $g(10) = 127278262644918$，其十进制下最高的五位为 $12727$。
 
 求在七进制表示下，$g(142857)$ 的最高的十位。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

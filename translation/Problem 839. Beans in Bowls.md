@@ -22,3 +22,9 @@ Find $B(10^7)$.
 记 $B(N)$ 为在有 $N$ 个碗的情况下，将碗中的豆子数变为单调不下降序列所需的步数。已知：$B(5) = 0$、$B(6) = 14263289$ 且 $B(100)=3284417556$。
 
 求 $B(10^7)$。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

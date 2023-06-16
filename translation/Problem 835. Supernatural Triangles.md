@@ -13,4 +13,10 @@ Find $S(10^{10^{10}})$. Give your answer modulo $1234567891$.
 
 记 $S(N)$ 为所有满足周长小于等于 $N$ 的所有不同超自然三角形的周长之和。已知：$S(100) = 258$ 且 $S(10000) = 172004$。
 
-求 $S(10^{10^{10}})$ 模 $1234567891$。
+求 $S(10^{10^{10}})$ 模 $1234567891$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

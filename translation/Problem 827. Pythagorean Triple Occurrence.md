@@ -12,7 +12,7 @@ You are also given $Q(10)=48$ and $Q(10^3)=8064000$.
 
 Find $\displaystyle \sum_{k=1}^{18} Q(10^k)$. Give your answer modulo $409120391$.
 
-### 827. 毕达哥拉斯三元组中的出现次数
+### 827. 在毕达哥拉斯三元组中的出现次数
 
 记 $Q(n)$ 为在所有 **毕达哥拉斯三元组** $(a,b,c)$（其中 $a \lt b \lt c$）中恰好出现 $n$ 次的最小正整数。
 
@@ -25,3 +25,9 @@ $$
 已知：$Q(10)=48$ 且 $Q(10^3)=8064000$。
 
 求 $\displaystyle \sum_{k=1}^{18} Q(10^k)$ 模 $409120391$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

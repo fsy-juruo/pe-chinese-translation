@@ -18,10 +18,16 @@ Find $f(20230401, 57)$. Give as your answer the concatenation of the first lette
 
 我们考虑一个**有向直线部分（open oriented line section）**，其正则化 Haar 测度为 $m$。
 
-记 $f(m, p)$ 为**雅可比矩阵（Jacobian）**的最大可能行列式之值，该矩阵与 $U$ 至 $A$ 的**正交核嵌入（orthogonal kernel embedding）** 有关。
+记 $f(m, p)$ 为**雅可比矩阵（Jacobian）**的最大可能判别式之值，该矩阵与 $U$ 至 $A$ 的**正交核嵌入（orthogonal kernel embedding）** 有关。
 
 求 $f(20230401, 57)$[^2]。将所有加粗词语的首字母串接作为你的答案。
 
 [^1]: 这是一个双关，bold 可以指“大胆的”，也可以指“被加粗的（字）”。proposition 在数学中也有“命题”一义。
 
 [^2]: $57$ 可能是使用了数学界的一个梗——格罗滕迪克质数。著名数学家亚历山大·格罗滕迪克（Alexander Grothendieck）曾在一次演讲中口误，在举例子时把 $57$ 错认为质数。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

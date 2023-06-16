@@ -34,8 +34,14 @@ $$
 \displaystyle \sum_{i=1}^{k}x_i^2=k\prod_{i=1}^{k}x_i,\quad x_i\text{ 均为正整数.}
 $$
 
-记 $M_k(N)$ 为 $\le N$ 的 $k$-马尔科夫数之和。已知：$M_3(10^{3})=2797$，$M_8(10^8) = 131493335$。
+记 $M_k(N)$ 为 $\le N$ 的 $k$-马尔科夫数之和。已知：$M_3(10^{3})=2797$、$M_8(10^8) = 131493335$。
 
-再记  $\displaystyle S(K,N)=\sum_{k=3}^{K}M_k(N)$。已知：$S(4, 10^2)=229$，$S(10, 10^8)=2383369980$。
+再记  $\displaystyle S(K,N)=\sum_{k=3}^{K}M_k(N)$。已知：$S(4, 10^2)=229$、$S(10, 10^8)=2383369980$。
 
 求 $S(10^{18}, 10^{18})$ 模 $1\,405\,695\,061$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

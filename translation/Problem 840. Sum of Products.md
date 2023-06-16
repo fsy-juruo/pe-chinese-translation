@@ -64,4 +64,10 @@ $$
 
 已知：$S(10)=396$。
 
-求 $S(5\times 10^4) \mod 999676999$。
+求 $S(5\times 10^4) \mod 999676999$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。
