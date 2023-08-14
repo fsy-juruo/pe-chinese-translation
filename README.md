@@ -6,13 +6,13 @@
 
 ### 最近更新 & 计划 | Recent updates & plans
 
+* **【2023-8-14】翻译 849 至 851、768 至 777（除 770）题，修改了几处笔误，撤下 836 题的翻译。** 
 * **【2023-6-18】翻译 770、778、779、780、848 题。**
 * **【2023-6-16】将目前所翻译的题目均转为 html 并搬运到网站上，并进行了一些翻译的修正。**
-* **【2023-6-14】翻译 826 至 847 题。**
+* 【2023-6-14】翻译 826 至 847 题。
 * 【2023-1-18】翻译 791 至 809 题，修正了部分错误。
 * 【2023-1-17】翻译 810 至 817、819 至 825 题。
 * 【2022-5-4】将 679 原译标题取消。
-* 【2022-3-27】修正 691 错译标题，并修改 683、691 的部分表述。
 
 ### 目录：帮助、杂项翻译 | Translation: Help Guides & Miscellaneous
 
@@ -48,7 +48,16 @@
 |722|缓慢收敛的级数 / Slowly converging series|25%|已译、未校|[link_722](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20722.%20Slowly%20converging%20series.md)|
 |723|毕达哥拉斯四元组 / Pythagorean Quadrilaterals|65%|已译、未校|[link_723](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20723.%20Pythagorean%20Quadrilaterals.md)|
 |761|跑者和游泳者 / Runner and Swimmer|90%|已译、未校|[link_761](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20761.%20Runner%20and%20Swimmer.md)|
+|768|吊灯 / Chandelier|95%|已译、未校|[link_768](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20768.%20Chandelier.md)|
+|769|二元二次表示法 II / Binary Quadratic Form II|90%|已译、未校|[link_769](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20769.%20Binary%20Quadratic%20Form%20II.md)|
 |770|德尔斐赌徒谜题 / Delphi Flip|30%|已译、未校|[link_770](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20770.%20Delphi%20Flip.md)|
+|771|伪等比数列 / Pseudo Geometric Sequences|80%|已译、未校|[link_771](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20771.%20Pseudo%20Geometric%20Sequences.md)|
+|772|可平衡 $k$-有界分拆 / Balanceable $k$-bounded Partitions|20%|已译、未校|[link_772](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20772.%20Balanceable%20k-bounded%20Partitions.md)|
+|773|拉夫数 / Ruff Numbers|50%|已译、未校|[link_773](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20773.%20Ruff%20Numbers.md)|
+|774|合取数列 / Conjunctive Sequences|90%|已译、未校|[link_774](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20774.%20Conjunctive%20Sequences.md)|
+|775|省纸 / Saving Paper|40%|已译、未校|[link_775](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20775.%20Saving%20Paper.md)|
+|776|数位和的除法 / Digit Sum Division|25%|已译、未校|[link_776](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20776.%20Digit%20Sum%20Division.md)|
+|777|利萨茹曲线 / Lissajous Curves|95%|已译、未校|[link_777](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20777.%20Lissajous%20Curves.md)|
 |778|新生乘积 / Freshman's Product|30%|已译、未校|[link_778](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20778.%20Freshman's%20Product.md)|
 |779|质因子与其指数 / Prime Factor and Exponent|25%|已译、未校|[link_779](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20779.%20Prime%20Factor%20and%20Exponent.md)|
 |780|环面上的三角剖分 / Toriangulations|100%?[^1]|已译、未校|[link_780](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20780.%20Toriangulations.md)|
@@ -106,12 +115,11 @@
 |833|三角形数乘积中的平方 / Square Triangle Products|65%|已译、未校|[link_833](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20833.%20Square%20Triangle%20Products.md)|
 |834|加上数并能整除 / Add and Divide|25%|已译、未校|[link_834](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20834.%20Add%20and%20Divide.md)|
 |835|超自然三角形 / Supernatural Triangles|25%|已译、未校|[link_835](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20835.%20Supernatural%20Triangles.md)|
-|836|一个大胆的提议 / A Bold Proposition[^3]|5%|已译、未校|[link_836](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20836.%20A%20Bold%20Proposition.md)|
 |837|阿弥陀签 / Amidakuji|55%|已译、未校|[link_837](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20837.%20Amidakuji.md)|
 |838|不互质 / Not Coprime|20%|已译、未校|[link_838](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20838.%20Not%20Coprime.md)|
-|839|碗中豆 / Beans in Bowls|暂无|已译、未校|[link_839](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20839.%20Beans%20in%20Bowls.md)|
-|840|乘积之和 / Sum of Products|暂无|已译、未校|[link_840](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20840.%20Sum%20of%20Products.md)|
-|841|规则星形多边形 / Regular Star Polygons|暂无|已译、未校|[link_841](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20841.%20Regular%20Star%20Polygons.md)|
+|839|碗中豆 / Beans in Bowls|30%|已译、未校|[link_839](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20839.%20Beans%20in%20Bowls.md)|
+|840|乘积之和 / Sum of Products|25%|已译、未校|[link_840](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20840.%20Sum%20of%20Products.md)|
+|841|规则星形多边形 / Regular Star Polygons|45%|已译、未校|[link_841](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20841.%20Regular%20Star%20Polygons.md)|
 |842|不规则星形多边形 / Irregular Star Polygons|暂无|已译、未校|[link_842](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20842.%20Irregular%20Star%20Polygons.md)|
 |843|周期圆环 / Periodic Circles|暂无|已译、未校|[link_843](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20843.%20Periodic%20Circles.md)|
 |844|$k$-马尔科夫数 / $k$-Markov Numbers|暂无|已译、未校|[link_844](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20844.%20k-Markov%20Numbers.md)|
@@ -119,10 +127,12 @@
 |846|魔法数镯 / Magic Bracelets|暂无|已译、未校|[link_846](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20846.%20Magic%20Bracelets.md)|
 |847|杰克的豆子 / Jack's Bean|暂无|已译、未校|[link_847](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20847.%20Jack's%20Bean.md)|
 |848|集合猜数游戏 / Guessing with Sets|暂无|已译、未校|[link_848](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20848.%20Guessing%20with%20Sets.md)|
+|849|锦标赛 / The Tournament|暂无|已译、未校|[link_849](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20849.%20The%20Tournament.md)|
+|850|幂的小数部分 / Fractions of Powers|暂无|已译、未校|[link_850](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20850.%20Fractions%20of%20Powers.md)|
+|851|积之和与和之积 / SOP and POS|暂无|已译、未校|[link_851](https://github.com/fsy-juruo/pe-chinese-translation/blob/master/translation/Problem%20851.%20SOP%20and%20POS.md)|
 
 [^1]: 难度系数后带 ? 等价于 PE 的 not yet finalised（难度未敲定）
 [^2]: mex 为 minimal excluded 的缩写，在此过程中的第二步被体现。信息学竞赛中一般不翻译 mex，这里也不翻译。另外，一般的 mex 运算一般是不在某个数集中最小的自然数，而非正整数。
-[^3]: 这部分题目目前有部分术语的译名不确定，需要进一步修正并优化翻译。
 
 ## 其它翻译站点 | Other translation sites
 
