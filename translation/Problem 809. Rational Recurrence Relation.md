@@ -25,3 +25,9 @@ $$
 例如 $f(3/2)=3$、$f(1/6) = 65533$ 且 $f(13/10) = 7625597484985$。
 
 求 $f(22/7)$ 模 $10^{15}$ 之值。
+
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

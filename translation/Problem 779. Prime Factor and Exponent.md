@@ -32,7 +32,7 @@ $$
 
 我们可以验证 $\overline{f_1} \approx 0.282419756159$。
 
-求 $\displaystyle \sum_{K=1}^{\infty}\overline{f_K}$。将你的答案四舍五入至小数点后第 12 位小数。
+求 $\displaystyle \sum_{K=1}^{\infty}\overline{f_K}$。将你的答案四舍五入至小数点后第 12 位。
 
 ---
 
