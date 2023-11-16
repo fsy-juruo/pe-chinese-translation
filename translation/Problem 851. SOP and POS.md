@@ -22,7 +22,7 @@ Find $R_6(10000!)$. Give your answer modulo $10^9+7$.
 
 * $u$ 与 $v$ 的 *和之积* $u \star v = \displaystyle\prod_{i=1}^{n} (u_i + v_i)$。
 
-记 $R_n(M)$ 为：$E_n$ 中所有满足 $\langle u, v \rangle = M$ 的数对 $(u, v)$ 的 $u \star v$ 之和。已知 $R_1(10) = 36$、$R_2(100) = 1873044$、$R_2(100) \equiv 446575636 \pmod {10^9+7}$。
+记 $R_n(M)$ 为：$E_n$ 中所有满足 $\langle u, v \rangle = M$ 的数对 $(u, v)$ 的 $u \star v$ 之和。已知 $R_1(10) = 36$、$R_2(100) = 1873044$、$R_2(100!) \equiv 446575636 \pmod {10^9+7}$。
 
 求 $R_6(10000!)$ 模 $(10^9+7)$ 的值。
 
