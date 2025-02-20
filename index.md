@@ -4,11 +4,9 @@
 
 直接在网址栏里输入 ``https://fsy-juruo.github.io/pe-chinese-translation/problems/__.html`` 即可访问，其中 ``__`` 是题号。
 
-目前暂时使用了 Typora 生成网页，后续可能会改。
+**[包含题目名、PE 难度的详细目录见此](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html)。**
 
-**包含题目名、PE 难度的详细目录见[此](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html)。**
-
-**目前已翻译 115 题，最近至第 885 题。**
+**目前已翻译 123 题，最近至第 932 题。**上次更新：2025 年 2 月 20 日。
 
 |                             ---                              |                             ---                              |                             ---                              |                             ---                              |                             ---                              |                             ---                              |                             ---                              |                             ---                              |                             ---                              |                             ---                              |
 | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: | :----------------------------------------------------------: |
@@ -100,13 +98,18 @@
 | [\*851\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/851.html) |                             852                              |                             853                              |                             854                              |                             855                              |                             856                              |                             857                              |                             858                              |                             859                              |                             860                              |
 |                             861                              | [\*862\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/862.html) | [\*863\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/863.html) |                             864                              |                             865                              |                             866                              |                             867                              |                             868                              |                             869                              |                             870                              |
 |                             871                              |                             872                              |                             873                              |                             874                              |                             875                              |                             876                              |                             877                              |                             878                              |                             879                              | [\*880\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/880.html) |
-| [\*881\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/862.html) | [\*882\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/882.html) | [\*883\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/883.html) | [\*884\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/884.html) | [\*885\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/885.html) |                                                              |                                                              |                                                              |                                                              |                                                              |
+| [\*881\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/881.html) |[\*882\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/882.html) |[\*883\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/883.html) |[\*884\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/884.html) |[\*885\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/885.html) |886 | 887 | 888 | 889 | 890 |
+| [\*891\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/891.html) |[\*892\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/892.html) |[\*893\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/893.html) |[\*894\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/894.html) |895 | 896 | 897 | 898 | 899 | 900 |
+| 901 | 902 | 903 | 904 | 905 | 906 | 907 | 908 | 909 | 910 |
+| 911 | 912 | 913 | 914 | 915 | 916 | 917 | 918 | 919 | 920 |
+| 921 | 922 | 923 | 924 | 925 | 926 | 927 | [\*928\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/928.html) |929 | [\*930\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/930.html) |
+| [\*931\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/931.html) |[\*932\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/932.html) |
 
 ### 其他 PE 相关网站 / Other sites
 
-- [sx349 的翻译](http://pe-cn.github.io/)：翻译 1 至 882 题。
+- [sx349 的翻译](http://pe-cn.github.io/)：翻译 1 至 930 题。
 
 ### 致谢 / Credits
 
-本站所有 PE 源站图片与附件均由 xiaoyaowudi 的[镜像站](https://pe.xiaoyaowudi.com/about)提供。
+本站所有 PE 源站图片与附件曾由 xiaoyaowudi 的[镜像站](https://pe.xiaoyaowudi.com/about)提供。
 
