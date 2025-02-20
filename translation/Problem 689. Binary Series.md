@@ -11,8 +11,8 @@ Find $p(0.5)$. Give your answer rounded to 8 digits after the decimal point.
 
 ### 689. 二进制级数
 
-对于满足 $0 \le x \lt 1$ 的实数 $x$，记 $d_i(x)$ 为 $x$ 二进制表示下，小数点后第 $i$ 位。
-比如说，$d_2(0.25) = 1$。且对于正整数 $i \ne 2$，$d_i(0.25) = 0$。
+对于满足 $0 \le x \lt 1$ 的实数 $x$，记 $d_i(x)$ 为 $x$ 二进制表示下小数点后第 $i$ 位。
+例如，$d_2(0.25) = 1$。且对诸正整数 $i \ne 2$ 都有 $d_i(0.25) = 0$。
 
 记 $f(x) = \displaystyle{\sum_{i=1}^{\infty}\frac{d_i(x)}{i^2}}$。
 

@@ -10,7 +10,7 @@ Find the expected value of the area of the second biggest of the three rectangle
 
 ### 695. 随机矩形
 
-在单位正方形上，随机选取三个点 $P_1$、$P_2$ 和 $P_3$。考虑三个满足如下条件的矩形：其有与单位正方形平行的边，且其对角线为 $\overline{P_1P_2}$，$\overline{P_1P_3}$，$\overline{P_2P_3}$ 三条线段中的一条。（见下图）
+在单位正方形上，随机选取三个点 $P_1$、$P_2$ 和 $P_3$。考虑三个满足如下条件的矩形：其有与单位正方形平行的边，且其对角线为 $\overline{P_1P_2}$，$\overline{P_1P_3}$，$\overline{P_2P_3}$ 三者之一。（见下图）
 
 ![](https://pe.xiaoyaowudi.com/project/images/p695_randrect.png)
 

@@ -20,13 +20,13 @@ Find $F(17)$ and give your answer rounded to 12 decimal places.
 随后，我们再选出一个实数 $x_2$，使得区间 $[0,\frac{1}{2})$, $[\frac{1}{2},1)$ 均只含二元组 $(x_1, x_2)$ 中的一个数。
 我们不断进行此过程：第 $n$ 步中，我们选出一个实数 $x_n$ 使得：对于任意 $k \in \{1, ..., n\}$，区间 $[\frac{k-1}{n}, \frac{k}{n})$ 都只含 $n$ 元组 $(x_1, x_2, ..., x_n)$ 中的一个数。
 
-$n$ 步后我们得到一个 $n$ 元组 $(x_1, x_2, ..., x_n)$，记 $F(n)$ 为 $x_1 + x_2 + ... + x_n$ 的最小值。例如 $F(4) = 1.5$，这可以通过 $(x_1, x_2, x_3, x_4) = (0, 0.75, 0.5, 0.25)$ 取到。
+$n$ 步后我们得到一个 $n$ 元组 $(x_1, x_2, ..., x_n)$，记 $F(n)$ 为 $x_1 + x_2 + \cdots + x_n$ 的最小值。例如 $F(4) = 1.5$，这可以通过 $(x_1, x_2, x_3, x_4) = (0, 0.75, 0.5, 0.25)$ 取到。
 
 令人惊讶的是，在此过程中，你最多只能取 $17$ 个实数。[^1]
 
 求 $F(17)$，将你的答案四舍五入至小数点后第 12 位。
 
-[^1]: 如果有感兴趣的读者的话，这里描述的问题被称为 Irregularities in the distributions。数学家 E. R. Berlekamp 和 R. L. Graham 曾在 1970 年给出过其[证明](https://www.sciencedirect.com/science/article/pii/0022314X70900156?ref=pdf_download&fr=RR-2&rr=7a4bf2d2d981f95b)。但在做本题时请不要参阅此论文。
+[^1]: 如果有感兴趣的读者的话，这里描述的问题被称为 Irregularities in the distributions。数学家 E. R. Berlekamp 和 R. L. Graham 曾在 1970 年给出过其[证明](https://www.sciencedirect.com/science/article/pii/0022314X70900156?ref=pdf_download&fr=RR-2&rr=7a4bf2d2d981f95b)。
 
 ---
 

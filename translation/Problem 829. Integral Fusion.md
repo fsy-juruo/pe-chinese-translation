@@ -28,7 +28,7 @@ Find $\displaystyle\sum_{n=2}^{31} M(n)$.
 
 ![](https://pe.xiaoyaowudi.com/resources/images/0829_example1.jpg?1678992055)
 
-记 $M(n)$ 为满足如下条件的最小整数，使得该数的二叉因子树与 $n!!$（$n$ 的双阶乘）的二叉因子树形状完全一致。如下图，$n = 9$ 时，$9!! = 9\times 7\times 5\times 3\times 1 = 945$。$945$ 的二叉因子树与 $72$ 的二叉因子树形状完全一致，而且 $72$ 是满足此条件的最小正整数，故 $M(9) = 72$。
+记 $M(n)$ 为满足如下条件的最小整数：该数的二叉因子树与 $n!!$（$n$ 的双阶乘）的二叉因子树形状完全一致。如下图，$n = 9$ 时，$9!! = 9\times 7\times 5\times 3\times 1 = 945$。$945$ 的二叉因子树与 $72$ 的二叉因子树形状完全一致，而且 $72$ 是满足此条件的最小正整数，故 $M(9) = 72$。
 
 ![](https://pe.xiaoyaowudi.com/resources/images/0829_example2.jpg?1678992055)
 
