@@ -6,6 +6,8 @@
 
 ### 最近更新 & 计划 | Recent updates & plans
 
+* 【2025-2-24】翻译 933 题。
+  
 * **【2025-2-16】翻译 891 至 894、930 至 932 题。修正了一些严重误译。**
   
 * 【2023-8-14】翻译 849 至 851、768 至 777（除 770）题，修改了几处笔误，撤下 836 题的翻译。
@@ -143,6 +145,7 @@
 |930|小球集聚 / The Gathering| 暂无[^2] |未校|[link_930](https://fsy-juruo.github.io/pe-chinese-translation/problems/930.html)|
 |931|欧拉总计函数图 / Totient Graph| 暂无[^2] |未校|[link_931](https://fsy-juruo.github.io/pe-chinese-translation/problems/931.html)|
 |932|2025| 暂无[^2] |未校|[link_932](https://fsy-juruo.github.io/pe-chinese-translation/problems/932.html)|
+|933|剪纸游戏 / Paper Cutting| 暂无 [^2] |未校|[link_933](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html)|
 
 
 [^1]: 难度系数后带 ? 等价于 PE 的 not yet finalised（难度未敲定）

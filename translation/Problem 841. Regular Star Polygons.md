@@ -41,7 +41,7 @@ Find $\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$, where $F_j$ is the Fibonacci sequence
 
 那为什么说是“环绕” $q$ 圈？在下图中仔细观察，每次连边后，该边都会占据 $\frac{2q}{p} \pi$ 的圆心角。重新连回 $1$ 号点时，占据的圆心角总和为 $q \times 2\pi$，相当于“环绕”了中间的正 $p$ 边形 $q$ 圈。
 
-![](https://cdn.luogu.com.cn/upload/image_hosting/8ay21ush.png)
+![](images/841_regular_star_polygon_with_circum.PNG)
 > 使用了 Alex CHIK 在 GeoGebra 上的演示器。[网址链接](https://www.geogebra.org/material/show/id/tYUSwUxw)
 
 这种方法在 $(p, q) \neq 1$ 时会退化，还有一种方法是，直接对于所有 $i \in \{1, 2, 3, \cdots, p\}$，将 $i$ 号点与 $i + q$ 号（大于 $p$ 时对 $p$ 取余）点相连。
