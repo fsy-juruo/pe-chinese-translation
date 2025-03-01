@@ -6,12 +6,10 @@
 
 ### 最近更新 & 计划 | Recent updates & plans
 
+* **【2025-3-1】翻译 924~926、929 题，更新了已知的 4 道奖励题目。**
 * 【2025-2-24】翻译 933 题。
-  
 * **【2025-2-16】翻译 891 至 894、930 至 932 题。修正了一些严重误译。**
-  
 * 【2023-8-14】翻译 849 至 851、768 至 777（除 770）题，修改了几处笔误，撤下 836 题的翻译。
-* 【2023-6-18】翻译 770、778、779、780、848 题。
 * 【2023-6-16】将目前所翻译的题目均转为 html 并搬运到网站上，并进行了一些翻译的修正。
 
 ### 目录：帮助、杂项翻译 | Translation: Help Guides & Miscellaneous
@@ -141,16 +139,30 @@
 |892|黑白交替的圆 / Zebra Circles| 60% |未校|[link_892](https://fsy-juruo.github.io/pe-chinese-translation/problems/892.html)|
 |893|火柴 / Matchsticks| 15% |未校|[link_893](https://fsy-juruo.github.io/pe-chinese-translation/problems/893.html)|
 |894|圆的螺旋 / Spiral of Circles| 35% |未校|[link_894](https://fsy-juruo.github.io/pe-chinese-translation/problems/894.html)|
+|924|更大的数位排列数 2 / Larger Digit Permutation II| 暂无[^2] |未校|[link_924](https://fsy-juruo.github.io/pe-chinese-translation/problems/924.html)|
+|925|更大的数位排列数 3 / Larger Digit Permutation III| 暂无[^2] |未校|[link_925](https://fsy-juruo.github.io/pe-chinese-translation/problems/925.html)|
+|926|总舍入程度 / Total Roundness| 暂无[^2] |未校|[link_926](https://fsy-juruo.github.io/pe-chinese-translation/problems/926.html)|
 |928|克里比奇牌戏 / Cribbage| 暂无[^2] |未校|[link_928](https://fsy-juruo.github.io/pe-chinese-translation/problems/928.html)|
+|929|奇长度相同段组成 / Odd-Run Compositions| 暂无[^2] |未校|[link_929](https://fsy-juruo.github.io/pe-chinese-translation/problems/929.html)|
 |930|小球集聚 / The Gathering| 暂无[^2] |未校|[link_930](https://fsy-juruo.github.io/pe-chinese-translation/problems/930.html)|
 |931|欧拉总计函数图 / Totient Graph| 暂无[^2] |未校|[link_931](https://fsy-juruo.github.io/pe-chinese-translation/problems/931.html)|
 |932|2025| 暂无[^2] |未校|[link_932](https://fsy-juruo.github.io/pe-chinese-translation/problems/932.html)|
-|933|剪纸游戏 / Paper Cutting| 暂无 [^2] |未校|[link_933](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html)|
+|933|剪纸游戏 / Paper Cutting| 暂无[^2] |未校|[link_933](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html)|
 
 
 [^1]: 难度系数后带 ? 等价于 PE 的 not yet finalised（难度未敲定）
 [^2]: Project Euler 中 Recent 的十道题暂时没有难度评分。
 [^3]: mex 为 minimal excluded 的缩写，在此过程中的第二步被体现。信息学竞赛中一般不翻译 mex，这里也不翻译。另外，一般的 mex 运算一般是不在某个数集中最小的自然数，而非正整数。
+
+### 关于：奖励题目 | Bonus Problems
+
+>:warning: **剧透警告！**
+>
+>链接中的文档包括了大部分 Project Euler 的奖励题目，提前阅读该文档可能会降低您在探索奖励题目时的兴趣。
+
+Project Euler 在某次更新后（时间未知）加入了 5 道奖励题目，解锁它们需要一定的条件。可s以在 Progress > Bonus 下看到自己目前解锁的奖励题目。
+
+目前已知的 4 道奖励题目 [在这里](https://fsy-juruo.github.io/pe-chinese-translation/problems/bonus.html)。
 
 ## 其它翻译站点 | Other translation sites
 
