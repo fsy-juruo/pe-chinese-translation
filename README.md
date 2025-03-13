@@ -8,9 +8,9 @@
 
 预计会在近期将所有图片传到 repository 中，解决网站因为 Project Euler 官网限制看不到图片的情况。
 
+* **【2025-3-13】翻译 901 至 906、912 至 915、927、935 题。修正了前几次翻译的笔误。**
 * **【2025-3-4】翻译 911、916~923、934 题。**
 * **【2025-3-1】翻译 924~926、929 题，更新了已知的 4 道奖励题目。**
-* **【2025-2-16】翻译 891 至 894、930 至 932 题。修正了一些严重误译。**
 * 【2023-8-14】翻译 849 至 851、768 至 777（除 770）题，修改了几处笔误，撤下 836 题的翻译。
 * 【2023-6-16】将目前所翻译的题目均转为 html 并搬运到网站上，并进行了一些翻译的修正。
 
@@ -58,7 +58,7 @@
 |777|利萨茹曲线 / Lissajous Curves|95%|[link_777](https://fsy-juruo.github.io/pe-chinese-translation/problems/777.html)|
 |778|新生乘积 / Freshman's Product|30%|[link_778](https://fsy-juruo.github.io/pe-chinese-translation/problems/778.html)|
 |779|质因子与其指数 / Prime Factor and Exponent|25%|[link_779](https://fsy-juruo.github.io/pe-chinese-translation/problems/779.html)|
-|780|环面上的三角剖分 / Toriangulations|100%?[^1]|[link_780](https://fsy-juruo.github.io/pe-chinese-translation/problems/780.html)|
+|780|环面上的三角剖分 / Toriangulations|100%|[link_780](https://fsy-juruo.github.io/pe-chinese-translation/problems/780.html)|
 |781|费曼图 / Feynman Diagrams|95%|[link_781](https://fsy-juruo.github.io/pe-chinese-translation/problems/781.html)|
 |782|不同的行与列 / Distinct Rows and Columns|65%|[link_782](https://fsy-juruo.github.io/pe-chinese-translation/problems/782.html)|
 |783|球瓮 / Urns|50%|[link_783](https://fsy-juruo.github.io/pe-chinese-translation/problems/783.html)|
@@ -90,7 +90,7 @@
 |809|有理数上的递归关系 / Rational Recurrence Relation|35%|[link_809](https://fsy-juruo.github.io/pe-chinese-translation/problems/809.html)|
 |810|异或质数 / XOR-Primes|20%|[link_810](https://fsy-juruo.github.io/pe-chinese-translation/problems/810.html)|
 |811|逐位递归 / Bitwise Recursion|40%|[link_811](https://fsy-juruo.github.io/pe-chinese-translation/problems/811.html)|
-|812|壮悍多项式 / Dynamical Polynomials|90%?[^1]|[link_812](https://fsy-juruo.github.io/pe-chinese-translation/problems/812.html)|
+|812|壮悍多项式 / Dynamical Polynomials|100%|[link_812](https://fsy-juruo.github.io/pe-chinese-translation/problems/812.html)|
 |813|异或幂 / XOR-Powers|20%|[link_813](https://fsy-juruo.github.io/pe-chinese-translation/problems/813.html)|
 |814|中强音 / Mezzo-forte|50%|[link_814](https://fsy-juruo.github.io/pe-chinese-translation/problems/814.html)|
 |815|按价值分堆 / Group by Value|25%|[link_815](https://fsy-juruo.github.io/pe-chinese-translation/problems/815.html)|
@@ -101,7 +101,7 @@
 |821|可 123 分离的 / 123-Separable|65%|[link_821](https://fsy-juruo.github.io/pe-chinese-translation/problems/821.html)|
 |822|把最小数平方 / Square the Smallest|15%|[link_822](https://fsy-juruo.github.io/pe-chinese-translation/problems/822.html)|
 |823|因子重排 / Factor Shuffle|50%|[link_823](https://fsy-juruo.github.io/pe-chinese-translation/problems/823.html)|
-|824|滑块棋子 / Chess Sliders|90%?[^1]|[link_824](https://fsy-juruo.github.io/pe-chinese-translation/problems/824.html)|
+|824|滑块棋子 / Chess Sliders|95%|[link_824](https://fsy-juruo.github.io/pe-chinese-translation/problems/824.html)|
 |825|追逐游戏 / Chasing Game|60%|[link_825](https://fsy-juruo.github.io/pe-chinese-translation/problems/825.html)|
 |826|电线上的鸟群 / Birds on a Wire|45%|[link_826](https://fsy-juruo.github.io/pe-chinese-translation/problems/826.html)|
 |827|在毕达哥拉斯三元组中的出现次数 / Pythagorean Triple Occurrence|50%|[link_827](https://fsy-juruo.github.io/pe-chinese-translation/problems/827.html)|
@@ -141,18 +141,29 @@
 |892|黑白交替的圆 / Zebra Circles| 60% |[link_892](https://fsy-juruo.github.io/pe-chinese-translation/problems/892.html)|
 |893|火柴 / Matchsticks| 15% |[link_893](https://fsy-juruo.github.io/pe-chinese-translation/problems/893.html)|
 |894|圆的螺旋 / Spiral of Circles| 35% |[link_894](https://fsy-juruo.github.io/pe-chinese-translation/problems/894.html)|
+|901|钻井 / Well Drilling| 25% |[link_901](https://fsy-juruo.github.io/pe-chinese-translation/problems/901.html)|
+|902|排列的幂 / Permutation Powers| 50% |[link_902](https://fsy-juruo.github.io/pe-chinese-translation/problems/902.html)|
+|903|全部排列的幂 / Total Permutation Powers| 90% |[link_903](https://fsy-juruo.github.io/pe-chinese-translation/problems/903.html)|
+|904|毕达哥拉斯角 / Pythagorean Angle| 45% |[link_904](https://fsy-juruo.github.io/pe-chinese-translation/problems/904.html)|
+|905|现在我知道了 / Now I Know| 35% |[link_905](https://fsy-juruo.github.io/pe-chinese-translation/problems/905.html)|
+|906|共同做出的选择 / A Collective Decision| 35% |[link_906](https://fsy-juruo.github.io/pe-chinese-translation/problems/906.html)|
 |911|辛钦例外 / Khinchin Exceptions| 50% |[link_911](https://fsy-juruo.github.io/pe-chinese-translation/problems/911.html)|
+|912|奇数在哪里？/ Where are the Odds?| 50% |[link_912](https://fsy-juruo.github.io/pe-chinese-translation/problems/912.html)|
+|913|优先填行或填列 / Row-major vs Column-major| 60% |[link_913](https://fsy-juruo.github.io/pe-chinese-translation/problems/913.html)|
+|914|圆内的三角形 / Triangles inside Circles| 20% |[link_914](https://fsy-juruo.github.io/pe-chinese-translation/problems/914.html)|
+|915|巨大的最大公约数 / Giant GCDs| 45% |[link_915](https://fsy-juruo.github.io/pe-chinese-translation/problems/915.html)|
 |916|满足限制的排列计数 / Restricted Permutations| 55% |[link_916](https://fsy-juruo.github.io/pe-chinese-translation/problems/916.html)|
 |917|费用是两项加和时的最小路径和 / Minimal Path Using Additive Cost| 50% |[link_917](https://fsy-juruo.github.io/pe-chinese-translation/problems/917.html)|
 |918|递归数列求和 / Recursive Sequence Summation| 10% |[link_918](https://fsy-juruo.github.io/pe-chinese-translation/problems/918.html)|
 |919|幸运三角形 / Fortunate Triangles| 35% |[link_919](https://fsy-juruo.github.io/pe-chinese-translation/problems/919.html)|
-|920|$\tau$ 数 / Tau Numbers| 30% |[link_920](https://fsy-juruo.github.io/pe-chinese-translation/problems/894.html)|
+|920|$\tau$ 数 / Tau Numbers| 30% |[link_920](https://fsy-juruo.github.io/pe-chinese-translation/problems/920.html)|
 |921|黄金分割递推 / Golden Recurrence| 45% |[link_921](https://fsy-juruo.github.io/pe-chinese-translation/problems/921.html)|
 |922|杨氏游戏 A / Young's Game A| 70% |[link_922](https://fsy-juruo.github.io/pe-chinese-translation/problems/922.html)|
 |923|杨氏游戏 B / Young's Game B| 85%?[^1] |[link_923](https://fsy-juruo.github.io/pe-chinese-translation/problems/923.html)|
 |924|更大的数位排列数 2 / Larger Digit Permutation II| 45% |[link_924](https://fsy-juruo.github.io/pe-chinese-translation/problems/924.html)|
-|925|更大的数位排列数 3 / Larger Digit Permutation III| 暂无[^2] |[link_925](https://fsy-juruo.github.io/pe-chinese-translation/problems/925.html)|
+|925|更大的数位排列数 3 / Larger Digit Permutation III| 55% |[link_925](https://fsy-juruo.github.io/pe-chinese-translation/problems/925.html)|
 |926|总舍入程度 / Total Roundness| 暂无[^2] |[link_926](https://fsy-juruo.github.io/pe-chinese-translation/problems/926.html)|
+|927|质数多叉树 / Prime-ary Tree| 暂无[^2] |[link_927](https://fsy-juruo.github.io/pe-chinese-translation/problems/927.html)|
 |928|克里比奇牌戏 / Cribbage| 暂无[^2] |[link_928](https://fsy-juruo.github.io/pe-chinese-translation/problems/928.html)|
 |929|奇长度相同段组成 / Odd-Run Compositions| 暂无[^2] |[link_929](https://fsy-juruo.github.io/pe-chinese-translation/problems/929.html)|
 |930|小球集聚 / The Gathering| 暂无[^2] |[link_930](https://fsy-juruo.github.io/pe-chinese-translation/problems/930.html)|
@@ -160,11 +171,12 @@
 |932|$2025$| 暂无[^2] |[link_932](https://fsy-juruo.github.io/pe-chinese-translation/problems/932.html)|
 |933|剪纸游戏 / Paper Cutting| 暂无[^2] |[link_933](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html)|
 |934|不幸质数 / Unlucky Primes| 暂无[^2] |[link_934](https://fsy-juruo.github.io/pe-chinese-translation/problems/934.html)|
-
+|935|滚动正方形 / Rolling Square| 暂无[^2] |[link_935](https://fsy-juruo.github.io/pe-chinese-translation/problems/935.html)|
 
 [^1]: 难度系数后带 ? 等价于 PE 的 not yet finalised（难度未敲定）
 [^2]: Project Euler 中 Recent 的十道题暂时没有难度评分。
 [^3]: mex 为 minimal excluded 的缩写，在此过程中的第二步被体现。信息学竞赛中一般不翻译 mex，这里也不翻译。另外，一般的 mex 运算一般是不在某个数集中最小的自然数，而非正整数。
+
 
 ### 关于：奖励题目 | Bonus Problems
 
