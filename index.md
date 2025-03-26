@@ -6,7 +6,7 @@
 
 **[包含题目名、PE 难度的详细目录见此](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html)。**
 
-**目前已翻译 150 题，最近至第 935 题。**上次更新：2025 年 3 月 13 日。
+**目前已翻译 163 题，最近至第 937 题。**上次更新：2025 年 3 月 26 日。
 
 若有翻译错误，欢迎在 Issues 下提出。
 
@@ -34,7 +34,7 @@
 | 191 | 192 | 193 | 194 | 195 | 196 | 197 | 198 | 199 | 200 | 
 | 201 | 202 | 203 | 204 | 205 | 206 | 207 | 208 | 209 | 210 | 
 | 211 | 212 | 213 | 214 | 215 | 216 | 217 | 218 | 219 | 220 | 
-| 221 | 222 | 223 | 224 | 225 | 226 | 227 | 228 | 229 | 230 | 
+| 221 | 222 | 223 | 224 | 225 | [\*226\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/226.html) | 227 | 228 | 229 | 230 | 
 | 231 | 232 | 233 | 234 | 235 | 236 | 237 | 238 | 239 | 240 | 
 | 241 | 242 | 243 | 244 | 245 | 246 | 247 | 248 | 249 | 250 | 
 | 251 | 252 | 253 | 254 | 255 | 256 | 257 | 258 | 259 | 260 | 
@@ -100,12 +100,12 @@
 | [\*851\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/851.html) | 852 | 853 | 854 | 855 | 856 | 857 | 858 | 859 | 860 | 
 | 861 | [\*862\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/862.html) | [\*863\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/863.html) | 864 | 865 | 866 | 867 | 868 | 869 | 870 | 
 | 871 | 872 | 873 | 874 | 875 | 876 | 877 | 878 | 879 | [\*880\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/880.html) | 
-| [\*881\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/881.html) | [\*882\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/882.html) | [\*883\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/883.html) | [\*884\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/884.html) | [\*885\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/885.html) | 886 | 887 | 888 | 889 | 890 | 
-| [\*891\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/891.html) | [\*892\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/892.html) | [\*893\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/893.html) | [\*894\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/894.html) | 895 | 896 | 897 | 898 | 899 | 900 | 
-| [\*901\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/901.html) | [\*902\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/902.html) | [\*903\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/903.html) | [\*904\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/904.html) | [\*905\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/905.html) | [\*906\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/906.html) | 907 | 908 | 909 | 910 | 
+| [\*881\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/881.html) | [\*882\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/882.html) | [\*883\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/883.html) | [\*884\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/884.html) | [\*885\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/885.html) | [\*886\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/886.html) | [\*887\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/887.html) | [\*888\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/888.html) | [\*889\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/889.html) | [\*890\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/890.html) | 
+| [\*891\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/891.html) | [\*892\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/892.html) | [\*893\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/893.html) | [\*894\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/894.html) | 895 | [\*896\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/896.html) | 897 | 898 | 899 | 900 | 
+| [\*901\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/901.html) | [\*902\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/902.html) | [\*903\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/903.html) | [\*904\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/904.html) | [\*905\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/905.html) | [\*906\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/906.html) | [\*907\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/907.html) | [\*908\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/908.html) | [\*909\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/909.html) | [\*910\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/910.html) | 
 | [\*911\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/911.html) | [\*912\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/912.html) | [\*913\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/913.html) | [\*914\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/914.html) | [\*915\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/915.html) | [\*916\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/916.html) | [\*917\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/917.html) | [\*918\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/918.html) | [\*919\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/919.html) | [\*920\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/920.html) | 
 | [\*921\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/921.html) | [\*922\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/922.html) | [\*923\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/923.html) | [\*924\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/924.html) | [\*925\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/925.html) | [\*926\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/926.html) | [\*927\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/927.html) | [\*928\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/928.html) | [\*929\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/929.html) | [\*930\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/930.html) | 
-| [\*931\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/931.html) | [\*932\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/932.html) | [\*933\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html) | [\*934\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/934.html) | [\*935\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/935.html) |  | | | | |
+| [\*931\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/931.html) | [\*932\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/932.html) | [\*933\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html) | [\*934\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/934.html) | [\*935\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/935.html) | [\*936\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/936.html) | [\*937\*](https://fsy-juruo.github.io/pe-chinese-translation/problems/937.html) |  | | |
 
 
 #### 关于：奖励题目 / Bonus Problems
@@ -120,7 +120,7 @@ Project Euler 在某次更新后（时间未知）加入了 5 道奖励题目，
 
 ### 其他 PE 相关网站 / Other sites
 
-- [sx349 的翻译](http://pe-cn.github.io/)：翻译 1 至 930 题。
+- [sx349 的翻译](http://pe-cn.github.io/)：翻译 1 至 936 题。
 
 ### 致谢 / Credits
 
