@@ -8,9 +8,10 @@
 
 预计会在近期将所有图片传到 repository 中，解决网站因为 Project Euler 官网限制看不到图片的情况。
 
+* **【2025-3-26】翻译 226、886 至 890、896、907 至 910、936 至 937 题。**
 * **【2025-3-13】翻译 901 至 906、912 至 915、927、935 题。修正了前几次翻译的笔误。**
 * **【2025-3-4】翻译 911、916~923、934 题。**
-* **【2025-3-1】翻译 924~926、929 题，更新了已知的 4 道奖励题目。**
+* 【2025-3-1】翻译 924~926、929 题，更新了已知的 4 道奖励题目。
 * 【2023-8-14】翻译 849 至 851、768 至 777（除 770）题，修改了几处笔误，撤下 836 题的翻译。
 * 【2023-6-16】将目前所翻译的题目均转为 html 并搬运到网站上，并进行了一些翻译的修正。
 
@@ -22,6 +23,7 @@
 
 |ID|题目名|难度系数(PE)|HTML 链接|
 |:---|:----|:-----|:----|
+|226|一勺奶冻 / A Scoop of Blancmange|65%|[link_226](https://fsy-juruo.github.io/pe-chinese-translation/problems/226.html)|
 |675|$2^{\omega(n)}$|25%|[link_675](https://fsy-juruo.github.io/pe-chinese-translation/problems/675.html)|
 |676|匹配数位和 / Matching Digit Sums|50%|[link_676](https://fsy-juruo.github.io/pe-chinese-translation/problems/676.html)|
 |677|被染色的图 / Coloured Graphs|90%|[link_677](https://fsy-juruo.github.io/pe-chinese-translation/problems/677.html)|
@@ -137,16 +139,26 @@
 |883|显著三角形 / Remarkable Triangles| 95%  |[link_883](https://fsy-juruo.github.io/pe-chinese-translation/problems/883.html)|
 |884|移除立方数 / Removing Cubes| 20%  |[link_884](https://fsy-juruo.github.io/pe-chinese-translation/problems/884.html)|
 |885|排好序的数位 / Sorted Digits| 10%   |[link_885](https://fsy-juruo.github.io/pe-chinese-translation/problems/885.html)|
+|886|互质排列 / Coprime Permutations| 40% |[link_886](https://fsy-juruo.github.io/pe-chinese-translation/problems/886.html)|
+|887|有界二分查找 / Bounded Binary Search| 35% |[link_887](https://fsy-juruo.github.io/pe-chinese-translation/problems/887.html)|
+|888|1249 尼姆游戏 / 1249 Nim| 45% |[link_888](https://fsy-juruo.github.io/pe-chinese-translation/problems/888.html)|
+|889|有理数上的奶冻函数 / Rational Blancmange| 70% |[link_889](https://fsy-juruo.github.io/pe-chinese-translation/problems/889.html)|
+|890|二进制拆分 / Binary Partitions| 55% |[link_890](https://fsy-juruo.github.io/pe-chinese-translation/problems/890.html)|
 |891|显时不明的时钟 / Ambiguous Clock| 65% |[link_891](https://fsy-juruo.github.io/pe-chinese-translation/problems/891.html)|
 |892|黑白交替的圆 / Zebra Circles| 60% |[link_892](https://fsy-juruo.github.io/pe-chinese-translation/problems/892.html)|
 |893|火柴 / Matchsticks| 15% |[link_893](https://fsy-juruo.github.io/pe-chinese-translation/problems/893.html)|
 |894|圆的螺旋 / Spiral of Circles| 35% |[link_894](https://fsy-juruo.github.io/pe-chinese-translation/problems/894.html)|
+|896|可除区间 / Divisible Ranges| 50% |[link_896](https://fsy-juruo.github.io/pe-chinese-translation/problems/896.html)|
 |901|钻井 / Well Drilling| 25% |[link_901](https://fsy-juruo.github.io/pe-chinese-translation/problems/901.html)|
 |902|排列的幂 / Permutation Powers| 50% |[link_902](https://fsy-juruo.github.io/pe-chinese-translation/problems/902.html)|
 |903|全部排列的幂 / Total Permutation Powers| 90% |[link_903](https://fsy-juruo.github.io/pe-chinese-translation/problems/903.html)|
 |904|毕达哥拉斯角 / Pythagorean Angle| 45% |[link_904](https://fsy-juruo.github.io/pe-chinese-translation/problems/904.html)|
 |905|现在我知道了 / Now I Know| 35% |[link_905](https://fsy-juruo.github.io/pe-chinese-translation/problems/905.html)|
 |906|共同做出的选择 / A Collective Decision| 35% |[link_906](https://fsy-juruo.github.io/pe-chinese-translation/problems/906.html)|
+|907|堆叠杯子 / Stacking Cups| 35% |[link_907](https://fsy-juruo.github.io/pe-chinese-translation/problems/907.html)|
+|908|钟表序列 2 / Clock Sequence II| 65% |[link_908](https://fsy-juruo.github.io/pe-chinese-translation/problems/908.html)|
+|909|L-表达式 1 / L-expressions I| 70% |[link_909](https://fsy-juruo.github.io/pe-chinese-translation/problems/909.html)|
+|910|L-表达式 2 / L-expressions II| 95%?[^1] |[link_910](https://fsy-juruo.github.io/pe-chinese-translation/problems/910.html)|
 |911|辛钦例外 / Khinchin Exceptions| 50% |[link_911](https://fsy-juruo.github.io/pe-chinese-translation/problems/911.html)|
 |912|奇数在哪里？/ Where are the Odds?| 50% |[link_912](https://fsy-juruo.github.io/pe-chinese-translation/problems/912.html)|
 |913|优先填行或填列 / Row-major vs Column-major| 60% |[link_913](https://fsy-juruo.github.io/pe-chinese-translation/problems/913.html)|
@@ -162,8 +174,8 @@
 |923|杨氏游戏 B / Young's Game B| 85%?[^1] |[link_923](https://fsy-juruo.github.io/pe-chinese-translation/problems/923.html)|
 |924|更大的数位排列数 2 / Larger Digit Permutation II| 45% |[link_924](https://fsy-juruo.github.io/pe-chinese-translation/problems/924.html)|
 |925|更大的数位排列数 3 / Larger Digit Permutation III| 55% |[link_925](https://fsy-juruo.github.io/pe-chinese-translation/problems/925.html)|
-|926|总舍入程度 / Total Roundness| 暂无[^2] |[link_926](https://fsy-juruo.github.io/pe-chinese-translation/problems/926.html)|
-|927|质数多叉树 / Prime-ary Tree| 暂无[^2] |[link_927](https://fsy-juruo.github.io/pe-chinese-translation/problems/927.html)|
+|926|总舍入程度 / Total Roundness| 10% |[link_926](https://fsy-juruo.github.io/pe-chinese-translation/problems/926.html)|
+|927|质数多叉树 / Prime-ary Tree| 45% |[link_927](https://fsy-juruo.github.io/pe-chinese-translation/problems/927.html)|
 |928|克里比奇牌戏 / Cribbage| 暂无[^2] |[link_928](https://fsy-juruo.github.io/pe-chinese-translation/problems/928.html)|
 |929|奇长度相同段组成 / Odd-Run Compositions| 暂无[^2] |[link_929](https://fsy-juruo.github.io/pe-chinese-translation/problems/929.html)|
 |930|小球集聚 / The Gathering| 暂无[^2] |[link_930](https://fsy-juruo.github.io/pe-chinese-translation/problems/930.html)|
@@ -172,11 +184,13 @@
 |933|剪纸游戏 / Paper Cutting| 暂无[^2] |[link_933](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html)|
 |934|不幸质数 / Unlucky Primes| 暂无[^2] |[link_934](https://fsy-juruo.github.io/pe-chinese-translation/problems/934.html)|
 |935|滚动正方形 / Rolling Square| 暂无[^2] |[link_935](https://fsy-juruo.github.io/pe-chinese-translation/problems/935.html)|
+|936|无同树[^4] / Peerless Trees| 暂无[^2] |[link_936](https://fsy-juruo.github.io/pe-chinese-translation/problems/936.html)|
+|937|等乘积分拆 / Equiproduct Partition| 暂无[^2] |[link_937](https://fsy-juruo.github.io/pe-chinese-translation/problems/937.html)|
 
 [^1]: 难度系数后带 ? 等价于 PE 的 not yet finalised（难度未敲定）
 [^2]: Project Euler 中 Recent 的十道题暂时没有难度评分。
 [^3]: mex 为 minimal excluded 的缩写，在此过程中的第二步被体现。信息学竞赛中一般不翻译 mex，这里也不翻译。另外，一般的 mex 运算一般是不在某个数集中最小的自然数，而非正整数。
-
+[^4]: 此处 peerless 的翻译参考了 Richard Xu (sx349) 的翻译。
 
 ### 关于：奖励题目 | Bonus Problems
 

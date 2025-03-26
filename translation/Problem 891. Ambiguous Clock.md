@@ -8,7 +8,7 @@ Nevertheless, there are several moments where the clock shows an ambiguous readi
 
 Note that even if two hands perfectly coincide, we can still see them as two distinct hands in the same position. Thus for example 3:00:00 and 9:00:00 are not ambiguous moments.
 
-<div style="text-align:center;"><img src="resources/images/0891_clock.png?1714250610" alt="0891_clock.png"></div>
+![](images/0891_clock.png)
 
 How many ambiguous moments are there within a 12-hour cycle?
 
@@ -22,7 +22,7 @@ How many ambiguous moments are there within a 12-hour cycle?
 
 需要注意的是：我们认为重合在一起的指针是能够分辨的。因此，3:00:00 和 9:00:00 就不是模糊时刻。
 
-<div style="text-align:center;"><img src="resources/images/0891_clock.png?1714250610" alt="0891_clock.png"></div>
+![](images/0891_clock.png)
 
 请问在 12 个小时中，有多少个模糊时刻？
 

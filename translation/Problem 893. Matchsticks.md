@@ -5,8 +5,9 @@ Define $M(n)$ to be the minimum number of matchsticks needed to represent the nu
 A number can be represented in digit form or as an expression involving addition and/or multiplication. Also order of operations must be followed, that is multiplication binding tighter than addition. Any other symbols or operations, such as brackets, subtraction, division or exponentiation, are not allowed.
 
 The valid digits and symbols are shown below:
-<div style="text-align:center;">
-<img src="resources/images/0893_DigitDiagram.jpg?1714876316" alt="0893_DigitDiagram.jpg" height="433" width="668"></div>
+
+![](images/0893_DigitDiagram.jpg)
+
 
 For example, $28$ needs $12$ matchsticks to represent it in digit form but representing it as $4\times 7$ would only need $9$ matchsticks and as there is no way using fewer matchsticks $M(28) = 9$.
 
@@ -21,8 +22,8 @@ Find $T(10^6)$.
 
 下图是你可以使用的符号合集：
 
-<div style="text-align:center;">
-<img src="resources/images/0893_DigitDiagram.jpg?1714876316" alt="0893_DigitDiagram.jpg" height="433" width="668"></div>
+![](images/0893_DigitDiagram.jpg)
+
 
 例如：用十进制表示表示 $28$ 需要 $12$ 根火柴，但是用表达式 $4 \times 7$ 表示 $28$ 只需要 $9$ 根火柴。可以证明没有更优的表示方法，所以 $M(28) = 9$。
 

@@ -9,8 +9,7 @@ Let $d(C)$ be the absolute difference between the numbers of black and white pie
 Let $D(n)$ be the sum of $d(C)$ over all different cuttings $C$.
 For example, there are five different cuttings with $n = 3$.
 
-<div style="text-align:center;">
-<img src="resources/images/0892_Zebra.png?1714876283" alt="0892_Zebra.png"></div>
+![](images/0892_Zebra.png)
 
 The upper three cuttings all have $d = 0$ because there are two black and two white pieces; the lower two cuttings both have $d = 2$ because there are three black and one white pieces.
 Therefore $D(3) = 0 + 0 + 0 + 2 + 2 = 4$. 
@@ -26,8 +25,7 @@ Find $\displaystyle \sum_{n=1}^{10^7} D(n)$. Give your answer modulo $1234567891
 
 例如 $n = 3$ 时，有 $5$ 种不同的切分，如下图所示。图片上侧的三种切分法的 $d$ 值为 0，下侧的两种切分法的 $d$ 值为 2。所以 $D(3) = 4$。已知：$D(100) \equiv 1172122931\pmod{1234567891}$。
 
-<div style="text-align:center;">
-<img src="resources/images/0892_Zebra.png?1714876283" alt="0892_Zebra.png"></div>
+![](images/0892_Zebra.png)
 
 求 $\displaystyle \sum_{n=1}^{10^7} D(n)$ 模 $1234567891$ 之值。
 

@@ -7,7 +7,7 @@ We call a triangle *remarkable* if
 - All three vertices and its **incentre** lie on lattice points
 - At least one of its angles is $60^\circ$
 
-![](https://pe.xiaoyaowudi.com/resources/images/0883_diagram.png?1707941179)
+![](images/0883_diagram.png)
 
 Above are four examples of remarkable triangles, with $60^\circ$ angles illustrated in red. Triangles A and B have inradius $1$; C has inradius $\sqrt{3}$; D has inradius $2$.
 
@@ -26,7 +26,7 @@ Find $T(10^6)$.
 - 它的三个顶点和内心都是格点。
 - 它至少有一个内角是 $60^\circ$。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0883_diagram.png?1707941179)
+![](images/0883_diagram.png)
 
 上图中，A、B、C、D 四个三角形都是显著三角形，它们的内切圆半径分别是 $1$、$1$、$\sqrt{3}$、$2$。
 

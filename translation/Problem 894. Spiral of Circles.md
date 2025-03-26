@@ -4,7 +4,7 @@ Consider a unit circle $C_0$ on the plane that does not enclose the origin. For 
 
 It is given that $C_0$ is externally tangent to $C_1$, $C_7$ and $C_8$, as shown in the diagram below, and no two circles overlap.
 
-<div style="text-align:center;"><img src="resources/images/0894_circle_spiral.jpg?1714305246" alt="0894_circle_spiral.jpg"></div>
+![](images/0894_circle_spiral.jpg)
 
 Find the total area of all the circular triangles. Give your answer rounded to $10$ places after the decimal point.
 
@@ -14,7 +14,7 @@ Find the total area of all the circular triangles. Give your answer rounded to $
 
 现已知存在某 $(t, \theta)$，使得在这组参数下生成的一系列圆中，所有圆两两不相交，且 $C_0$ 和 $C_1, C_7, C_8$ 外切。最终的图形如下图所示。
 
-<div style="text-align:center;"><img src="resources/images/0894_circle_spiral.jpg?1714305246" alt="0894_circle_spiral.jpg"></div>
+![](images/0894_circle_spiral.jpg)
 
 求出上图中，所有绿色的弧形三角形的面积之和，将你的答案四舍五入至小数点后第 10 位。
 
