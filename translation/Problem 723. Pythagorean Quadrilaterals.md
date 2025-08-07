@@ -10,11 +10,11 @@ We further call a pythagorean quadrilateral a *pythagorean lattice grid quadrila
 
 Let $f(r)$ be the number of different pythagorean lattice grid quadrilaterals for which the radius of the circumcircle is $r$. For example $f(1)=1$, $f(\sqrt 2)=1$, $f(\sqrt 5)=38$ and $f(5)=167$.
 
-Two of the pythagorean lattice grid  quadrilaterals with $r=\sqrt 5$ are illustrated below:
+Two of the pythagorean lattice grid quadrilaterals with $r=\sqrt 5$ are illustrated below:
 
-![](https://pe.xiaoyaowudi.com/resources/images/0723_1.png?1678992054)
+![](images/0723_1.png?1678992054)
 
-![](https://pe.xiaoyaowudi.com/resources/images/0723_2.png?1678992054)
+![](images/0723_2.png?1678992054)
 
 Let $\displaystyle S(n)=\sum_{d \vert n} f(\sqrt d)$. For example, $S(325)=S(5^2 \cdot 13)=f(1)+f(\sqrt 5)+f(5)+f(\sqrt {13})+f(\sqrt{65})+f(5\sqrt{13})=2370$ and $S(1105)=S(5\cdot 13 \cdot 17)=5535$.
 
@@ -30,9 +30,9 @@ Find $S(1411033124176203125)=S(5^6 \cdot 13^3 \cdot 17^2 \cdot 29 \cdot 37 \cdot
 
 下图是两个外接圆半径为 $\sqrt 5$ 时的毕达哥拉斯格点四边形。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0723_1.png?1678992054)
+![](images/0723_1.png?1678992054)
 
-![](https://pe.xiaoyaowudi.com/resources/images/0723_2.png?1678992054)
+![](images/0723_2.png?1678992054)
 
 记 $\displaystyle S(n)=\sum_{d \vert n} f(\sqrt d)$。已知： $S(325)=S(5^2 \cdot 13)=f(1)+f(\sqrt 5)+f(5)+f(\sqrt {13})+f(\sqrt{65})+f(5\sqrt{13})=2370$ 且 $S(1105)=S(5\cdot 13 \cdot 17)=5535$。
 

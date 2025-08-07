@@ -12,7 +12,7 @@ where $t$ varies between 0 and $2\pi$.
 
 For example, the images below show $C_{2,5}$ (left) and $C_{7,4}$ (right):
 
-![](https://pe.xiaoyaowudi.com/project/images/p777_lissajous-pair-25-74.png)
+![](images/p777_lissajous-pair-25-74.png)
 
 Define $d(a,b) = \sum (x^2 + y^2)$, where the sum is over all points (x, y) at which $C_{a,b}$ crosses itself.
 
@@ -35,7 +35,7 @@ $$
 
 例如，下图左、右两侧分别展示了曲线 $C_{2,5}$ 和 $C_{7, 4}$：
 
-![](https://pe.xiaoyaowudi.com/project/images/p777_lissajous-pair-25-74.png)
+![](images/p777_lissajous-pair-25-74.png)
 
 记 $d(a, b)$ 为：$C_{a, b}$ 中所有自相交的点 $(x, y)$ 到原点距离的平方的和。即 $d(a, b) = \sum (x^2 + y^2)$。
 

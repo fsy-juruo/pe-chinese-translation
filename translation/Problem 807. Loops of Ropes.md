@@ -10,7 +10,7 @@ Each rope is straight between its two end points, and lies above all previous ro
 After step $n$, we get a loop of red ropes, and a loop of blue ropes.
 Sometimes the two loops can be separated, as in the left figure below; sometimes they are "linked", hence cannot be separated, as in the middle and right figures below.
 
-![](https://pe.xiaoyaowudi.com/project/images/p807.jpg)
+![](images/p807.jpg)
 
 Let $P(n)$ be the probability that the two loops can be separated.
 For example, $P(3) = \frac{11}{20}$ and $P(5) \approx 0.4304177690$.
@@ -28,7 +28,7 @@ Find $P(80)$, rounded to $10$ digits after decimal point.
 
 第 $n$ 步后，我们会得到两个绳环，一个红色的、一个蓝色的。有时这两个绳环能被分开，如左图所示。而有时这两个绳环会互锁，无法分开，如中间与右边两图所示。
 
-![](https://pe.xiaoyaowudi.com/project/images/p807.jpg)
+![](images/p807.jpg)
 
 记 $P(n)$ 为两个绳环能被分开的概率。
 例如 $P(3) = \frac{11}{20}$、$P(5) \approx 0.4304177690$。

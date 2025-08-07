@@ -7,7 +7,7 @@ In addition a *magic bracelet* must satisfy the following two conditions:
 * no two beads display the same number
 * the product of the numbers of any two adjacent beads is of the form $x^2+1$.
 
-![](https://pe.xiaoyaowudi.com/resources/images/0846_diagram.jpg?1684224225)
+![](images/0846_diagram.jpg)
 
 
 Define the *potency* of a magic bracelet to be the sum of numbers on its beads. 
@@ -26,7 +26,7 @@ Find $F(10^6)$.
 * 数镯上的珠子的标号两两不同。
 * 任意两个相邻珠子上的标号之积均可被表示为 $x^2 + 1$ 的形式（其中 $x$ 为整数）。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0846_diagram.jpg?1684224225)
+![](images/0846_diagram.jpg)
 
 对任意魔法数镯，定义其*魔法效力*为其所有珠子标号之和。上图中的魔法数镯共有 5 个珠子，魔法效力为 155。
 

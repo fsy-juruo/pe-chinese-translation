@@ -2,7 +2,7 @@
 
 When wrapping several cubes in paper, it is more efficient to wrap them all together than to wrap each one individually. For example, with 10 cubes of unit edge length, it would take 30 units of paper to wrap them in the arrangement shown below, but 60 units to wrap them separately.
 
-![](https://pe.xiaoyaowudi.com/project/images/p775_wrapping_cubes.png)
+![](images/p775_wrapping_cubes.png)
 
 
 Define $g(n)$ to be the maximum amount of paper that can be saved by wrapping $n$ identical $1\times 1\times 1$ cubes in a compact arrangement, compared with wrapping them individually. We insist that the wrapping paper is in contact with the cubes at all points, without leaving a void.
@@ -21,7 +21,7 @@ Find $G(10^{16})$. Give your answer modulo $1\,000\,000\,007$.
 
 用纸包裹一些正方体时，相较于单独用纸包裹它们，把正方体叠放在一起后用纸包裹它们更加省纸。如下图中有 10 个叠放在一起的单位正方体，包裹它们需要 30 单位面积的纸，而单独包裹则需 60 单位的纸。
 
-![](https://pe.xiaoyaowudi.com/project/images/p775_wrapping_cubes.png)
+![](images/p775_wrapping_cubes.png)
 
 记 $g(n)$ 为通过叠放 $n$ 个单位正方体后用纸包裹它们最多可以省去的纸的面积。注意，包裹时，我们要求纸与正方体完全叠合，也就是说，不能存在一部分纸，使得其不与任何一个正方体接触。
 

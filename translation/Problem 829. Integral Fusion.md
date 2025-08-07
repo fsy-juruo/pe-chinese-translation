@@ -7,13 +7,13 @@ Given any integer $n \gt 1$ a *binary factor tree* $T(n)$ is defined to be:
 
 For example $T(20)$:
 
-![](https://pe.xiaoyaowudi.com/resources/images/0829_example1.jpg?1678992055)
+![](images/0829_example1.jpg)
 
 We define $M(n)$ to be the smallest number that has a factor tree identical in shape to the factor tree for $n!!$, the **double factorial** of $n$.
 
 For example, consider $9!! = 9\times 7\times 5\times 3\times 1 = 945$. The factor tree for $945$ is shown below together with the factor tree for $72$ which is the smallest number that has a factor tree of the same shape. Hence $M(9) = 72$.
 
-![](https://pe.xiaoyaowudi.com/resources/images/0829_example2.jpg?1678992055)
+![](images/0829_example2.jpg)
 
 Find $\displaystyle\sum_{n=2}^{31} M(n)$.
 
@@ -26,11 +26,11 @@ Find $\displaystyle\sum_{n=2}^{31} M(n)$.
 
 如下图为 $T(20)$：
 
-![](https://pe.xiaoyaowudi.com/resources/images/0829_example1.jpg?1678992055)
+![](images/0829_example1.jpg)
 
 记 $M(n)$ 为满足如下条件的最小整数：该数的二叉因子树与 $n!!$（$n$ 的双阶乘）的二叉因子树形状完全一致。如下图，$n = 9$ 时，$9!! = 9\times 7\times 5\times 3\times 1 = 945$。$945$ 的二叉因子树与 $72$ 的二叉因子树形状完全一致，而且 $72$ 是满足此条件的最小正整数，故 $M(9) = 72$。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0829_example2.jpg?1678992055)
+![](images/0829_example2.jpg)
 
 
 求 $\displaystyle\sum_{n=2}^{31} M(n)$。

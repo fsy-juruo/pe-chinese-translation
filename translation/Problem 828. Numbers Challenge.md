@@ -22,7 +22,7 @@ When combining numbers, the following rules must be observed:
 * Only the four basic arithmetic operations are permitted: $+$, $-$, $\times$, $\div$.
 * All intermediate values must be positive integers, so for example $(3\div 2)$ is never permitted as a subexpression (even if the final answer is an integer).
 
-The attached file [number-challenges.txt](https://pe.xiaoyaowudi.com/project/resources/p828_number_challenges.txt) contains 200 problems, one per line in the format:
+The attached file [number-challenges.txt](images/p828_number_challenges.txt) contains 200 problems, one per line in the format:
 
 <center><big><tt>211:2,3,4,6,7,25</tt></big></center>
 
@@ -56,7 +56,7 @@ $$
 * 只能对数字进行四则运算。
 * 所有中间量都必须是整数。所以 $(3\div 2)$ 不可以作为解法的一部分，即使答案是整数也不可以。
 
-下发文件 [number-challenges.txt](https://pe.xiaoyaowudi.com/project/resources/p828_number_challenges.txt) 包括 200 道题目，每道题的格式如下：
+下发文件 [number-challenges.txt](images/p828_number_challenges.txt) 包括 200 道题目，每道题的格式如下：
 
 <center><big><tt>211:2,3,4,6,7,25</tt></big></center>
 

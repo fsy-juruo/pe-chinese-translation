@@ -10,7 +10,7 @@ You are also given $F(10^2) = 697317$.
 
 Find $F(2\cdot 10^6)$.
 
-### 784. 互反数对[^1]
+### 784. 互反数对
 
 我们称数对 $(p, q) (p \lt q$) 为*互反数对*，当且仅当存在一个正整数 $r < p$，使得 $r$ 既为模 $q$ 意义下 $p$ 的乘法逆，也为模 $p$ 意义下 $q$ 的乘法逆。例如 $(3,5)$ 是一对互反数对，令 $r=2$ 即可。
 
@@ -18,4 +18,8 @@ Find $F(2\cdot 10^6)$.
 
 求 $F(2\cdot 10^6)$。
 
-[^1]: 此处 reciprocal 的翻译参照「二次互反律（quadratic reciprocity）」。
+---
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/) 回到源站。
+
+点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。

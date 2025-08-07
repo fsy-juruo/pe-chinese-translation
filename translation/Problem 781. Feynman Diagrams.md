@@ -7,7 +7,7 @@ Let $F(n)$ be the number of connected graphs with blue edges (directed) and red 
 
 For example, $F(4)=5$ because there are 5 graphs with these properties:
 
-![](https://pe.xiaoyaowudi.com/project/images/p781_feynman_diagrams.jpg)
+![](images/p781_feynman_diagrams.jpg)
 
 You are also given $F(8)=319$.
 
@@ -24,13 +24,13 @@ NOTE: Feynman diagrams are a way of visualising the forces between elementary pa
 
 例如 $F(4)=5$，这 $5$ 张符合要求的图如下：
 
-![](https://pe.xiaoyaowudi.com/project/images/p781_feynman_diagrams.jpg)
+![](images/p781_feynman_diagrams.jpg)
 
 已知 $F(8)=319$。
 
 求 $F(50\,000)$ 模 $1\,000\,000\,007$ 之值。
 
-注：费曼图是一种可视化“基本”粒子之间作用力的一种方法。每个顶点表示两个粒子的作用。蓝色有向边表示一个实物粒子（如电子、正电子），其方向表示电荷流向。红色边（一般是波浪形的）表示力场粒子（如光子）。费曼图可用于预测粒子作用力的强度。[^1]
+注：费曼图是一种可视化“基本”粒子之间作用力的一种方法。每个顶点表示两个粒子的作用。蓝色有向边表示一个实物粒子（如电子、正电子），其方向表示电荷流向。红色边（一般是波浪形的）表示力场粒子（如光子）。费曼图可用于预测粒子作用力的强度。
 
 ---
 
@@ -38,4 +38,3 @@ NOTE: Feynman diagrams are a way of visualising the forces between elementary pa
 
 点 [这个链接](https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html) 回到详细版题目目录。
 
-[^1]: 现翻译参照英文原文和 Richard Xu (sx349) 的[翻译](http://pe-cn.github.io/781/)。原翻译参照 [Eric Weisstein's World of Physics](https://scienceworld.wolfram.com/physics/FeynmanDiagram.html) 与 Wikipedia 镜像中的页面。（EW's world of Physics: In such a diagram, all particles are represented by lines, with straight lines representing fermions and wavy lines representing bosons (except for the Higgs boson, which is usually represented by a dashed line, and gluons, which are usually represented by loops).）

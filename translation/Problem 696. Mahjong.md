@@ -11,11 +11,11 @@ A *winning hand* is a collection of $3t+2$ Tiles (where $t$ is a fixed integer) 
 
 For example, here is a winning hand with $n=9$, $s=3$, $t=4$, consisting in this case of two Chows, two Pungs, and one Pair:
 
-![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_1.png?1678992054)
+![](images/0696_mahjong_1.png)
 
 Note that sometimes the same collection of tiles can be represented as $t$ Triples and one Pair in more than one way. This only counts as one winning hand. For example, this is considered to be the same winning hand as above, because it consists of the same tiles:
 
-![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_2.png?1678992054)
+![](images/0696_mahjong_2.png)
 
 Let $w(n, s, t)$ be the number of distinct winning hands formed of $t$ Triples and one Pair, where there are $s$ suits available and tiles are numbered up to $n$.
 
@@ -36,11 +36,11 @@ Find $w(10^8, 10^8, 30)$. Give your answer modulo $1\,000\,000\,007$.
 
 下图的牌组满足 $n=9$、$s=3$、$t=4$，且能胡牌（由两副顺子、两副刻子、一副对子组成）。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_1.png?1678992054)
+![](images/0696_mahjong_1.png)
 
 注意到有时候相同的一副牌可以通过不同的方式被整理为 $t$ 副三对子与一副对子，但是这种牌应只被计数一次。下图的牌组也能胡牌，但由于其牌型构成与上图中的牌完全一致，故被认为与上图重复：
 
-![](https://pe.xiaoyaowudi.com/resources/images/0696_mahjong_2.png?1678992054)
+![](images/0696_mahjong_2.png)
 
 记 $w(n, s, t)$ 为满足如下条件的不同的牌组数：由 $t$ 副三对子与一副对子组成、有 $s$ 个可用花色、最大点数为 $n$ 且可以胡牌。
 
@@ -48,7 +48,7 @@ Find $w(10^8, 10^8, 30)$. Give your answer modulo $1\,000\,000\,007$.
 
 求 $w(10^8, 10^8, 30)$ 模 $1\,000\,000\,007$ 之值。
 
-[^1]: 所有麻将相关术语（除「点数」「三对子」）的译名参照《中国麻将竞赛规则（1998 年 7 月版）》。原译的「吃」「碰」「杠」是考虑到英文原稿而为，但这是错译。
+[^1]: 所有麻将相关术语（除「点数」「三对子」）的译名参照《中国麻将竞赛规则（1998 年 7 月版）》。
 
 ---
 
