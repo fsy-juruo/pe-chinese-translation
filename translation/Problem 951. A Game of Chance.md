@@ -14,7 +14,7 @@ Define $F(n)$ to be the number of starting configurations which are fair. Theref
 Find $F(26)$.
 
 
-### 951. 一个机遇游戏 [^1]
+### 951. 一个碰运气游戏 [^1]
 
 [^1]: game of chance 意指靠碰运气（而非技巧）取胜的游戏。
 

@@ -4,7 +4,7 @@ Given $n$ equally spaced points on a circle, we define an *$n$-star polygon* as 
 
 For example, there are twelve $5$-star polygons shown below.
 
-![](https://pe.xiaoyaowudi.com/resources/images/0842_5-agons.jpg?1680461480)
+![](images/0842_5-agons.jpg?1680461480)
 
 For an $n$-star polygon $S$, let $I(S)$ be the number of its self intersection points.
 Let $T(n)$ be the sum of $I(S)$ over all $n$-star polygons $S$.
@@ -12,7 +12,7 @@ For the example above $T(5) = 20$ because in total there are $20$ self intersect
 
 Some star polygons may have intersection points made from more than two lines. These are only counted once. For example, $S$, shown below is one of the sixty $6$-star polygons. This one has $I(S) = 4$.
 
-![](https://pe.xiaoyaowudi.com/resources/images/0842_6-agon.jpg?1680461493)
+![](images/0842_6-agon.jpg?1680461493)
 
 You are also given that $T(8) = 14640$.
 
@@ -24,13 +24,13 @@ Find $\displaystyle \sum_{n = 3}^{60}T(n)$. Give your answer modulo $(10^9 + 7)$
 
 下图是 12 个星形 $5$ 边形。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0842_5-agons.jpg?1680461480)
+![](images/0842_5-agons.jpg?1680461480)
 
 对于一个星形 $n$ 边形 $S$，记 $I(S)$ 为该 $n$ 边形自相交点的个数。记 $T(n)$ 为所有星形 $n$ 边形的 $I(S)$ 之和。已知：$T(5) = 20$。
 
 需要注意的是，如果有多于两条边同时交于一点，这个自相交点应该只被计数 1 次。如下图，对于这个星形六边形 $S$，$I(S) = 4$。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0842_6-agon.jpg?1680461493)
+![](images/0842_6-agon.jpg?1680461493)
 
 又已知：$T(8) = 14640$。
 

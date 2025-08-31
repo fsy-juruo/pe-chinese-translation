@@ -16,7 +16,7 @@ Find $f(10^5)$. Give your answer modulo $1\,000\,000\,007$.
 
 ### 806. 汉诺塔上的尼姆游戏
 
-此问题结合了尼姆取石子（Nim）游戏、汉诺塔问题两种游戏。如需这两种游戏的简介，请分别参阅 301 题、497 题。
+此问题结合了尼姆取石子（Nim）游戏、汉诺塔问题两种游戏。如需这两种游戏的简介，请分别参阅 [301 题](https://fsy-juruo.github.io/pe-chinese-translation/problems/301.html)、[497 题](https://fsy-juruo.github.io/pe-chinese-translation/problems/497.html)。
 
 对于有 $n$ 张圆盘，$3$ 个柱子的汉诺塔问题，其唯一的步骤数最少的解法需要 $2^n-1$ 次移动。我们将其过程中出现的盘面状态按序标号。初始状态（所有圆盘均在 1 号柱上）标为 $0$，最终状态（所有圆盘均在 3 号柱上）标为 $2^n-1$。
 

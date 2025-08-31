@@ -2,7 +2,7 @@
 
 The regular star polygon $\{p/q\}$, for coprime integers $p,q$ with $p \gt 2q \gt 0$, is a polygon formed from $p$ edges of equal length and equal internal angles, such that tracing the complete polygon wraps $q$ times around the centre. For example, $\{8/3\}$ is illustrated below:
 
-![](https://pe.xiaoyaowudi.com/resources/images/0841_star_polygon_8_3.png?1680515338)
+![](images/0841_star_polygon_8_3.png?1680515338)
 
 The edges of a regular star polygon intersect one another, dividing the interior into several regions. Define the *alternating shading* of a regular star polygon to be a selection of such regions to shade, such that every piece of every edge has a shaded region on one side and an unshaded region on the other, with the exterior of the polygon unshaded. For example, the above image shows the alternating shading (in green) of $\{8/3\}$.
 
@@ -16,7 +16,7 @@ Find $\sum_{n=3}^{34} A(F_{n+1},F_{n-1})$, where $F_j$ is the Fibonacci sequence
 
 对于满足 $p, q$ 互质与 $p \gt 2q \gt 0$ 的正整数 $p, q$，我们定义规则星形多边形 $\{p/q\}$ 为一个由 $p$ 条等长的边围成、内角相等、且围绕着某个正多边形的中心“缠绕”了这个多边形 $q$ 圈。[^1] 下图展示了规则星形多边形 $\{8/3\}$。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0841_star_polygon_8_3.png?1680515338)
+![](images/0841_star_polygon_8_3.png?1680515338)
 
 规则星形多边形的边彼此相交，将其内部划分为一些不同的区域。我们定义某规则星形多边形的 *交替阴影涂色* 为满足如下条件的一种区域染色方案：
 

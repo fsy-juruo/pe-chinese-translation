@@ -12,7 +12,7 @@ Let $G(n)$ be the expected amount that the winner will receive. For example $G(5
 
 Find $G(500)$, giving your answer in scientific notation rounded to 9 significant digits.
 
-### 683. 追逐游戏 II
+### 683. 追逐游戏 2
 
 以下描述的是追逐游戏的一个变种，$n$ 位玩家围坐圆桌边，用两颗骰子来玩这个游戏。这个游戏共有 $n-1$ 轮，每一轮结束后，将有一名玩家将被淘汰，他需要向奖池里投入一定量的钱。存活到最后的人获胜，拿到奖池里的所有钱。
 

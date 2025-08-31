@@ -32,7 +32,7 @@ Let $F(N)$ be the number of solutions to this equation satisfying $0 \le a \le b
 Find $F(10^7)$.
 
 
-### 945. 异或方程 C
+### 945. 异或方程 3
 
 我们记 $x\oplus y$ 为 $x$ 与 $y$ 按位异或的结果。
 

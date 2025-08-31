@@ -6,7 +6,7 @@ In the beginning, a number of parallel vertical lines are drawn, one for each ob
 
 For example, the following diagram depicts an Amidakuji with three objects ($A$, $B$, $C$) and six rungs:
 
-![](https://pe.xiaoyaowudi.com/resources/images/0837_amidakuji.png?1678992054)
+![](images/0837_amidakuji.png?1678992054)
 
 The coloured lines in the diagram illustrate how to form the permutation. For each object, starting from the top of its vertical line, trace downwards but follow any rung encountered along the way, and record which vertical we end up on. In this example, the resulting permutation happens to be the identity: $A\mapsto A$, $B\mapsto B$, $C\mapsto C$.
 
@@ -24,7 +24,7 @@ Find $a(123456789, 987654321)$. Give your answer modulo $1234567891$.
 
 例如，下面这张图描述了一张阿弥陀签。这张阿弥陀签共有三条分别代表物体 $A, B, C$ 的竖直线和六条水平线。
 
-![](https://pe.xiaoyaowudi.com/resources/images/0837_amidakuji.png?1678992054)
+![](images/0837_amidakuji.png?1678992054)
 
 上图中，红、绿、蓝色的线条阐释了产生排列的方法：对于某个物体，我们从代表它的那条竖直线的顶端开始沿绘制的线下行。一旦遇到横线，就沿横线方向继续行进。最终记录下我们最终所处的那条竖直线。在此例中，最终产生的排列碰巧就是原排列：$A\mapsto A$、$B\mapsto B$、$C\mapsto C$。
 
