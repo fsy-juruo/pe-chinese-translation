@@ -1,0 +1,769 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'><style type='text/css'>html {overflow-x: initial !important;}</style>
+<style type='text/css'  id="style-base">:root { --bg-color: #ffffff; --text-color: #333333; --select-text-bg-color: #B5D6FC; --select-text-font-color: auto; --monospace: "Lucida Console",Consolas,"Courier",monospace; --title-bar-height: 20px; }
+.mac-os-11 { --title-bar-height: 28px; }
+html { font-size: 14px; background-color: var(--bg-color); color: var(--text-color); font-family: "Helvetica Neue", Helvetica, Arial, "Segoe UI Emoji", "SF Pro", sans-serif; -webkit-font-smoothing: antialiased; }
+h1, h2, h3, h4, h5 { white-space: pre-wrap; }
+body { margin: 0px; padding: 0px; height: auto; inset: 0px; font-size: 1rem; line-height: 1.42857; overflow-x: hidden; background: inherit; }
+iframe { margin: auto; }
+a.url { word-break: break-all; }
+a:active, a:hover { outline: 0px; }
+.in-text-selection, ::selection { text-shadow: none; background: var(--select-text-bg-color); color: var(--select-text-font-color); }
+#write { margin: 0px auto; height: auto; width: inherit; word-break: normal; overflow-wrap: break-word; position: relative; white-space: normal; overflow-x: visible; padding-top: 36px; }
+#write.first-line-indent p { text-indent: 2em; }
+#write.first-line-indent li p, #write.first-line-indent p *, #write.first-line-indent svg * { text-indent: 0px; }
+#write.first-line-indent li { margin-left: 2em; }
+.for-image #write { padding-left: 8px; padding-right: 8px; }
+body.typora-export { padding-left: 30px; padding-right: 30px; }
+.typora-export .footnote-line, .typora-export li, .typora-export p { white-space: pre-wrap; }
+.typora-export .task-list-item input { pointer-events: none; }
+@media screen and (max-width: 500px) {
+  body.typora-export { padding-left: 0px; padding-right: 0px; }
+  #write { padding-left: 20px; padding-right: 20px; }
+}
+#write li > figure:last-child { margin-bottom: 0.5rem; }
+#write ol, #write ul { position: relative; }
+img { max-width: 100%; vertical-align: middle; image-orientation: from-image; }
+button, input, select, textarea { color: inherit; font: inherit; }
+input[type="checkbox"], input[type="radio"] { line-height: normal; padding: 0px; }
+*, ::after, ::before { box-sizing: border-box; }
+#write h1, #write h2, #write h3, #write h4, #write h5, #write h6, #write p, #write pre { width: inherit; position: relative; }
+#write svg h1, #write svg h2, #write svg h3, #write svg h4, #write svg h5, #write svg h6, #write svg p { position: static; white-space: nowrap; overflow: visible; }
+foreignobject { overflow: visible; }
+p { line-height: inherit; }
+h1, h2, h3, h4, h5, h6 { break-after: avoid-page; break-inside: avoid; orphans: 4; }
+p { orphans: 4; }
+li p { orphans: 1; }
+h1 { font-size: 2rem; }
+h2 { font-size: 1.8rem; }
+h3 { font-size: 1.6rem; }
+h4 { font-size: 1.4rem; }
+h5 { font-size: 1.2rem; }
+h6 { font-size: 1rem; }
+.md-math-block, .md-rawblock, h1, h2, h3, h4, h5, h6, p { margin-top: 1rem; margin-bottom: 1rem; }
+.hidden { display: none; }
+.md-blockmeta { color: rgb(204, 204, 204); font-weight: 700; font-style: italic; }
+a { cursor: pointer; }
+sup.md-footnote { padding: 2px 4px; background-color: rgba(238, 238, 238, 0.7); color: rgb(85, 85, 85); border-radius: 4px; cursor: pointer; }
+sup.md-footnote a, sup.md-footnote a:hover { color: inherit; text-transform: inherit; text-decoration: inherit; }
+#write input[type="checkbox"] { cursor: pointer; width: inherit; height: inherit; }
+figure { overflow-x: auto; margin: 1.2em 0px; max-width: calc(100% + 16px); padding: 0px; }
+figure > table { margin: 0px; }
+thead, tr { break-inside: avoid; break-after: auto; }
+thead { display: table-header-group; }
+table { border-collapse: collapse; border-spacing: 0px; width: 100%; overflow: auto; break-inside: auto; text-align: left; }
+table.md-table td { min-width: 32px; }
+.CodeMirror-gutters { border-right: 0px; background-color: inherit; }
+.CodeMirror-linenumber { user-select: none; }
+.CodeMirror { text-align: left; }
+.CodeMirror-placeholder { opacity: 0.3; }
+.CodeMirror pre { padding: 0px 4px; }
+.CodeMirror-lines { padding: 0px; }
+div.hr:focus { cursor: none; }
+#write pre { white-space: pre-wrap; }
+#write.fences-no-line-wrapping pre { white-space: pre; }
+#write pre.ty-contain-cm { white-space: normal; }
+.CodeMirror-gutters { margin-right: 4px; }
+.md-fences { font-size: 0.9rem; display: block; break-inside: avoid; text-align: left; overflow: visible; white-space: pre; background: inherit; position: relative !important; }
+.md-fences-adv-panel { width: 100%; margin-top: 10px; text-align: center; padding-top: 0px; padding-bottom: 8px; overflow-x: auto; }
+#write .md-fences.mock-cm { white-space: pre-wrap; }
+.md-fences.md-fences-with-lineno { padding-left: 0px; }
+#write.fences-no-line-wrapping .md-fences.mock-cm { white-space: pre; overflow-x: auto; }
+.md-fences.mock-cm.md-fences-with-lineno { padding-left: 8px; }
+.CodeMirror-line, twitterwidget { break-inside: avoid; }
+svg { break-inside: avoid; }
+.footnotes { opacity: 0.8; font-size: 0.9rem; margin-top: 1em; margin-bottom: 1em; }
+.footnotes + .footnotes { margin-top: 0px; }
+.md-reset { margin: 0px; padding: 0px; border: 0px; outline: 0px; vertical-align: top; background: 0px 0px; text-decoration: none; text-shadow: none; float: none; position: static; width: auto; height: auto; white-space: nowrap; cursor: inherit; -webkit-tap-highlight-color: transparent; line-height: normal; font-weight: 400; text-align: left; box-sizing: content-box; direction: ltr; }
+li div { padding-top: 0px; }
+blockquote { margin: 1rem 0px; }
+li .mathjax-block, li p { margin: 0.5rem 0px; }
+li blockquote { margin: 1rem 0px; }
+li { margin: 0px; position: relative; }
+blockquote > :last-child { margin-bottom: 0px; }
+blockquote > :first-child, li > :first-child { margin-top: 0px; }
+.footnotes-area { color: rgb(136, 136, 136); margin-top: 0.714rem; padding-bottom: 0.143rem; white-space: normal; }
+#write .footnote-line { white-space: pre-wrap; }
+@media print {
+  body, html { border: 1px solid transparent; height: 99%; break-after: avoid; break-before: avoid; font-variant-ligatures: no-common-ligatures; }
+  #write { margin-top: 0px; border-color: transparent !important; padding-top: 0px !important; padding-bottom: 0px !important; }
+  .typora-export * { -webkit-print-color-adjust: exact; }
+  .typora-export #write { break-after: avoid; }
+  .typora-export #write::after { height: 0px; }
+  .is-mac table { break-inside: avoid; }
+  #write > p:nth-child(1) { margin-top: 0px; }
+  .typora-export-show-outline .typora-export-sidebar { display: none; }
+  figure { overflow-x: visible; }
+}
+.footnote-line { margin-top: 0.714em; font-size: 0.7em; }
+a img, img a { cursor: pointer; }
+pre.md-meta-block { font-size: 0.8rem; min-height: 0.8rem; white-space: pre-wrap; background: rgb(204, 204, 204); display: block; overflow-x: hidden; }
+p > .md-image:only-child:not(.md-img-error) img, p > img:only-child { display: block; margin: auto; }
+#write.first-line-indent p > .md-image:only-child:not(.md-img-error) img { left: -2em; position: relative; }
+p > .md-image:only-child { display: inline-block; width: 100%; }
+#write .MathJax_Display { margin: 0.8em 0px 0px; }
+.md-math-block { width: 100%; }
+.md-math-block:not(:empty)::after { display: none; }
+.MathJax_ref { fill: currentcolor; }
+[contenteditable="true"]:active, [contenteditable="true"]:focus, [contenteditable="false"]:active, [contenteditable="false"]:focus { outline: 0px; box-shadow: none; }
+.md-task-list-item { position: relative; list-style-type: none; }
+.task-list-item.md-task-list-item { padding-left: 0px; }
+.md-task-list-item > input { position: absolute; top: 0px; left: 0px; margin-left: -1.2em; margin-top: calc(1em - 10px); border: none; }
+.math { font-size: 1rem; }
+.md-toc { min-height: 3.58rem; position: relative; font-size: 0.9rem; border-radius: 10px; }
+.md-toc-content { position: relative; margin-left: 0px; }
+.md-toc-content::after, .md-toc::after { display: none; }
+.md-toc-item { display: block; color: rgb(65, 131, 196); }
+.md-toc-item a { text-decoration: none; }
+.md-toc-inner:hover { text-decoration: underline; }
+.md-toc-inner { display: inline-block; cursor: pointer; }
+.md-toc-h1 .md-toc-inner { margin-left: 0px; font-weight: 700; }
+.md-toc-h2 .md-toc-inner { margin-left: 2em; }
+.md-toc-h3 .md-toc-inner { margin-left: 4em; }
+.md-toc-h4 .md-toc-inner { margin-left: 6em; }
+.md-toc-h5 .md-toc-inner { margin-left: 8em; }
+.md-toc-h6 .md-toc-inner { margin-left: 10em; }
+@media screen and (max-width: 48em) {
+  .md-toc-h3 .md-toc-inner { margin-left: 3.5em; }
+  .md-toc-h4 .md-toc-inner { margin-left: 5em; }
+  .md-toc-h5 .md-toc-inner { margin-left: 6.5em; }
+  .md-toc-h6 .md-toc-inner { margin-left: 8em; }
+}
+a.md-toc-inner { font-size: inherit; font-style: inherit; font-weight: inherit; line-height: inherit; }
+.footnote-line a:not(.reversefootnote) { color: inherit; }
+.reversefootnote { font-family: ui-monospace, sans-serif; }
+.md-attr { display: none; }
+.md-fn-count::after { content: "."; }
+code, pre, samp, tt { font-family: var(--monospace); }
+kbd { margin: 0px 0.1em; padding: 0.1em 0.6em; font-size: 0.8em; color: rgb(36, 39, 41); background: rgb(255, 255, 255); border: 1px solid rgb(173, 179, 185); border-radius: 3px; box-shadow: rgba(12, 13, 14, 0.2) 0px 1px 0px, rgb(255, 255, 255) 0px 0px 0px 2px inset; white-space: nowrap; vertical-align: middle; }
+.md-comment { color: rgb(162, 127, 3); opacity: 0.6; font-family: var(--monospace); }
+code { text-align: left; vertical-align: initial; }
+a.md-print-anchor { white-space: pre !important; border-width: initial !important; border-style: none !important; border-color: initial !important; display: inline-block !important; position: absolute !important; width: 1px !important; right: 0px !important; outline: 0px !important; background: 0px 0px !important; text-decoration: initial !important; text-shadow: initial !important; }
+.os-windows.monocolor-emoji .md-emoji { font-family: "Segoe UI Symbol", sans-serif; }
+.md-diagram-panel > svg { max-width: 100%; }
+[lang="flow"] svg, [lang="mermaid"] svg { max-width: 100%; height: auto; }
+[lang="mermaid"] .node text { font-size: 1rem; }
+table tr th { border-bottom: 0px; }
+video { max-width: 100%; display: block; margin: 0px auto; }
+iframe { max-width: 100%; width: 100%; border: none; }
+.highlight td, .highlight tr { border: 0px; }
+mark { background: rgb(255, 255, 0); color: rgb(0, 0, 0); }
+.md-html-inline .md-plain, .md-html-inline strong, mark .md-inline-math, mark strong { color: inherit; }
+.md-expand mark .md-meta { opacity: 0.3 !important; }
+mark .md-meta { color: rgb(0, 0, 0); }
+@media print {
+  .typora-export h1, .typora-export h2, .typora-export h3, .typora-export h4, .typora-export h5, .typora-export h6 { break-inside: avoid; }
+}
+.md-diagram-panel .messageText { stroke: none !important; }
+.md-diagram-panel .start-state { fill: var(--node-fill); }
+.md-diagram-panel .edgeLabel rect { opacity: 1 !important; }
+.md-fences.md-fences-math { font-size: 1em; }
+.md-fences-advanced:not(.md-focus) { padding: 0px; white-space: nowrap; border: 0px; }
+.md-fences-advanced:not(.md-focus) { background: inherit; }
+.mermaid-svg { margin: auto; }
+.typora-export-show-outline .typora-export-content { max-width: 1440px; margin: auto; display: flex; flex-direction: row; }
+.typora-export-sidebar { width: 300px; font-size: 0.8rem; margin-top: 80px; margin-right: 18px; }
+.typora-export-show-outline #write { --webkit-flex: 2; flex: 2 1 0%; }
+.typora-export-sidebar .outline-content { position: fixed; top: 0px; max-height: 100%; overflow: hidden auto; padding-bottom: 30px; padding-top: 60px; width: 300px; }
+@media screen and (max-width: 1024px) {
+  .typora-export-sidebar, .typora-export-sidebar .outline-content { width: 240px; }
+}
+@media screen and (max-width: 800px) {
+  .typora-export-sidebar { display: none; }
+}
+.outline-content li, .outline-content ul { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; list-style: none; overflow-wrap: anywhere; }
+.outline-content ul { margin-top: 0px; margin-bottom: 0px; }
+.outline-content strong { font-weight: 400; }
+.outline-expander { width: 1rem; height: 1.42857rem; position: relative; display: table-cell; vertical-align: middle; cursor: pointer; padding-left: 4px; }
+.outline-expander::before { content: ""; position: relative; font-family: Ionicons; display: inline-block; font-size: 8px; vertical-align: middle; }
+.outline-item { padding-top: 3px; padding-bottom: 3px; cursor: pointer; }
+.outline-expander:hover::before { content: ""; }
+.outline-h1 > .outline-item { padding-left: 0px; }
+.outline-h2 > .outline-item { padding-left: 1em; }
+.outline-h3 > .outline-item { padding-left: 2em; }
+.outline-h4 > .outline-item { padding-left: 3em; }
+.outline-h5 > .outline-item { padding-left: 4em; }
+.outline-h6 > .outline-item { padding-left: 5em; }
+.outline-label { cursor: pointer; display: table-cell; vertical-align: middle; text-decoration: none; color: inherit; }
+.outline-label:hover { text-decoration: underline; }
+.outline-item:hover { border-color: rgb(245, 245, 245); background-color: var(--item-hover-bg-color); }
+.outline-item:hover { margin-left: -28px; margin-right: -28px; border-left: 28px solid transparent; border-right: 28px solid transparent; }
+.outline-item-single .outline-expander::before, .outline-item-single .outline-expander:hover::before { display: none; }
+.outline-item-open > .outline-item > .outline-expander::before { content: ""; }
+.outline-children { display: none; }
+.info-panel-tab-wrapper { display: none; }
+.outline-item-open > .outline-children { display: block; }
+.typora-export .outline-item { padding-top: 1px; padding-bottom: 1px; }
+.typora-export .outline-item:hover { margin-right: -8px; border-right: 8px solid transparent; }
+.typora-export .outline-expander::before { content: "+"; font-family: inherit; top: -1px; }
+.typora-export .outline-expander:hover::before, .typora-export .outline-item-open > .outline-item > .outline-expander::before { content: "−"; }
+.typora-export-collapse-outline .outline-children { display: none; }
+.typora-export-collapse-outline .outline-item-open > .outline-children, .typora-export-no-collapse-outline .outline-children { display: block; }
+.typora-export-no-collapse-outline .outline-expander::before { content: "" !important; }
+.typora-export-show-outline .outline-item-active > .outline-item .outline-label { font-weight: 700; }
+.md-inline-math-container mjx-container { zoom: 0.95; }
+mjx-container { break-inside: avoid; }
+.md-alert.md-alert-note { border-left-color: rgb(9, 105, 218); }
+.md-alert.md-alert-important { border-left-color: rgb(130, 80, 223); }
+.md-alert.md-alert-warning { border-left-color: rgb(154, 103, 0); }
+.md-alert.md-alert-tip { border-left-color: rgb(31, 136, 61); }
+.md-alert.md-alert-caution { border-left-color: rgb(207, 34, 46); }
+.md-alert { padding: 0px 1em; margin-bottom: 16px; color: inherit; border-left: 0.25em solid rgb(0, 0, 0); }
+.md-alert-text-note { color: rgb(9, 105, 218); }
+.md-alert-text-important { color: rgb(130, 80, 223); }
+.md-alert-text-warning { color: rgb(154, 103, 0); }
+.md-alert-text-tip { color: rgb(31, 136, 61); }
+.md-alert-text-caution { color: rgb(207, 34, 46); }
+.md-alert-text { font-size: 0.9rem; font-weight: 700; }
+.md-alert-text svg { fill: currentcolor; position: relative; top: 0.125em; margin-right: 1ch; overflow: visible; }
+.md-alert-text-container::after { content: attr(data-text); text-transform: capitalize; pointer-events: none; margin-right: 1ch; }
+
+</style>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&amp;subset=latin,latin-ext' type='text/css' />
+<style type='text/css'  id="style-theme_css">:root {
+    --side-bar-bg-color: #fafafa;
+    --control-text-color: #777;
+}
+
+@include-when-export url(https://fonts.googleapis.com/css?family=Open+Sans:400italic,700italic,700,400&subset=latin,latin-ext);
+
+/* open-sans-regular - latin-ext_latin */
+  /* open-sans-italic - latin-ext_latin */
+    /* open-sans-700 - latin-ext_latin */
+    /* open-sans-700italic - latin-ext_latin */
+  html {
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+}
+
+body {
+    font-family: "Open Sans","Clear Sans", "Helvetica Neue", Helvetica, Arial, 'Segoe UI Emoji', sans-serif;
+    color: rgb(51, 51, 51);
+    line-height: 1.6;
+}
+
+#write {
+    max-width: 860px;
+  	margin: 0 auto;
+  	padding: 30px;
+    padding-bottom: 100px;
+}
+
+@media only screen and (min-width: 1400px) {
+	#write {
+		max-width: 1024px;
+	}
+}
+
+@media only screen and (min-width: 1800px) {
+	#write {
+		max-width: 1200px;
+	}
+}
+
+#write > ul:first-child,
+#write > ol:first-child{
+    margin-top: 30px;
+}
+
+a {
+    color: #4183C4;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    font-weight: bold;
+    line-height: 1.4;
+    cursor: text;
+}
+h1:hover a.anchor,
+h2:hover a.anchor,
+h3:hover a.anchor,
+h4:hover a.anchor,
+h5:hover a.anchor,
+h6:hover a.anchor {
+    text-decoration: none;
+}
+h1 tt,
+h1 code {
+    font-size: inherit;
+}
+h2 tt,
+h2 code {
+    font-size: inherit;
+}
+h3 tt,
+h3 code {
+    font-size: inherit;
+}
+h4 tt,
+h4 code {
+    font-size: inherit;
+}
+h5 tt,
+h5 code {
+    font-size: inherit;
+}
+h6 tt,
+h6 code {
+    font-size: inherit;
+}
+h1 {
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+h2 {
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+/*@media print {
+    .typora-export h1,
+    .typora-export h2 {
+        border-bottom: none;
+        padding-bottom: initial;
+    }
+
+    .typora-export h1::after,
+    .typora-export h2::after {
+        content: "";
+        display: block;
+        height: 100px;
+        margin-top: -96px;
+        border-top: 1px solid #eee;
+    }
+}*/
+
+h3 {
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+h4 {
+    font-size: 1.25em;
+}
+h5 {
+    font-size: 1em;
+}
+h6 {
+   font-size: 1em;
+    color: #777;
+}
+p,
+blockquote,
+ul,
+ol,
+dl,
+table{
+    margin: 0.8em 0;
+}
+li>ol,
+li>ul {
+    margin: 0 0;
+}
+hr {
+    height: 2px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #e7e7e7;
+    border: 0 none;
+    overflow: hidden;
+    box-sizing: content-box;
+}
+
+li p.first {
+    display: inline-block;
+}
+ul,
+ol {
+    padding-left: 30px;
+}
+ul:first-child,
+ol:first-child {
+    margin-top: 0;
+}
+ul:last-child,
+ol:last-child {
+    margin-bottom: 0;
+}
+blockquote {
+    border-left: 4px solid #dfe2e5;
+    padding: 0 15px;
+    color: #777777;
+}
+blockquote blockquote {
+    padding-right: 0;
+}
+table {
+    padding: 0;
+    word-break: initial;
+}
+table tr {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 0;
+}
+table tr:nth-child(2n),
+thead {
+    background-color: #f8f8f8;
+}
+table th {
+    font-weight: bold;
+    border: 1px solid #dfe2e5;
+    border-bottom: 0;
+    margin: 0;
+    padding: 6px 13px;
+}
+table td {
+    border: 1px solid #dfe2e5;
+    margin: 0;
+    padding: 6px 13px;
+}
+table th:first-child,
+table td:first-child {
+    margin-top: 0;
+}
+table th:last-child,
+table td:last-child {
+    margin-bottom: 0;
+}
+
+.CodeMirror-lines {
+    padding-left: 4px;
+}
+
+.code-tooltip {
+    box-shadow: 0 1px 1px 0 rgba(0,28,36,.3);
+    border-top: 1px solid #eef2f2;
+}
+
+.md-fences,
+code,
+tt {
+    border: 1px solid #e7eaed;
+    background-color: #f8f8f8;
+    border-radius: 3px;
+    padding: 0;
+    padding: 2px 4px 0px 4px;
+    font-family: "Consolas";
+    font-size: 0.9em;
+}
+
+code {
+    background-color: #f3f4f4;
+    font-family: "Consolas";
+    padding: 0 2px 0 2px;
+}
+
+.md-fences {
+    margin-bottom: 15px;
+    margin-top: 15px;
+    padding-top: 8px;
+    padding-bottom: 6px;
+}
+
+
+.md-task-list-item > input {
+  margin-left: -1.3em;
+}
+
+@media print {
+    html {
+        font-size: 13px;
+    }
+    pre {
+        page-break-inside: avoid;
+        word-wrap: break-word;
+    }
+}
+
+.md-fences {
+	background-color: #f8f8f8;
+}
+#write pre.md-meta-block {
+	padding: 1rem;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border: 0;
+    border-radius: 3px;
+    color: #777777;
+    margin-top: 0 !important;
+}
+
+.mathjax-block>.code-tooltip {
+	bottom: .375rem;
+}
+
+.md-mathjax-midline {
+    background: #fafafa;
+}
+
+#write>h3.md-focus:before{
+	left: -1.5625rem;
+	top: .375rem;
+}
+#write>h4.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h5.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+#write>h6.md-focus:before{
+	left: -1.5625rem;
+	top: .285714286rem;
+}
+.md-image>.md-meta {
+    /*border: 1px solid #ddd;*/
+    border-radius: 3px;
+    padding: 2px 0px 0px 4px;
+    font-size: 0.9em;
+    color: inherit;
+}
+
+.md-tag {
+    color: #a7a7a7;
+    opacity: 1;
+}
+
+.md-toc { 
+    margin-top:20px;
+    padding-bottom:20px;
+}
+
+.sidebar-tabs {
+    border-bottom: none;
+}
+
+#typora-quick-open {
+    border: 1px solid #ddd;
+    background-color: #f8f8f8;
+}
+
+#typora-quick-open-item {
+    background-color: #FAFAFA;
+    border-color: #FEFEFE #e5e5e5 #e5e5e5 #eee;
+    border-style: solid;
+    border-width: 1px;
+}
+
+/** focus mode */
+.on-focus-mode blockquote {
+    border-left-color: rgba(85, 85, 85, 0.12);
+}
+
+header, .context-menu, .megamenu-content, footer{
+    font-family: "Segoe UI", "Arial", sans-serif;
+}
+
+.file-node-content:hover .file-node-icon,
+.file-node-content:hover .file-node-open-state{
+    visibility: visible;
+}
+
+.mac-seamless-mode #typora-sidebar {
+    background-color: #fafafa;
+    background-color: var(--side-bar-bg-color);
+}
+
+.md-lang {
+    color: #b4654d;
+}
+
+/*.html-for-mac {
+    --item-hover-bg-color: #E6F0FE;
+}*/
+
+#md-notification .btn {
+    border: 0;
+}
+
+.dropdown-menu .divider {
+    border-color: #e5e5e5;
+    opacity: 0.4;
+}
+
+.ty-preferences .window-content {
+    background-color: #fafafa;
+}
+
+.ty-preferences .nav-group-item.active {
+    color: white;
+    background: #999;
+}
+
+.menu-item-container a.menu-style-btn {
+    background-color: #f5f8fa;
+    background-image: linear-gradient( 180deg , hsla(0, 0%, 100%, 0.8), hsla(0, 0%, 100%, 0)); 
+}
+</style>
+<style type='text/css'  id="style-mathjax">
+mjx-container[jax="SVG"] {
+  direction: ltr;
+}
+
+mjx-container[jax="SVG"] > svg {
+  overflow: visible;
+  min-height: 1px;
+  min-width: 1px;
+}
+
+mjx-container[jax="SVG"] > svg a {
+  fill: blue;
+  stroke: blue;
+}
+
+mjx-assistive-mml {
+  position: absolute !important;
+  top: 0px;
+  left: 0px;
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 1px 0px 0px 0px !important;
+  border: 0px !important;
+  display: block !important;
+  width: auto !important;
+  overflow: hidden !important;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+mjx-assistive-mml[display="block"] {
+  width: 100% !important;
+}
+
+mjx-container[jax="SVG"][display="true"] {
+  display: block;
+  text-align: center;
+  margin: 1em 0;
+}
+
+mjx-container[jax="SVG"][display="true"][width="full"] {
+  display: flex;
+}
+
+mjx-container[jax="SVG"][justify="left"] {
+  text-align: left;
+}
+
+mjx-container[jax="SVG"][justify="right"] {
+  text-align: right;
+}
+
+g[data-mml-node="merror"] > g {
+  fill: red;
+  stroke: red;
+}
+
+g[data-mml-node="merror"] > rect[data-background] {
+  fill: yellow;
+  stroke: none;
+}
+
+g[data-mml-node="mtable"] > line[data-line], svg[data-table] > g > line[data-line] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > rect[data-frame], svg[data-table] > g > rect[data-frame] {
+  stroke-width: 70px;
+  fill: none;
+}
+
+g[data-mml-node="mtable"] > .mjx-dashed, svg[data-table] > g > .mjx-dashed {
+  stroke-dasharray: 140;
+}
+
+g[data-mml-node="mtable"] > .mjx-dotted, svg[data-table] > g > .mjx-dotted {
+  stroke-linecap: round;
+  stroke-dasharray: 0,140;
+}
+
+g[data-mml-node="mtable"] > g > svg {
+  overflow: visible;
+}
+
+[jax="SVG"] mjx-tool {
+  display: inline-block;
+  position: relative;
+  width: 0;
+  height: 0;
+}
+
+[jax="SVG"] mjx-tool > mjx-tip {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+mjx-tool > mjx-tip {
+  display: inline-block;
+  padding: .2em;
+  border: 1px solid #888;
+  font-size: 70%;
+  background-color: #F8F8F8;
+  color: black;
+  box-shadow: 2px 2px 5px #AAAAAA;
+}
+
+g[data-mml-node="maction"][data-toggle] {
+  cursor: pointer;
+}
+
+mjx-status {
+  display: block;
+  position: fixed;
+  left: 1em;
+  bottom: 1em;
+  min-width: 25%;
+  padding: .2em .4em;
+  border: 1px solid #888;
+  font-size: 90%;
+  background-color: #F8F8F8;
+  color: black;
+}
+
+foreignObject[data-mjx-xml] {
+  font-family: initial;
+  line-height: normal;
+  overflow: visible;
+}
+
+mjx-container[jax="SVG2"] path[data-c], mjx-container[jax="SVG2"] use[data-c] {
+  stroke-width: 3;
+}
+
+g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+
+.MathJax g[data-mml-node="xypic"] path {
+  stroke-width: inherit;
+}
+</style>
+<style type='text/css'  id="style-mathjax-ni">mjx-container[jax="SVG"] path[data-c], mjx-container[jax="SVG"] use[data-c] {
+							stroke-width: 0;
+						}</style>
+<style type='text/css'  id="style-lp">ol, ul {padding-left: 40px}</style>
+
+<title>Problem 12. Highly Divisible Triangular Number</title>
+</head>
+<body class='typora-export os-windows'><div class='typora-export-content'>
+<div id='write'  class=''><h3 id='12-highly-divisible-triangular-number'><a href='https://projecteuler.net/problem=12'><span>12. Highly Divisible Triangular Number</span></a></h3><p><span>The sequence of triangle numbers is generated by adding the natural numbers. So the </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.579ex" role="img" focusable="false" viewBox="0 -676 500 698" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.05ex;"><defs><path id="MJX-735-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="37" xlink:href="#MJX-735-TEX-N-37"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">7</script><sup><span>th</span></sup><span> triangle number would be </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="29.792ex" height="1.717ex" role="img" focusable="false" viewBox="0 -677 13168.2 759" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-736-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-736-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-736-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-736-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-736-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-736-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-736-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-736-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-736-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-736-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-736-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(722.2,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(1722.4,0)"><use data-c="32" xlink:href="#MJX-736-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(2444.7,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(3444.9,0)"><use data-c="33" xlink:href="#MJX-736-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(4167.1,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(5167.3,0)"><use data-c="34" xlink:href="#MJX-736-TEX-N-34"></use></g><g data-mml-node="mo" transform="translate(5889.6,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(6889.8,0)"><use data-c="35" xlink:href="#MJX-736-TEX-N-35"></use></g><g data-mml-node="mo" transform="translate(7612,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(8612.2,0)"><use data-c="36" xlink:href="#MJX-736-TEX-N-36"></use></g><g data-mml-node="mo" transform="translate(9334.4,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(10334.7,0)"><use data-c="37" xlink:href="#MJX-736-TEX-N-37"></use></g><g data-mml-node="mo" transform="translate(11112.4,0)"><use data-c="3D" xlink:href="#MJX-736-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(12168.2,0)"><use data-c="32" xlink:href="#MJX-736-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-736-TEX-N-38" transform="translate(500,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>28</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">1 + 2 + 3 + 4 + 5 + 6 + 7 = 28</script><span>. The first ten terms would be:</span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n19" cid="n19" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-math-container"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="31.943ex" height="1.971ex" role="img" focusable="false" viewBox="0 -677 14118.7 871" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.439ex;"><defs><path id="MJX-728-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-728-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-728-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-728-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-728-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-728-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-728-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-728-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-728-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-728-TEX-N-2026" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60ZM525 60Q525 84 542 102T585 120Q609 120 627 104T646 61Q646 36 629 18T586 0T543 17T525 60ZM972 60Q972 84 989 102T1032 120Q1056 120 1074 104T1093 61Q1093 36 1076 18T1033 0T990 17T972 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-728-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(500,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(944.7,0)"><use data-c="33" xlink:href="#MJX-728-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(1444.7,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1889.3,0)"><use data-c="36" xlink:href="#MJX-728-TEX-N-36"></use></g><g data-mml-node="mo" transform="translate(2389.3,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2834,0)"><use data-c="31" xlink:href="#MJX-728-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-728-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(3834,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(4278.7,0)"><use data-c="31" xlink:href="#MJX-728-TEX-N-31"></use><use data-c="35" xlink:href="#MJX-728-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(5278.7,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(5723.3,0)"><use data-c="32" xlink:href="#MJX-728-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-728-TEX-N-31" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(6723.3,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(7168,0)"><use data-c="32" xlink:href="#MJX-728-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-728-TEX-N-38" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(8168,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(8612.7,0)"><use data-c="33" xlink:href="#MJX-728-TEX-N-33"></use><use data-c="36" xlink:href="#MJX-728-TEX-N-36" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(9612.7,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(10057.3,0)"><use data-c="34" xlink:href="#MJX-728-TEX-N-34"></use><use data-c="35" xlink:href="#MJX-728-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(11057.3,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(11502,0)"><use data-c="35" xlink:href="#MJX-728-TEX-N-35"></use><use data-c="35" xlink:href="#MJX-728-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(12502,0)"><use data-c="2C" xlink:href="#MJX-728-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(12946.7,0)"><use data-c="2026" xlink:href="#MJX-728-TEX-N-2026"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>21</mn><mo>,</mo><mn>28</mn><mo>,</mo><mn>36</mn><mo>,</mo><mn>45</mn><mo>,</mo><mn>55</mn><mo>,</mo><mo>…</mo></math></mjx-assistive-mml></mjx-container></div></div><p><span>Let us list the factors of the first seven triangle numbers:</span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n21" cid="n21" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-math-container"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="17.688ex" height="19.91ex" role="img" focusable="false" viewBox="0 -4650 7818 8800" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -9.389ex;"><defs><path id="MJX-729-TEX-B-1D7CF" d="M481 0L294 3Q136 3 109 0H96V62H227V304Q227 546 225 546Q169 529 97 529H80V591H97Q231 591 308 647L319 655H333Q355 655 359 644Q361 640 361 351V62H494V0H481Z"></path><path id="MJX-729-TEX-N-3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-729-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-729-TEX-B-1D7D1" d="M80 503Q80 565 133 610T274 655Q366 655 421 623T491 538Q493 528 493 510Q493 446 453 407T361 348L376 344Q452 324 489 281T526 184Q526 152 514 121T474 58T392 8T265 -11Q175 -11 111 34T48 152Q50 187 72 209T132 232Q171 232 193 208T216 147Q216 136 214 126T207 108T197 94T187 84T178 77T170 72L168 71Q168 70 179 65T215 54T266 48H270Q331 48 350 105Q358 128 358 185Q358 239 348 268T309 313Q292 321 242 322Q205 322 198 324T191 341V348Q191 366 196 369T232 375Q239 375 247 376T260 377T268 378Q284 383 297 393T326 436T341 517Q341 536 339 547T331 573T308 593T266 600Q248 600 241 599Q214 593 183 576Q234 556 234 503Q234 462 210 444T157 426Q126 426 103 446T80 503Z"></path><path id="MJX-729-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-729-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-729-TEX-B-1D7D4" d="M48 318Q48 395 68 456T120 553T193 613T273 646T350 655Q425 655 461 616T497 524Q497 485 475 468T428 451Q399 451 378 470T357 521Q357 565 403 588Q375 601 351 601Q313 601 282 584Q242 565 222 526Q199 473 199 367Q201 369 210 380T227 396T246 410T275 422T312 426Q438 426 494 332Q526 285 526 208V199Q526 112 465 53Q428 17 388 3T285 -11Q236 -11 195 7T135 43T104 80Q48 165 48 318ZM375 231V244V268Q375 295 373 310T364 342T341 366T299 374H297Q231 374 208 287Q200 257 200 196Q201 120 209 100Q231 47 288 47Q351 47 368 90Q375 112 375 231Z"></path><path id="MJX-729-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-729-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-729-TEX-B-1D7CE" d="M266 654H280H282Q500 654 524 418Q529 370 529 320Q529 125 456 52Q397 -10 287 -10Q110 -10 63 154Q45 212 45 316Q45 504 113 585Q140 618 185 636T266 654ZM374 548Q347 604 286 604Q247 604 218 575Q197 552 193 511T188 311Q188 159 196 116Q202 87 225 64T287 41Q339 41 367 87Q379 107 382 152T386 329Q386 518 374 548Z"></path><path id="MJX-729-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-729-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-729-TEX-B-1D7D3" d="M100 565V605Q100 637 102 646T113 655Q116 655 139 647T202 631T286 623Q332 623 372 631T434 647T459 655Q466 655 469 651T472 643T472 629Q472 613 463 601Q370 487 219 487Q195 487 183 488T169 490T168 433V376Q169 376 174 379T188 387T211 397T244 405T288 409Q390 409 453 352T517 201Q517 106 445 48T253 -11Q169 -11 113 37T57 154Q57 187 79 208T131 229T183 209T206 154Q206 99 155 83Q152 82 157 78Q196 47 253 47Q347 47 358 135Q358 137 358 138Q360 158 360 209Q360 277 355 301T337 338Q315 358 282 358Q202 358 160 303Q153 294 149 292T130 290Q107 290 102 301Q100 304 100 474V565Z"></path><path id="MJX-729-TEX-B-1D7D0" d="M175 580Q175 578 185 572T205 551T215 510Q215 467 191 449T137 430Q107 430 83 448T58 511Q58 558 91 592T168 640T259 654Q328 654 383 637Q451 610 484 563T517 459Q517 401 482 360T368 262Q340 243 265 184L210 140H274Q416 140 429 145Q439 148 447 186T455 237H517V233Q516 230 501 119Q489 9 486 4V0H57V25Q57 51 58 54Q60 57 109 106T215 214T288 291Q364 377 364 458Q364 515 328 553T231 592Q214 592 201 589T181 584T175 580Z"></path><path id="MJX-729-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-729-TEX-B-1D7D6" d="M80 474Q80 561 139 607T278 654Q357 654 411 632Q490 593 494 509Q494 424 416 376L407 371L418 364Q432 356 447 345T481 312T513 260T526 192Q526 100 461 45T285 -11Q184 -11 116 32T48 164Q48 181 50 196T58 225T69 249T84 270T100 286T117 300T134 311T149 321T162 329L152 336Q120 360 100 397T80 474ZM347 404Q404 446 404 503Q404 579 317 599Q309 600 276 600Q178 600 170 538Q170 532 171 527T173 518T178 509T184 501T194 492T205 484T219 476T235 467T254 456T275 445L347 404ZM289 47Q323 47 351 54T402 82T425 137Q425 147 421 161Q411 183 391 197T303 249Q224 293 223 293Q220 291 215 288T197 273T175 248T157 213T149 167Q149 109 188 78T289 47Z"></path><path id="MJX-729-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-729-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr" transform="translate(0,3900)"><g data-mml-node="mtd" transform="translate(575,0)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7CF" xlink:href="#MJX-729-TEX-B-1D7CF"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-729-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,2600)"><g data-mml-node="mtd" transform="translate(575,0)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D1" xlink:href="#MJX-729-TEX-B-1D7D1"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-729-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="33" xlink:href="#MJX-729-TEX-N-33"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,1300)"><g data-mml-node="mtd" transform="translate(575,0)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D4" xlink:href="#MJX-729-TEX-B-1D7D4"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-729-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="32" xlink:href="#MJX-729-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="33" xlink:href="#MJX-729-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="36" xlink:href="#MJX-729-TEX-N-36"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,0)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7CF" xlink:href="#MJX-729-TEX-B-1D7CF"></use><use data-c="1D7CE" xlink:href="#MJX-729-TEX-B-1D7CE" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-729-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="32" xlink:href="#MJX-729-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="35" xlink:href="#MJX-729-TEX-N-35"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-729-TEX-N-30" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-1300)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7CF" xlink:href="#MJX-729-TEX-B-1D7CF"></use><use data-c="1D7D3" xlink:href="#MJX-729-TEX-B-1D7D3" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-729-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="33" xlink:href="#MJX-729-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="35" xlink:href="#MJX-729-TEX-N-35"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use><use data-c="35" xlink:href="#MJX-729-TEX-N-35" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-2600)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D0" xlink:href="#MJX-729-TEX-B-1D7D0"></use><use data-c="1D7CF" xlink:href="#MJX-729-TEX-B-1D7CF" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-729-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="33" xlink:href="#MJX-729-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="37" xlink:href="#MJX-729-TEX-N-37"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="32" xlink:href="#MJX-729-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-729-TEX-N-31" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-3900)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D0" xlink:href="#MJX-729-TEX-B-1D7D0"></use><use data-c="1D7D6" xlink:href="#MJX-729-TEX-B-1D7D6" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-729-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="32" xlink:href="#MJX-729-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="34" xlink:href="#MJX-729-TEX-N-34"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="37" xlink:href="#MJX-729-TEX-N-37"></use></g><g data-mml-node="mo" transform="translate(3778.7,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(4223.3,0)"><use data-c="31" xlink:href="#MJX-729-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-729-TEX-N-34" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(5223.3,0)"><use data-c="2C" xlink:href="#MJX-729-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(5668,0)"><use data-c="32" xlink:href="#MJX-729-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-729-TEX-N-38" transform="translate(500,0)"></use></g></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left" columnspacing="0em" rowspacing="3pt"><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">1</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">3</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>3</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">6</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">10</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">15</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>15</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">21</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>21</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">28</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>14</mn><mo>,</mo><mn>28</mn></mtd></mtr></mtable></math></mjx-assistive-mml></mjx-container></div></div><p><span>We can see that </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.05ex;"><defs><path id="MJX-737-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-737-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-737-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-737-TEX-N-38" transform="translate(500,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">28</script><span> is the first triangle number to have over five divisors.</span>
+<span>What is the value of the first triangle number to have over five hundred divisors?</span></p><h3 id='12-因数众多的三角形数'><span>12. 因数众多的三角形数</span></h3><p><span>通过作自然数的前缀和，可以得到三角形数序列。因此，第 </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="1.131ex" height="1.579ex" role="img" focusable="false" viewBox="0 -676 500 698" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.05ex;"><defs><path id="MJX-735-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="37" xlink:href="#MJX-735-TEX-N-37"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>7</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">7</script><span> 个三角形数是 </span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="29.792ex" height="1.717ex" role="img" focusable="false" viewBox="0 -677 13168.2 759" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.186ex;"><defs><path id="MJX-736-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-736-TEX-N-2B" d="M56 237T56 250T70 270H369V420L370 570Q380 583 389 583Q402 583 409 568V270H707Q722 262 722 250T707 230H409V-68Q401 -82 391 -82H389H387Q375 -82 369 -68V230H70Q56 237 56 250Z"></path><path id="MJX-736-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-736-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-736-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-736-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-736-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-736-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-736-TEX-N-3D" d="M56 347Q56 360 70 367H707Q722 359 722 347Q722 336 708 328L390 327H72Q56 332 56 347ZM56 153Q56 168 72 173H708Q722 163 722 153Q722 140 707 133H70Q56 140 56 153Z"></path><path id="MJX-736-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-736-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(722.2,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(1722.4,0)"><use data-c="32" xlink:href="#MJX-736-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(2444.7,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(3444.9,0)"><use data-c="33" xlink:href="#MJX-736-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(4167.1,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(5167.3,0)"><use data-c="34" xlink:href="#MJX-736-TEX-N-34"></use></g><g data-mml-node="mo" transform="translate(5889.6,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(6889.8,0)"><use data-c="35" xlink:href="#MJX-736-TEX-N-35"></use></g><g data-mml-node="mo" transform="translate(7612,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(8612.2,0)"><use data-c="36" xlink:href="#MJX-736-TEX-N-36"></use></g><g data-mml-node="mo" transform="translate(9334.4,0)"><use data-c="2B" xlink:href="#MJX-736-TEX-N-2B"></use></g><g data-mml-node="mn" transform="translate(10334.7,0)"><use data-c="37" xlink:href="#MJX-736-TEX-N-37"></use></g><g data-mml-node="mo" transform="translate(11112.4,0)"><use data-c="3D" xlink:href="#MJX-736-TEX-N-3D"></use></g><g data-mml-node="mn" transform="translate(12168.2,0)"><use data-c="32" xlink:href="#MJX-736-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-736-TEX-N-38" transform="translate(500,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>1</mn><mo>+</mo><mn>2</mn><mo>+</mo><mn>3</mn><mo>+</mo><mn>4</mn><mo>+</mo><mn>5</mn><mo>+</mo><mn>6</mn><mo>+</mo><mn>7</mn><mo>=</mo><mn>28</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">1 + 2 + 3 + 4 + 5 + 6 + 7 = 28</script><span>。三角形数序列的前十项是：</span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n25" cid="n25" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-math-container"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="31.943ex" height="1.971ex" role="img" focusable="false" viewBox="0 -677 14118.7 871" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.439ex;"><defs><path id="MJX-730-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-730-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-730-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-730-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-730-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-730-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-730-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-730-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path><path id="MJX-730-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-730-TEX-N-2026" d="M78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60ZM525 60Q525 84 542 102T585 120Q609 120 627 104T646 61Q646 36 629 18T586 0T543 17T525 60ZM972 60Q972 84 989 102T1032 120Q1056 120 1074 104T1093 61Q1093 36 1076 18T1033 0T990 17T972 60Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="31" xlink:href="#MJX-730-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(500,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(944.7,0)"><use data-c="33" xlink:href="#MJX-730-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(1444.7,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1889.3,0)"><use data-c="36" xlink:href="#MJX-730-TEX-N-36"></use></g><g data-mml-node="mo" transform="translate(2389.3,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2834,0)"><use data-c="31" xlink:href="#MJX-730-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-730-TEX-N-30" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(3834,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(4278.7,0)"><use data-c="31" xlink:href="#MJX-730-TEX-N-31"></use><use data-c="35" xlink:href="#MJX-730-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(5278.7,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(5723.3,0)"><use data-c="32" xlink:href="#MJX-730-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-730-TEX-N-31" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(6723.3,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(7168,0)"><use data-c="32" xlink:href="#MJX-730-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-730-TEX-N-38" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(8168,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(8612.7,0)"><use data-c="33" xlink:href="#MJX-730-TEX-N-33"></use><use data-c="36" xlink:href="#MJX-730-TEX-N-36" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(9612.7,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(10057.3,0)"><use data-c="34" xlink:href="#MJX-730-TEX-N-34"></use><use data-c="35" xlink:href="#MJX-730-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(11057.3,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(11502,0)"><use data-c="35" xlink:href="#MJX-730-TEX-N-35"></use><use data-c="35" xlink:href="#MJX-730-TEX-N-35" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(12502,0)"><use data-c="2C" xlink:href="#MJX-730-TEX-N-2C"></use></g><g data-mml-node="mo" transform="translate(12946.7,0)"><use data-c="2026" xlink:href="#MJX-730-TEX-N-2026"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn><mo>,</mo><mn>10</mn><mo>,</mo><mn>15</mn><mo>,</mo><mn>21</mn><mo>,</mo><mn>28</mn><mo>,</mo><mn>36</mn><mo>,</mo><mn>45</mn><mo>,</mo><mn>55</mn><mo>,</mo><mo>…</mo></math></mjx-assistive-mml></mjx-container></div></div><p><span>我们列出前七个三角形数的所有因数：</span></p><div contenteditable="false" spellcheck="false" class="mathjax-block md-end-block md-math-block md-rawblock" id="mathjax-n27" cid="n27" mdtype="math_block" data-math-tag-before="0" data-math-tag-after="0" data-math-labels="[]"><div class="md-math-container"><mjx-container class="MathJax" jax="SVG" display="true" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="17.688ex" height="19.91ex" role="img" focusable="false" viewBox="0 -4650 7818 8800" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -9.389ex;"><defs><path id="MJX-731-TEX-B-1D7CF" d="M481 0L294 3Q136 3 109 0H96V62H227V304Q227 546 225 546Q169 529 97 529H80V591H97Q231 591 308 647L319 655H333Q355 655 359 644Q361 640 361 351V62H494V0H481Z"></path><path id="MJX-731-TEX-N-3A" d="M78 370Q78 394 95 412T138 430Q162 430 180 414T199 371Q199 346 182 328T139 310T96 327T78 370ZM78 60Q78 84 95 102T138 120Q162 120 180 104T199 61Q199 36 182 18T139 0T96 17T78 60Z"></path><path id="MJX-731-TEX-N-31" d="M213 578L200 573Q186 568 160 563T102 556H83V602H102Q149 604 189 617T245 641T273 663Q275 666 285 666Q294 666 302 660V361L303 61Q310 54 315 52T339 48T401 46H427V0H416Q395 3 257 3Q121 3 100 0H88V46H114Q136 46 152 46T177 47T193 50T201 52T207 57T213 61V578Z"></path><path id="MJX-731-TEX-B-1D7D1" d="M80 503Q80 565 133 610T274 655Q366 655 421 623T491 538Q493 528 493 510Q493 446 453 407T361 348L376 344Q452 324 489 281T526 184Q526 152 514 121T474 58T392 8T265 -11Q175 -11 111 34T48 152Q50 187 72 209T132 232Q171 232 193 208T216 147Q216 136 214 126T207 108T197 94T187 84T178 77T170 72L168 71Q168 70 179 65T215 54T266 48H270Q331 48 350 105Q358 128 358 185Q358 239 348 268T309 313Q292 321 242 322Q205 322 198 324T191 341V348Q191 366 196 369T232 375Q239 375 247 376T260 377T268 378Q284 383 297 393T326 436T341 517Q341 536 339 547T331 573T308 593T266 600Q248 600 241 599Q214 593 183 576Q234 556 234 503Q234 462 210 444T157 426Q126 426 103 446T80 503Z"></path><path id="MJX-731-TEX-N-2C" d="M78 35T78 60T94 103T137 121Q165 121 187 96T210 8Q210 -27 201 -60T180 -117T154 -158T130 -185T117 -194Q113 -194 104 -185T95 -172Q95 -168 106 -156T131 -126T157 -76T173 -3V9L172 8Q170 7 167 6T161 3T152 1T140 0Q113 0 96 17Z"></path><path id="MJX-731-TEX-N-33" d="M127 463Q100 463 85 480T69 524Q69 579 117 622T233 665Q268 665 277 664Q351 652 390 611T430 522Q430 470 396 421T302 350L299 348Q299 347 308 345T337 336T375 315Q457 262 457 175Q457 96 395 37T238 -22Q158 -22 100 21T42 130Q42 158 60 175T105 193Q133 193 151 175T169 130Q169 119 166 110T159 94T148 82T136 74T126 70T118 67L114 66Q165 21 238 21Q293 21 321 74Q338 107 338 175V195Q338 290 274 322Q259 328 213 329L171 330L168 332Q166 335 166 348Q166 366 174 366Q202 366 232 371Q266 376 294 413T322 525V533Q322 590 287 612Q265 626 240 626Q208 626 181 615T143 592T132 580H135Q138 579 143 578T153 573T165 566T175 555T183 540T186 520Q186 498 172 481T127 463Z"></path><path id="MJX-731-TEX-B-1D7D4" d="M48 318Q48 395 68 456T120 553T193 613T273 646T350 655Q425 655 461 616T497 524Q497 485 475 468T428 451Q399 451 378 470T357 521Q357 565 403 588Q375 601 351 601Q313 601 282 584Q242 565 222 526Q199 473 199 367Q201 369 210 380T227 396T246 410T275 422T312 426Q438 426 494 332Q526 285 526 208V199Q526 112 465 53Q428 17 388 3T285 -11Q236 -11 195 7T135 43T104 80Q48 165 48 318ZM375 231V244V268Q375 295 373 310T364 342T341 366T299 374H297Q231 374 208 287Q200 257 200 196Q201 120 209 100Q231 47 288 47Q351 47 368 90Q375 112 375 231Z"></path><path id="MJX-731-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-731-TEX-N-36" d="M42 313Q42 476 123 571T303 666Q372 666 402 630T432 550Q432 525 418 510T379 495Q356 495 341 509T326 548Q326 592 373 601Q351 623 311 626Q240 626 194 566Q147 500 147 364L148 360Q153 366 156 373Q197 433 263 433H267Q313 433 348 414Q372 400 396 374T435 317Q456 268 456 210V192Q456 169 451 149Q440 90 387 34T253 -22Q225 -22 199 -14T143 16T92 75T56 172T42 313ZM257 397Q227 397 205 380T171 335T154 278T148 216Q148 133 160 97T198 39Q222 21 251 21Q302 21 329 59Q342 77 347 104T352 209Q352 289 347 316T329 361Q302 397 257 397Z"></path><path id="MJX-731-TEX-B-1D7CE" d="M266 654H280H282Q500 654 524 418Q529 370 529 320Q529 125 456 52Q397 -10 287 -10Q110 -10 63 154Q45 212 45 316Q45 504 113 585Q140 618 185 636T266 654ZM374 548Q347 604 286 604Q247 604 218 575Q197 552 193 511T188 311Q188 159 196 116Q202 87 225 64T287 41Q339 41 367 87Q379 107 382 152T386 329Q386 518 374 548Z"></path><path id="MJX-731-TEX-N-35" d="M164 157Q164 133 148 117T109 101H102Q148 22 224 22Q294 22 326 82Q345 115 345 210Q345 313 318 349Q292 382 260 382H254Q176 382 136 314Q132 307 129 306T114 304Q97 304 95 310Q93 314 93 485V614Q93 664 98 664Q100 666 102 666Q103 666 123 658T178 642T253 634Q324 634 389 662Q397 666 402 666Q410 666 410 648V635Q328 538 205 538Q174 538 149 544L139 546V374Q158 388 169 396T205 412T256 420Q337 420 393 355T449 201Q449 109 385 44T229 -22Q148 -22 99 32T50 154Q50 178 61 192T84 210T107 214Q132 214 148 197T164 157Z"></path><path id="MJX-731-TEX-N-30" d="M96 585Q152 666 249 666Q297 666 345 640T423 548Q460 465 460 320Q460 165 417 83Q397 41 362 16T301 -15T250 -22Q224 -22 198 -16T137 16T82 83Q39 165 39 320Q39 494 96 585ZM321 597Q291 629 250 629Q208 629 178 597Q153 571 145 525T137 333Q137 175 145 125T181 46Q209 16 250 16Q290 16 318 46Q347 76 354 130T362 333Q362 478 354 524T321 597Z"></path><path id="MJX-731-TEX-B-1D7D3" d="M100 565V605Q100 637 102 646T113 655Q116 655 139 647T202 631T286 623Q332 623 372 631T434 647T459 655Q466 655 469 651T472 643T472 629Q472 613 463 601Q370 487 219 487Q195 487 183 488T169 490T168 433V376Q169 376 174 379T188 387T211 397T244 405T288 409Q390 409 453 352T517 201Q517 106 445 48T253 -11Q169 -11 113 37T57 154Q57 187 79 208T131 229T183 209T206 154Q206 99 155 83Q152 82 157 78Q196 47 253 47Q347 47 358 135Q358 137 358 138Q360 158 360 209Q360 277 355 301T337 338Q315 358 282 358Q202 358 160 303Q153 294 149 292T130 290Q107 290 102 301Q100 304 100 474V565Z"></path><path id="MJX-731-TEX-B-1D7D0" d="M175 580Q175 578 185 572T205 551T215 510Q215 467 191 449T137 430Q107 430 83 448T58 511Q58 558 91 592T168 640T259 654Q328 654 383 637Q451 610 484 563T517 459Q517 401 482 360T368 262Q340 243 265 184L210 140H274Q416 140 429 145Q439 148 447 186T455 237H517V233Q516 230 501 119Q489 9 486 4V0H57V25Q57 51 58 54Q60 57 109 106T215 214T288 291Q364 377 364 458Q364 515 328 553T231 592Q214 592 201 589T181 584T175 580Z"></path><path id="MJX-731-TEX-N-37" d="M55 458Q56 460 72 567L88 674Q88 676 108 676H128V672Q128 662 143 655T195 646T364 644H485V605L417 512Q408 500 387 472T360 435T339 403T319 367T305 330T292 284T284 230T278 162T275 80Q275 66 275 52T274 28V19Q270 2 255 -10T221 -22Q210 -22 200 -19T179 0T168 40Q168 198 265 368Q285 400 349 489L395 552H302Q128 552 119 546Q113 543 108 522T98 479L95 458V455H55V458Z"></path><path id="MJX-731-TEX-B-1D7D6" d="M80 474Q80 561 139 607T278 654Q357 654 411 632Q490 593 494 509Q494 424 416 376L407 371L418 364Q432 356 447 345T481 312T513 260T526 192Q526 100 461 45T285 -11Q184 -11 116 32T48 164Q48 181 50 196T58 225T69 249T84 270T100 286T117 300T134 311T149 321T162 329L152 336Q120 360 100 397T80 474ZM347 404Q404 446 404 503Q404 579 317 599Q309 600 276 600Q178 600 170 538Q170 532 171 527T173 518T178 509T184 501T194 492T205 484T219 476T235 467T254 456T275 445L347 404ZM289 47Q323 47 351 54T402 82T425 137Q425 147 421 161Q411 183 391 197T303 249Q224 293 223 293Q220 291 215 288T197 273T175 248T157 213T149 167Q149 109 188 78T289 47Z"></path><path id="MJX-731-TEX-N-34" d="M462 0Q444 3 333 3Q217 3 199 0H190V46H221Q241 46 248 46T265 48T279 53T286 61Q287 63 287 115V165H28V211L179 442Q332 674 334 675Q336 677 355 677H373L379 671V211H471V165H379V114Q379 73 379 66T385 54Q393 47 442 46H471V0H462ZM293 211V545L74 212L183 211H293Z"></path><path id="MJX-731-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mtable"><g data-mml-node="mtr" transform="translate(0,3900)"><g data-mml-node="mtd" transform="translate(575,0)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7CF" xlink:href="#MJX-731-TEX-B-1D7CF"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-731-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,2600)"><g data-mml-node="mtd" transform="translate(575,0)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D1" xlink:href="#MJX-731-TEX-B-1D7D1"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-731-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="33" xlink:href="#MJX-731-TEX-N-33"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,1300)"><g data-mml-node="mtd" transform="translate(575,0)"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D4" xlink:href="#MJX-731-TEX-B-1D7D4"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-731-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="32" xlink:href="#MJX-731-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="33" xlink:href="#MJX-731-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="36" xlink:href="#MJX-731-TEX-N-36"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,0)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7CF" xlink:href="#MJX-731-TEX-B-1D7CF"></use><use data-c="1D7CE" xlink:href="#MJX-731-TEX-B-1D7CE" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-731-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="32" xlink:href="#MJX-731-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="35" xlink:href="#MJX-731-TEX-N-35"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use><use data-c="30" xlink:href="#MJX-731-TEX-N-30" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-1300)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7CF" xlink:href="#MJX-731-TEX-B-1D7CF"></use><use data-c="1D7D3" xlink:href="#MJX-731-TEX-B-1D7D3" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-731-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="33" xlink:href="#MJX-731-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="35" xlink:href="#MJX-731-TEX-N-35"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use><use data-c="35" xlink:href="#MJX-731-TEX-N-35" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-2600)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D0" xlink:href="#MJX-731-TEX-B-1D7D0"></use><use data-c="1D7CF" xlink:href="#MJX-731-TEX-B-1D7CF" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-731-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="33" xlink:href="#MJX-731-TEX-N-33"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="37" xlink:href="#MJX-731-TEX-N-37"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="32" xlink:href="#MJX-731-TEX-N-32"></use><use data-c="31" xlink:href="#MJX-731-TEX-N-31" transform="translate(500,0)"></use></g></g></g><g data-mml-node="mtr" transform="translate(0,-3900)"><g data-mml-node="mtd"><g data-mml-node="TeXAtom" data-mjx-texclass="ORD"><g data-mml-node="mn"><use data-c="1D7D0" xlink:href="#MJX-731-TEX-B-1D7D0"></use><use data-c="1D7D6" xlink:href="#MJX-731-TEX-B-1D7D6" transform="translate(575,0)"></use></g></g></g><g data-mml-node="mtd" transform="translate(1150,0)"><g data-mml-node="mi"></g><g data-mml-node="mo"><use data-c="3A" xlink:href="#MJX-731-TEX-N-3A"></use></g><g data-mml-node="mn" transform="translate(444.7,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use></g><g data-mml-node="mo" transform="translate(944.7,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(1389.3,0)"><use data-c="32" xlink:href="#MJX-731-TEX-N-32"></use></g><g data-mml-node="mo" transform="translate(1889.3,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(2334,0)"><use data-c="34" xlink:href="#MJX-731-TEX-N-34"></use></g><g data-mml-node="mo" transform="translate(2834,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(3278.7,0)"><use data-c="37" xlink:href="#MJX-731-TEX-N-37"></use></g><g data-mml-node="mo" transform="translate(3778.7,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(4223.3,0)"><use data-c="31" xlink:href="#MJX-731-TEX-N-31"></use><use data-c="34" xlink:href="#MJX-731-TEX-N-34" transform="translate(500,0)"></use></g><g data-mml-node="mo" transform="translate(5223.3,0)"><use data-c="2C" xlink:href="#MJX-731-TEX-N-2C"></use></g><g data-mml-node="mn" transform="translate(5668,0)"><use data-c="32" xlink:href="#MJX-731-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-731-TEX-N-38" transform="translate(500,0)"></use></g></g></g></g></g></g></svg><mjx-assistive-mml unselectable="on" display="block"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><mtable displaystyle="true" columnalign="right left" columnspacing="0em" rowspacing="3pt"><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">1</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">3</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>3</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">6</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>6</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">10</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>10</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">15</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>5</mn><mo>,</mo><mn>15</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">21</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>3</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>21</mn></mtd></mtr><mtr><mtd><mrow data-mjx-texclass="ORD"><mn mathvariant="bold">28</mn></mrow></mtd><mtd><mi></mi><mo data-mjx-texclass="PUNCT">:</mo><mn>1</mn><mo>,</mo><mn>2</mn><mo>,</mo><mn>4</mn><mo>,</mo><mn>7</mn><mo>,</mo><mn>14</mn><mo>,</mo><mn>28</mn></mtd></mtr></mtable></math></mjx-assistive-mml></mjx-container></div></div><p><span>我们发现，</span><mjx-container class="MathJax" jax="SVG" style="position: relative;"><svg xmlns="http://www.w3.org/2000/svg" width="2.262ex" height="1.557ex" role="img" focusable="false" viewBox="0 -666 1000 688" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" style="vertical-align: -0.05ex;"><defs><path id="MJX-737-TEX-N-32" d="M109 429Q82 429 66 447T50 491Q50 562 103 614T235 666Q326 666 387 610T449 465Q449 422 429 383T381 315T301 241Q265 210 201 149L142 93L218 92Q375 92 385 97Q392 99 409 186V189H449V186Q448 183 436 95T421 3V0H50V19V31Q50 38 56 46T86 81Q115 113 136 137Q145 147 170 174T204 211T233 244T261 278T284 308T305 340T320 369T333 401T340 431T343 464Q343 527 309 573T212 619Q179 619 154 602T119 569T109 550Q109 549 114 549Q132 549 151 535T170 489Q170 464 154 447T109 429Z"></path><path id="MJX-737-TEX-N-38" d="M70 417T70 494T124 618T248 666Q319 666 374 624T429 515Q429 485 418 459T392 417T361 389T335 371T324 363L338 354Q352 344 366 334T382 323Q457 264 457 174Q457 95 399 37T249 -22Q159 -22 101 29T43 155Q43 263 172 335L154 348Q133 361 127 368Q70 417 70 494ZM286 386L292 390Q298 394 301 396T311 403T323 413T334 425T345 438T355 454T364 471T369 491T371 513Q371 556 342 586T275 624Q268 625 242 625Q201 625 165 599T128 534Q128 511 141 492T167 463T217 431Q224 426 228 424L286 386ZM250 21Q308 21 350 55T392 137Q392 154 387 169T375 194T353 216T330 234T301 253T274 270Q260 279 244 289T218 306L210 311Q204 311 181 294T133 239T107 157Q107 98 150 60T250 21Z"></path></defs><g stroke="currentColor" fill="currentColor" stroke-width="0" transform="scale(1,-1)"><g data-mml-node="math"><g data-mml-node="mn"><use data-c="32" xlink:href="#MJX-737-TEX-N-32"></use><use data-c="38" xlink:href="#MJX-737-TEX-N-38" transform="translate(500,0)"></use></g></g></g></svg><mjx-assistive-mml unselectable="on" display="inline"><math xmlns="http://www.w3.org/1998/Math/MathML"><mn>28</mn></math></mjx-assistive-mml></mjx-container><script type="math/tex">28</script><span> 是第一个有多于 5 个因数的三角形数。</span><br/><span>第一个含有多于 500 个因数的三角形数是多少？</span></p><hr /><p><span>点 </span><a href='https://fsy-juruo.github.io/pe-chinese-translation/'><span>这个链接</span></a><span> 回到源站。</span></p><p><span>点 </span><a href='https://fsy-juruo.github.io/pe-chinese-translation/detailed_content_archives.html'><span>这个链接</span></a><span> 回到详细版题目目录。</span></p></div></div>
+</body>
+</html>
