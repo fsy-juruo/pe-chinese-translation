@@ -6,20 +6,18 @@
 
 ### 最近更新 | Recent updates
 
-预计下次更新时间：2025 年 9 月 8 日（小更新）。
+预计下次更新时间：2025 年 11 月 29 日。
 
+* **[2025-11-6] 进行了如下更新：**
+  * 翻译：11-15、296、762-767、818、852、856-860、959-967。
 * **[2025-8-31] 进行了如下更新：**
   * 翻译：1-10、253、301、497、853-854、861、864-870、958。
   * 增加配图：已经翻译的题目都已更新完。
   * 修订了部分题中的翻译。
-  
 * **[2025-8-7] 进行了如下更新：**
   * 翻译：873-879，947-957。
   * 修正、更改：删除了部分题目中偏私人、偏剧透、偏无用的注释。
-    
   * 增加配图：更新至 829 题。
-
-* **[2025-5-26] 翻译：871、872、898、899、938-946。**
 
 ### 目录：帮助、杂项翻译 | Translation: Help Guides & Miscellaneous
 
@@ -39,8 +37,14 @@
 |8|连续数位的最大乘积 / Largest Product in a Series|5%|[link_8](https://fsy-juruo.github.io/pe-chinese-translation/problems/8.html)|
 |9|特殊的毕达哥拉斯三元组 / Special Pythagorean Triplet|5%|[link_9](https://fsy-juruo.github.io/pe-chinese-translation/problems/9.html)|
 |10|质数求和 / Summation of Primes|5%|[link_10](https://fsy-juruo.github.io/pe-chinese-translation/problems/10.html)|
+|11|数阵中的最大乘积 / Largest Product in a Grid|5%|[link_11](https://fsy-juruo.github.io/pe-chinese-translation/problems/11.html)|
+|12|因数众多的三角形数 / Highly Divisible Triangular Number|5%|[link_12](https://fsy-juruo.github.io/pe-chinese-translation/problems/12.html)|
+|13|大数之和 / Large Sum|5%|[link_13](https://fsy-juruo.github.io/pe-chinese-translation/problems/13.html)|
+|14|最长的考拉兹序列 / Longest Collatz Sequence|5%|[link_14](https://fsy-juruo.github.io/pe-chinese-translation/problems/14.html)|
+|15|格路 / Lattice Paths|5%|[link_15](https://fsy-juruo.github.io/pe-chinese-translation/problems/15.html)|
 |226|一勺奶冻 / A Scoop of Blancmange|65%|[link_226](https://fsy-juruo.github.io/pe-chinese-translation/problems/226.html)|
 |253|收拾拼图 1 / Tidying Up A|75%|[link_253](https://fsy-juruo.github.io/pe-chinese-translation/problems/253.html)|
+|296|角平分线和切线 / Angular Bisector and Tangent|60%|[link_296](https://fsy-juruo.github.io/pe-chinese-translation/problems/296.html)|
 |301|尼姆游戏 / Nim|15%|[link_301](https://fsy-juruo.github.io/pe-chinese-translation/problems/301.html)|
 |497|醉鬼的汉诺塔游戏 / Drunken Towers of Hanoi|40%|[link_497](https://fsy-juruo.github.io/pe-chinese-translation/problems/497.html)|
 |675|$2^{\omega(n)}$|25%|[link_675](https://fsy-juruo.github.io/pe-chinese-translation/problems/675.html)|
@@ -67,6 +71,12 @@
 |722|缓慢收敛的级数 / Slowly converging series|25%|[link_722](https://fsy-juruo.github.io/pe-chinese-translation/problems/722.html)|
 |723|毕达哥拉斯四元组 / Pythagorean Quadrilaterals|65%|[link_723](https://fsy-juruo.github.io/pe-chinese-translation/problems/723.html)|
 |761|跑者和游泳者 / Runner and Swimmer|90%|[link_761](https://fsy-juruo.github.io/pe-chinese-translation/problems/761.html)|
+|762|二维网格上的变形虫 / Amoebas in a 2D Grid|50%|[link_762](https://fsy-juruo.github.io/pe-chinese-translation/problems/762.html)|
+|763|三维网格上的变形虫 / Amoebas in a 3D Grid|100%|[link_763](https://fsy-juruo.github.io/pe-chinese-translation/problems/763.html)|
+|764|不对称丢番图方程 / Asymmetric Diophantine Equation|40%|[link_764](https://fsy-juruo.github.io/pe-chinese-translation/problems/764.html)|
+|765|万亿富翁 / Trillionaire|65%|[link_765](https://fsy-juruo.github.io/pe-chinese-translation/problems/765.html)|
+|766|滑块谜题 / Sliding Block Puzzle|35%|[link_766](https://fsy-juruo.github.io/pe-chinese-translation/problems/766.html)|
+|767|矩阵的窗口 2 / Window into a Matrix II|60%|[link_767](https://fsy-juruo.github.io/pe-chinese-translation/problems/767.html)|
 |768|吊灯 / Chandelier|95%|[link_768](https://fsy-juruo.github.io/pe-chinese-translation/problems/768.html)|
 |769|二元二次型 2 / Binary Quadratic Form II|90%|[link_769](https://fsy-juruo.github.io/pe-chinese-translation/problems/769.html)|
 |770|德尔斐赌徒谜题 / Delphi Flip|30%|[link_770](https://fsy-juruo.github.io/pe-chinese-translation/problems/770.html)|
@@ -117,6 +127,7 @@
 |815|按价值分堆 / Group by Value|25%|[link_815](https://fsy-juruo.github.io/pe-chinese-translation/problems/815.html)|
 |816|平面点对最短距离 / Shortest distance among points|5%|[link_816](https://fsy-juruo.github.io/pe-chinese-translation/problems/816.html)|
 |817|平方数里的数位 / Digits in Squares|20%|[link_817](https://fsy-juruo.github.io/pe-chinese-translation/problems/817.html)|
+|818|神奇形色牌 / SET|85%|[link_818](https://fsy-juruo.github.io/pe-chinese-translation/problems/818.html)|
 |819|迭代取样法 / Iterative Sampling|45%|[link_819](https://fsy-juruo.github.io/pe-chinese-translation/problems/819.html)|
 |820|倒数的小数点后第 $N$ 位 / $N$<sup>th</sup> digit of Reciprocals|10%|[link_820](https://fsy-juruo.github.io/pe-chinese-translation/problems/820.html)|
 |821|可 123 分离的 / 123-Separable|65%|[link_821](https://fsy-juruo.github.io/pe-chinese-translation/problems/821.html)|
@@ -150,8 +161,14 @@
 |849|锦标赛 / The Tournament|45%|[link_849](https://fsy-juruo.github.io/pe-chinese-translation/problems/849.html)|
 |850|幂的小数部分 / Fractions of Powers|85%|[link_850](https://fsy-juruo.github.io/pe-chinese-translation/problems/850.html)|
 |851|积之和与和之积 / SOP and POS| 85%          |[link_851](https://fsy-juruo.github.io/pe-chinese-translation/problems/851.html)|
+|852|箱中的硬币 / Coins in a Box| 50% |[link_852](https://fsy-juruo.github.io/pe-chinese-translation/problems/852.html)|
 |853|皮萨诺周期 1 / Pisano Periods 1| 5% |[link_853](https://fsy-juruo.github.io/pe-chinese-translation/problems/853.html)|
 |854|皮萨诺周期 2 / Pisano Periods 2| 40% |[link_854](https://fsy-juruo.github.io/pe-chinese-translation/problems/854.html)|
+|856|等待一对牌 / Waiting for a Pair| 20% |[link_856](https://fsy-juruo.github.io/pe-chinese-translation/problems/856.html)|
+|857|漂亮的图 / Beautiful Graphs| 60% |[link_857](https://fsy-juruo.github.io/pe-chinese-translation/problems/857.html)|
+|858|最小公倍数 / LCM| 50% |[link_858](https://fsy-juruo.github.io/pe-chinese-translation/problems/858.html)|
+|859|曲奇游戏 / Cookie Game| 55% |[link_859](https://fsy-juruo.github.io/pe-chinese-translation/problems/859.html)|
+|860|金币银币游戏 / Gold and Silver Coin Game| 20% |[link_860](https://fsy-juruo.github.io/pe-chinese-translation/problems/860.html)|
 |861|双单元因数的乘积 / Products of Bi-Unitary Divisors| 40% |[link_861](https://fsy-juruo.github.io/pe-chinese-translation/problems/861.html)|
 |862|更大的数位排列数 / Larger Digit Permutation| 10%          |[link_862](https://fsy-juruo.github.io/pe-chinese-translation/problems/862.html)|
 |863|不同的骰子 / Different Dice| 35%          |[link_863](https://fsy-juruo.github.io/pe-chinese-translation/problems/863.html)|
@@ -224,29 +241,38 @@
 |933|剪纸游戏 / Paper Cutting| 50% |[link_933](https://fsy-juruo.github.io/pe-chinese-translation/problems/933.html)|
 |934|不幸质数 / Unlucky Primes| 25% |[link_934](https://fsy-juruo.github.io/pe-chinese-translation/problems/934.html)|
 |935|滚动正方形 / Rolling Square| 80% |[link_935](https://fsy-juruo.github.io/pe-chinese-translation/problems/935.html)|
-|936|无同树[^4] / Peerless Trees| 85%?[^1] |[link_936](https://fsy-juruo.github.io/pe-chinese-translation/problems/936.html)|
+|936|无同树[^4] / Peerless Trees| 90% |[link_936](https://fsy-juruo.github.io/pe-chinese-translation/problems/936.html)|
 |937|等乘积分拆 / Equiproduct Partition| 50% |[link_937](https://fsy-juruo.github.io/pe-chinese-translation/problems/937.html)|
 |938|耗尽同色牌 / Exhausting a Colour| 5% |[link_938](https://fsy-juruo.github.io/pe-chinese-translation/problems/938.html)|
 |939|不公平尼姆游戏 / Partisan Nim| 60% |[link_939](https://fsy-juruo.github.io/pe-chinese-translation/problems/939.html)|
 |940|二维递推关系 / Two-Dimensional Recurrence| 15% |[link_940](https://fsy-juruo.github.io/pe-chinese-translation/problems/940.html)|
 |941|德布鲁因的密码锁 / de Bruijn's Combination Lock| 65% |[link_941](https://fsy-juruo.github.io/pe-chinese-translation/problems/941.html)|
 |942|梅森数的平方根 / Mersenne's Square Root| 100%?[^1]    |[link_942](https://fsy-juruo.github.io/pe-chinese-translation/problems/942.html)|
-|943|自描述序列 / Self Describing Sequences| 85%?[^1] |[link_943](https://fsy-juruo.github.io/pe-chinese-translation/problems/943.html)|
+|943|自描述序列 / Self Describing Sequences| 90%?[^1] |[link_943](https://fsy-juruo.github.io/pe-chinese-translation/problems/943.html)|
 |944|基本因数之和 / Sum of Elevisors| 10% |[link_944](https://fsy-juruo.github.io/pe-chinese-translation/problems/944.html)|
 |945|异或方程 3 / XOR-Equation C| 35% |[link_945](https://fsy-juruo.github.io/pe-chinese-translation/problems/945.html)|
 |946|由连分数构成的分数 / Continued Fraction Fraction| 30% |[link_946](https://fsy-juruo.github.io/pe-chinese-translation/problems/946.html)|
 |947|斐波那契余数 / Fibonacci Residues| 60% |[link_947](https://fsy-juruo.github.io/pe-chinese-translation/problems/947.html)|
 |948|小左对小右 / Left vs Right| 25% |[link_948](https://fsy-juruo.github.io/pe-chinese-translation/problems/948.html)|
-|949|小左对小右 2 / Left vs Right II| 暂无[^2] |[link_949](https://fsy-juruo.github.io/pe-chinese-translation/problems/949.html)|
-|950|海盗的宝藏 / Pirate Treasure| 暂无[^2] |[link_950](https://fsy-juruo.github.io/pe-chinese-translation/problems/950.html)|
-|951|一个机遇游戏 / A Game of Chance| 暂无[^2] |[link_951](https://fsy-juruo.github.io/pe-chinese-translation/problems/951.html)|
-|952|模阶乘意义下的阶 / Order Modulo Factorial| 暂无[^2] |[link_952](https://fsy-juruo.github.io/pe-chinese-translation/problems/952.html)|
-|953|质因数分解尼姆游戏 / Factorisation Nim| 暂无[^2] |[link_953](https://fsy-juruo.github.io/pe-chinese-translation/problems/953.html)|
-|954|数字七恐惧症 / Heptaphobia| 暂无[^2] |[link_954](https://fsy-juruo.github.io/pe-chinese-translation/problems/954.html)|
-|955|寻找三角形数 / Finding Triangles| 暂无[^2] |[link_955](https://fsy-juruo.github.io/pe-chinese-translation/problems/955.html)|
-|956|超酷阶乘的求和 / Super Duper Sum| 暂无[^2] |[link_956](https://fsy-juruo.github.io/pe-chinese-translation/problems/956.html)|
-|957|点的创生 / Point Genesis| 暂无[^2] |[link_957](https://fsy-juruo.github.io/pe-chinese-translation/problems/957.html)|
+|949|小左对小右 2 / Left vs Right II| 100%?[^1] |[link_949](https://fsy-juruo.github.io/pe-chinese-translation/problems/949.html)|
+|950|海盗的宝藏 / Pirate Treasure| 75% |[link_950](https://fsy-juruo.github.io/pe-chinese-translation/problems/950.html)|
+|951|一个碰运气游戏 / A Game of Chance| 25% |[link_951](https://fsy-juruo.github.io/pe-chinese-translation/problems/951.html)|
+|952|模阶乘意义下的阶 / Order Modulo Factorial| 30%          |[link_952](https://fsy-juruo.github.io/pe-chinese-translation/problems/952.html)|
+|953|质因数分解尼姆游戏 / Factorisation Nim| 40% |[link_953](https://fsy-juruo.github.io/pe-chinese-translation/problems/953.html)|
+|954|数字七恐惧症 / Heptaphobia| 50% |[link_954](https://fsy-juruo.github.io/pe-chinese-translation/problems/954.html)|
+|955|寻找三角形数 / Finding Triangles| 15% |[link_955](https://fsy-juruo.github.io/pe-chinese-translation/problems/955.html)|
+|956|超酷阶乘的求和 / Super Duper Sum| 15% |[link_956](https://fsy-juruo.github.io/pe-chinese-translation/problems/956.html)|
+|957|点的创生 / Point Genesis| 90% |[link_957](https://fsy-juruo.github.io/pe-chinese-translation/problems/957.html)|
 |958|欧几里得的劳动 / Euclid's Labour| 暂无[^2] |[link_958](https://fsy-juruo.github.io/pe-chinese-translation/problems/958.html)|
+|959|不对称随机游走 / Asymmetric Random Walk| 暂无[^2] |[link_959](https://fsy-juruo.github.io/pe-chinese-translation/problems/959.html)|
+|960|单人取石子游戏 / Stone Game Solitaire| 暂无[^2] |[link_960](https://fsy-juruo.github.io/pe-chinese-translation/problems/960.html)|
+|961|移除数位 / Removing Digits| 暂无[^2] |[link_961](https://fsy-juruo.github.io/pe-chinese-translation/problems/961.html)|
+|962|角平分线和切线 2 / Angular Bisector and Tangent 2| 暂无[^2] |[link_962](https://fsy-juruo.github.io/pe-chinese-translation/problems/962.html)|
+|963|移除三进制位 / Removing Trits| 暂无[^2] |[link_963](https://fsy-juruo.github.io/pe-chinese-translation/problems/963.html)|
+|964|重访抢椅子游戏 / Musical Chairs Revisited| 暂无[^2] |[link_964](https://fsy-juruo.github.io/pe-chinese-translation/problems/964.html)|
+|965|极小小数部分的期望 / Expected Minimal Fractional Value| 暂无[^2] |[link_965](https://fsy-juruo.github.io/pe-chinese-translation/problems/965.html)|
+|966|三角形与圆形的交 / Triangle Circle Intersection| 暂无[^2] |[link_966](https://fsy-juruo.github.io/pe-chinese-translation/problems/966.html)|
+|967|$B$-可三分数 / $B$-Trivisible Numbers| 暂无[^2] |[link_967](https://fsy-juruo.github.io/pe-chinese-translation/problems/967.html)|
 
 [^1]: 难度系数后带 ? 等价于 PE 的 not yet finalised（难度未敲定）
 [^2]: Project Euler 中 Recent 的十道题暂时没有难度评分。
@@ -256,5 +282,5 @@
 ## 其它翻译站点 | Other translation sites
 
 - [ProjectEuler 趣题汉化 - 飲水思源（1 ~ 372 题）](http://jakwings.is-programmer.com/Project_Euler)
-- [sx349 翻译（1 ~ 941 题）](http://pe-cn.github.io/)
+- [sx349 翻译（1 ~ 963 题）](http://pe-cn.github.io/)
 
