@@ -1,4 +1,4 @@
-### [830. Binomials and Powers](https://projecteuler.net/problem=845)
+### [830. Binomials and Powers](https://projecteuler.net/problem=830)
 
 Let $\displaystyle S(n)=\sum\limits_{k=0}^{n}\binom{n}{k}k^n$.
 

@@ -6,7 +6,7 @@ $m$ is the tangent at $C$ to the circumscribed circle of $ABC$.
 $n$ is a line parallel to $m$ through $B$.  
 The intersection of $n$ and $k$ is called $E$.
 
-![](E:/pe-translation-workbox/trans-box/translation/images/0296_bisector.gif)
+![](images/0296_bisector.gif)
 
 How many triangles $ABC$ with a perimeter not exceeding $1\,000\,000$ exist such that $CE$ has integral length?
 
@@ -16,7 +16,7 @@ How many triangles $ABC$ with a perimeter not exceeding $1\,000\,000$ exist such
 
 给定一个满足 $BC \le AC \le AB$ 的、各边长都是整数的三角形 $ABC$。$k$ 是 $\angle ACB$ 的角平分线，$m$ 是 $\triangle ABC$ 的外接圆在 $C$ 处的切线。过 $B$ 作 $m$ 的平行线，记其为 $n$，并记 $n, k$ 的交点为 $E$。
 
-![](E:/pe-translation-workbox/trans-box/translation/images/0296_bisector.gif)
+![](images/0296_bisector.gif)
 
 满足上述条件，周长不超过 $1\,000\,000$ 且 $CE$ 长度是整数的三角形有多少个？
 
